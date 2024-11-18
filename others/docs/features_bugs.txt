@@ -1,0 +1,28 @@
+
+
+EXTRACTION
+1. Allow for HTML access 
+
+# SECURITY
+2. Dont store the password, but hash it
+3. Check pasword isalphanumeric and lenght 
+
+# DATA DEFINTION
+1. "Last edited" field in all entities 
+
+# FRONTEND
+1. Show each part of the db in the webpage
+
+# MODELS
+1. User last_login and joined should be automatized
+
+# BLOB STORAGE
+1. Put more informative names to the files
+
+
+# AI CALL
+1. One AI reviews the other's output
+
+
+# TO BE DONE: 
+1. Add data to the models from a script

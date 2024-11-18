@@ -1,0 +1,6 @@
+.DS_Store
+.venv
+src/backend/django_project/media/*
+src/django_project/.env
+
+
