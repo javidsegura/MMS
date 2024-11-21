@@ -56,3 +56,15 @@ ETL stands for Extract, Transform, Load.
 6. Permissions in SQL 
 6.5 HTML extracion 
 8. Improve security, and effficency 
+
+# DELIVERABLES
+1. Django project ✅
+2. Database schema ✅
+3. Test cases
+4. Database triggers
+5. Database queries
+6. Indexes
+7. Materialized views
+8. Full-text search
+9. Presentation
+10. Documentation
