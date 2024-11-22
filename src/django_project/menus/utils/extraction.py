@@ -13,8 +13,6 @@ def ai_call(menu, extension):
     Note: extension is the file extension of the menu file (e.g: .png, .html, .pdf)
     """
     print(f"AI call for uploaded file. Extension: {extension}")
-    if extension not in ["png", "html", "pdf", "jpg", "jpeg"]:
-        raise ValueError(f"Unsupported file extension: {extension}")
     
     menu_file = menu.menu_file
     ai_call_log = AuditLog.objects.create(
@@ -22,6 +20,9 @@ def ai_call(menu, extension):
         status="Started"
     )
     try:
+        if extension not in ["png", "html", "pdf", "jpg", "jpeg"]:
+            raise ValueError(f"Unsupported file extension: {extension}")
+        
         # OpenAI API call
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -125,4 +126,4 @@ def ai_call(menu, extension):
         ai_call_log.status = "Failed"
         ai_call_log.other = str(e)
         ai_call_log.save()
-        raise e
+        return None, ai_call_log

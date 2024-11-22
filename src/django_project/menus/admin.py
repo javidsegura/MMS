@@ -26,7 +26,6 @@ from .models import (
     MenuVersion
 )
 
-
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
     list_display = ('id', 'username', 'email', 'first_name', 'last_name', 'is_staff') 
@@ -38,7 +37,8 @@ class CustomUserAdmin(UserAdmin):
 @admin.register(Restaurant)
 class RestaurantAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'phone', 'email', 
-                    'website', 'country', 'city', 'state', 'zip', 'street')
+                    'website', 'country', 'city', 'state',
+                    'zip', 'street', 'last_edited')
     search_fields = ('name', 'city')
     list_filter = ('country', 'city', 'state')
 
@@ -57,7 +57,7 @@ class MenuAdmin(admin.ModelAdmin):
     """
     list_display = ('id', 'restaurant', 'user_id', 'version', 'menu_file_link',
                     'active_status', 'available_from', 'available_until',
-                    'timeUpload')
+                    'timeUpload', 'last_edited')
     list_filter = ('active_status', 'available_from', 'available_until')
     readonly_fields = ('user_id', 'version', "restaurant") # restaurante will be readonly, with default temp
     search_fields = ('restaurant__name',)
@@ -70,22 +70,25 @@ class MenuAdmin(admin.ModelAdmin):
         """
         # Log the event
     
-        uploaded_log = AuditLog.objects.create(
-            phase="Uploaded file",
-            status="Received"
-        )
         super().save_model(request, menu, form, change) # maybe this can be edeleted with super.savaemodelr
 
 
         if menu.menu_file and not change:  # Only process on new uploads
+            uploaded_log = AuditLog.objects.create(
+                phase="Uploaded file",
+                status="Received"
+            )
             menu.user_id = request.user
             uploaded_log.status = "Stored successfully"
             try:
                 extension = menu.menu_file.name.split(".")[-1]
                 menu_json, ai_call_log = ai_call(menu, extension=extension)
+                if menu_json is None:
+                    raise ValueError("No menu_json returned from AI call")
+                
                 populate_menu_data(menu, menu_json)
                 if menu.restaurant.name:
-                    menu_version = MenuVersion.objects.create(restaurant=menu.restaurant)
+                    menu_version = MenuVersion.objects.create(restaurant=menu.restaurant) # For each restaurant there is a menu version
                     menu.version = menu_version
                     menu.save()
                     uploaded_log.menu_version = menu_version
@@ -96,10 +99,10 @@ class MenuAdmin(admin.ModelAdmin):
                 else:
                     raise ValueError("Restaurant must be set before creating MenuVersion")
             except Exception as e:
-                if ai_call_log:
-                    ai_call_log.status = "Failed"
-                    ai_call_log.other = str(e)
-                    ai_call_log.save()
+                ai_call_log.status = "Failed"
+                ai_call_log.other = str(e)
+                ai_call_log.save()
+                menu.delete() # consider deleting it instead 
                 
 
 
@@ -113,31 +116,34 @@ class MenuAdmin(admin.ModelAdmin):
 
 @admin.register(MenuSection)
 class MenuSectionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'menu')
+    list_display = ('id', 'name', 'menu', 'last_edited')
     list_filter = ('menu',)
     search_fields = ('menu__restaurant__name',)
+
 @admin.register(MenuItem)
 class MenuItemAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'menu_section', 'price', 'currency', 'available')
+    list_display = ('id', 'name', 'menu_section', 'price', 
+                    'currency', 'available', 'last_edited')
     list_filter = ('available', 'currency', 'menu_section')
     search_fields = ('name', 'description', 'menu_section')
 
 @admin.register(DietaryRestriction)
 class DietaryRestrictionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name')
+    list_display = ('id', 'name', 'last_edited')
     list_filter = ('name',)
     search_fields = ('name',)
 
 @admin.register(MenuVersion)
 class MenuVersionAdmin(admin.ModelAdmin):
-    list_display = ("restaurant", "composite_id",)
+    list_display = ("restaurant", "composite_id")
     readonly_fields = ("composite_id",)
     list_filter = ("restaurant",)
     search_fields = ("restaurant__name",) # restaurant is a foreign key. syntaxis accordingly
 
 @admin.register(AuditLog)
 class AuditLogAdmin(admin.ModelAdmin):
-    list_display = ('id', 'menu_version', 'status', 'phase', 'time_registered', 'other')
+    list_display = ('id', 'menu_version', 'status', 'phase', 
+                    'time_registered', 'other', 'last_edited')
     list_filter = ('status',)
     readonly_fields = ('menu_version', 'status', 'phase', 'other', "time_registered", "other")
     search_fields = ('menu_version__restaurant__name',)

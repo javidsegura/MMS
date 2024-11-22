@@ -24,17 +24,10 @@ class User(AbstractUser):
     street = models.CharField(max_length=50, null=True, blank=True)
 
     def __str__(self): 
-        """ represnts the object namein the admin interface """
         return self.username
 
 class Restaurant(models.Model):
-    """
-    __str_: defines the name of the object (each record)
-    Meta Class: defines metadata about the model
-        - verbose_name: name of the model in singular
-        - verbose_name_plural: name of the model in plural
-    """
-    name = models.CharField(max_length=50, null=True)
+    name = models.CharField(max_length=50, null=True, unique=True)
     phone = models.CharField(max_length=50, null=True, blank=True)
     website = models.URLField(max_length=200, null=True, blank=True)
     email = models.EmailField(max_length=50, null=True, blank=True)
@@ -43,6 +36,7 @@ class Restaurant(models.Model):
     state = models.CharField(max_length=3, null=True, blank=True)
     zip = models.SmallIntegerField(null=True, blank=True)
     street = models.CharField(max_length=50, null=True, blank=True)
+    last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -63,10 +57,8 @@ class MenuVersion(models.Model):
                 restaurant=self.restaurant
             ).order_by('-version_number').first()
             
-            # Set the new version number
             self.version_number = (latest_version.version_number + 1) if latest_version else 1
             
-            # Create a more unique composite_id using restaurant ID
             self.composite_id = f"{self.restaurant.name}-v{self.version_number}:{self.restaurant.id}"
         
         super().save(*args, **kwargs)
@@ -88,6 +80,7 @@ class Menu(models.Model):
     available_from = models.DateField(null=True, blank=True)
     active_status = models.BooleanField(default=True, null=True, blank=True)
     timeUpload = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def __str__(self):
         return f"{self.version}" if self.version else f"No version: {self.id}"
@@ -100,7 +93,7 @@ class Menu(models.Model):
 class MenuSection(models.Model):
     menu = models.ForeignKey(Menu, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=99, null=True, blank=True)
-
+    last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
     def __str__(self):
         return f"{self.menu.restaurant.name}:{self.menu.id}:{self.name}"
     
@@ -116,6 +109,7 @@ class MenuItem(models.Model):
     price = models.IntegerField(null=True, blank=True)
     currency = models.CharField(max_length=99, default='dollar', null=True, blank=True)
     available = models.BooleanField(null=True, blank=True)
+    last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -127,7 +121,7 @@ class MenuItem(models.Model):
 class DietaryRestriction(models.Model):
     menu_items = models.ManyToManyField(MenuItem, related_name='dietary_restrictions') # relanted_name specified how to access the reverse relationship
     name = models.CharField(max_length=99, null=True, blank=True)
-
+    last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
     def __str__(self):
         return self.name
 
@@ -135,14 +129,13 @@ class DietaryRestriction(models.Model):
         verbose_name = "Dietary Restriction"
         verbose_name_plural = "Dietary Restrictions"
 
-
 class AuditLog(models.Model):
     menu_version = models.ForeignKey(MenuVersion, on_delete=models.CASCADE, null=True, blank=True)
     phase = models.CharField(max_length=99, null=True, blank=True)
     status = models.CharField(max_length=99, null=True, blank=True)
     time_registered = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    other = models.CharField(max_length=99, null=True, blank=True) # this could be a json
-
+    other = models.CharField(max_length=99, null=True, blank=True)
+    last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
     def __str__(self):
         return f"{self.menu_version}:{self.phase}"
     
