@@ -5952,3 +5952,22 @@ INFO 2024-11-17 20:12:53,209 logging_middleware 51895 6167621632 Response: {
   }
 }
 INFO 2024-11-17 20:12:53,210 basehttp 51895 6167621632 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 11:21:44,263 autoreload 4970 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:21:56,793 autoreload 4970 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:21:57,667 autoreload 5007 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:22:04,106 autoreload 5007 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:22:04,858 autoreload 5025 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:22:07,136 autoreload 5025 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:22:07,854 autoreload 5039 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:25:50,683 autoreload 5039 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:25:51,621 autoreload 5147 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:25:55,016 autoreload 5147 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:25:55,705 autoreload 5161 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:26:03,111 autoreload 5161 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:26:03,573 autoreload 5180 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:26:04,815 autoreload 5180 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:26:05,417 autoreload 5192 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:26:09,740 autoreload 5192 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:26:10,459 autoreload 5210 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 11:26:17,883 autoreload 5210 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 11:26:18,585 autoreload 5228 7965332224 Watching for file changes with StatReloader

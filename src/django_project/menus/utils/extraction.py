@@ -13,6 +13,9 @@ def ai_call(menu, extension):
     Note: extension is the file extension of the menu file (e.g: .png, .html, .pdf)
     """
     print(f"AI call for uploaded file. Extension: {extension}")
+    if extension not in ["png", "html", "pdf", "jpg", "jpeg"]:
+        raise ValueError(f"Unsupported file extension: {extension}")
+    
     menu_file = menu.menu_file
     ai_call_log = AuditLog.objects.create(
         phase="Extraction",
@@ -55,16 +58,18 @@ def ai_call(menu, extension):
                 }
             ]
         
-        if extension == "png":
+        if extension in ["png", "jpg", "jpeg"]:
             # Read image file directly from the InMemoryUploadedFile
             base64_file = base64.b64encode(menu_file.file.read()).decode('utf-8')
             # Reset file pointer for future reads
             menu_file.file.seek(0)
 
+            type = "jpeg" if extension in ["jpg", "jpeg"] else extension
+
             messages[0]["content"].append({
                 "type": "image_url",
                 "image_url": {
-                    "url": f"data:image/png;base64,{base64_file}"
+                    "url": f"data:image/{type};base64,{base64_file}"
                 }
             })
         elif extension == "html":
