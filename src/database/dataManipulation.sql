@@ -54,15 +54,16 @@ CALL GetMenuItemsByDietaryRestriction('Vegetarian');
 -- Retrieves information about menu uploads and their status from the audit log.
 SELECT 
     m.menu_id,
-    m.menu_section,
+    m.section AS menu_section,
     al.status,
-    al.action,
-    al.old_value AS previous_value,
-    al.new_value AS updated_value
+    al.phase,
+    al.other AS error_details, 
+    al.time_registered AS updated_time
 FROM 
-    menu_info m
+    menu m
 JOIN 
     audit_log al ON m.menu_id = al.menu_id;
+
 
 
 -- 4. Generate Reports on Menu Items and Prices
