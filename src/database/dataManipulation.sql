@@ -25,20 +25,30 @@ WHERE
 
 -- 2. Filter Items by Dietary Restrictions
 -- Finds menu items based on specific dietary restrictions (e.g., Vegetarian).
-SELECT 
-    mi.name AS item_name,
-    mi.description AS item_description,
-    mi.price,
-    mi.currency,
-    dr.description AS dietary_restriction
-FROM 
-    menu_item mi
-JOIN 
-    item_dietary_restrictions idr ON mi.menu_item_id = idr.menu_item_id
-JOIN 
-    dietary_restrictions dr ON idr.dietary_restrict_id = dr.dietary_restrict_id
-WHERE 
-    dr.description = 'Vegetarian';
+DELIMITER $$
+
+CREATE PROCEDURE GetMenuItemsByDietaryRestriction(IN dietaryType VARCHAR(99))
+BEGIN
+    SELECT 
+        mi.name AS item_name,
+        mi.description AS item_description,
+        mi.price,
+        mi.currency,
+        dr.description AS dietary_restriction
+    FROM 
+        menu_item mi
+    JOIN 
+        item_dietary_restrictions idr ON mi.menu_item_id = idr.menu_item_id
+    JOIN 
+        dietary_restrictions dr ON idr.dietary_restrict_id = dr.dietary_restrict_id
+    WHERE 
+        dr.description = dietaryType;
+END $$
+
+DELIMITER ;
+
+
+CALL GetMenuItemsByDietaryRestriction('Vegetarian');
 
 -- 3. Track PDF Processing Status
 -- Retrieves information about menu uploads and their status from the audit log.
