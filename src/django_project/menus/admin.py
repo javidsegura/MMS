@@ -37,9 +37,10 @@ class CustomUserAdmin(UserAdmin):
 
 @admin.register(Restaurant)
 class RestaurantAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'city', 'state', 'phone', 'email', 
-                    'website', 'country', 'zip', 'street')
+    list_display = ('id', 'name', 'phone', 'email', 
+                    'website', 'country', 'city', 'state', 'zip', 'street')
     search_fields = ('name', 'city')
+    list_filter = ('country', 'city', 'state')
 
 @admin.register(Menu)
 class MenuAdmin(admin.ModelAdmin):
@@ -59,6 +60,7 @@ class MenuAdmin(admin.ModelAdmin):
                     'timeUpload')
     list_filter = ('active_status', 'available_from', 'available_until')
     readonly_fields = ('user_id', 'version', "restaurant") # restaurante will be readonly, with default temp
+    search_fields = ('restaurant__name',)
 
     
     def save_model(self, request, menu, form, change):
@@ -113,7 +115,7 @@ class MenuAdmin(admin.ModelAdmin):
 class MenuSectionAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'menu')
     list_filter = ('menu',)
-
+    search_fields = ('menu__restaurant__name',)
 @admin.register(MenuItem)
 class MenuItemAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'menu_section', 'price', 'currency', 'available')
@@ -123,15 +125,20 @@ class MenuItemAdmin(admin.ModelAdmin):
 @admin.register(DietaryRestriction)
 class DietaryRestrictionAdmin(admin.ModelAdmin):
     list_display = ('id', 'name')
+    list_filter = ('name',)
     search_fields = ('name',)
 
 @admin.register(MenuVersion)
 class MenuVersionAdmin(admin.ModelAdmin):
-    list_display = ("id", "composite_id")
+    list_display = ("restaurant", "composite_id",)
+    readonly_fields = ("composite_id",)
+    list_filter = ("restaurant",)
+    search_fields = ("restaurant__name",) # restaurant is a foreign key. syntaxis accordingly
 
 @admin.register(AuditLog)
 class AuditLogAdmin(admin.ModelAdmin):
-    list_display = ('id', 'menu_version', 'status', 'phase', 'time_registered', 'other', "time_till_change")
+    list_display = ('id', 'menu_version', 'status', 'phase', 'time_registered', 'other')
     list_filter = ('status',)
-    readonly_fields = ('menu_version', 'status', 'phase', 'other', "time_registered", "time_till_change", "other")
+    readonly_fields = ('menu_version', 'status', 'phase', 'other', "time_registered", "other")
+    search_fields = ('menu_version__restaurant__name',)
 

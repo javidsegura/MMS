@@ -17,7 +17,7 @@ class User(AbstractUser):
     # is_staff
     # is_active
     # date_joined
-    country = models.CharField(max_length=50, null=True, blank=True)
+    country = models.CharField(max_length=50, null=True, blank=True)  # Should not be blank or null
     city = models.CharField(max_length=50, null=True, blank=True)
     state = models.CharField(max_length=3, null=True, blank=True)
     zip = models.SmallIntegerField(null=True, blank=True)
@@ -34,15 +34,15 @@ class Restaurant(models.Model):
         - verbose_name: name of the model in singular
         - verbose_name_plural: name of the model in plural
     """
-    name = models.CharField(max_length=50, null=True, blank=True)
+    name = models.CharField(max_length=50, null=True)
     phone = models.CharField(max_length=50, null=True, blank=True)
+    website = models.URLField(max_length=200, null=True, blank=True)
     email = models.EmailField(max_length=50, null=True, blank=True)
     country = models.CharField(max_length=50, null=True, blank=True)
     city = models.CharField(max_length=50, null=True, blank=True)
     state = models.CharField(max_length=3, null=True, blank=True)
     zip = models.SmallIntegerField(null=True, blank=True)
     street = models.CharField(max_length=50, null=True, blank=True)
-    website = models.URLField(max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -80,14 +80,14 @@ class MenuVersion(models.Model):
 class Menu(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, null=True, blank=True)
     version = models.ForeignKey(MenuVersion, on_delete=models.CASCADE, null=True, blank=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True) # should be readonly and given from the current logged in user automatically
-    active_status = models.BooleanField(default=True, null=True, blank=True)
-    available_until = models.DateField(null=True, blank=True)
-    available_from = models.DateField(null=True, blank=True)
-    timeUpload = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     menu_file = models.FileField(
                         null=True,
                         blank=True) # add storage=S3Boto3Storage() if using AWS S3
+    available_until = models.DateField(null=True, blank=True)
+    available_from = models.DateField(null=True, blank=True)
+    active_status = models.BooleanField(default=True, null=True, blank=True)
+    timeUpload = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
     def __str__(self):
         return f"{self.version}" if self.version else f"No version: {self.id}"
@@ -137,13 +137,11 @@ class DietaryRestriction(models.Model):
 
 
 class AuditLog(models.Model):
-
     menu_version = models.ForeignKey(MenuVersion, on_delete=models.CASCADE, null=True, blank=True)
-    status = models.CharField(max_length=99, null=True, blank=True)
     phase = models.CharField(max_length=99, null=True, blank=True)
+    status = models.CharField(max_length=99, null=True, blank=True)
     time_registered = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     other = models.CharField(max_length=99, null=True, blank=True) # this could be a json
-    time_till_change = models.TimeField(null=True, blank=True) # datediff
 
     def __str__(self):
         return f"{self.menu_version}:{self.phase}"

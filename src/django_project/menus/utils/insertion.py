@@ -50,11 +50,6 @@ def populate_menu_data(menu, menu_data: dict):
             
             # Create menu items for this section
             for item_data in section_data.get('items', []):
-                description = item_data.get('description', '')
-                truncated_description = description[:255] if description else ''
-                print(f"Len of description is: {len(description)}")
-                if len(description) > 255:
-                    print(f"Complete description was: {description}")
                 menu_item = MenuItem.objects.create(
                     menu_section=section,
                     name=item_data.get('name', ''),
