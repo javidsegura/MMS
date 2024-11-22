@@ -40,7 +40,6 @@ class Restaurant(models.Model):
 
     def __str__(self):
         return self.name
-    
     class Meta:
         verbose_name = "Restaurant"
         verbose_name_plural = "Restaurants"
@@ -58,37 +57,33 @@ class MenuVersion(models.Model):
             ).order_by('-version_number').first()
             
             self.version_number = (latest_version.version_number + 1) if latest_version else 1
-            
             self.composite_id = f"{self.restaurant.name}-v{self.version_number}:{self.restaurant.id}"
         
         super().save(*args, **kwargs)
     
     def __str__(self):
         return self.composite_id
-    
     class Meta:
         verbose_name = verbose_name_plural = "Menu Versions"
 
 class Menu(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, null=True, blank=True)
     version = models.ForeignKey(MenuVersion, on_delete=models.CASCADE, null=True, blank=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     menu_file = models.FileField(
                         null=True,
                         blank=True) # add storage=S3Boto3Storage() if using AWS S3
     available_until = models.DateField(null=True, blank=True)
     available_from = models.DateField(null=True, blank=True)
     active_status = models.BooleanField(default=True, null=True, blank=True)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     timeUpload = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def __str__(self):
         return f"{self.version}" if self.version else f"No version: {self.id}"
-    
     class Meta:
         verbose_name = "Menu"
         verbose_name_plural = "Menus"
-
 
 class MenuSection(models.Model):
     menu = models.ForeignKey(Menu, on_delete=models.CASCADE, null=True)
@@ -96,11 +91,9 @@ class MenuSection(models.Model):
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
     def __str__(self):
         return f"{self.menu.restaurant.name}:{self.menu.id}:{self.name}"
-    
     class Meta:
         verbose_name = "Menu Section"
         verbose_name_plural = "Menu Sections"
-
 
 class MenuItem(models.Model):
     menu_section = models.ForeignKey(MenuSection, on_delete=models.CASCADE, null=True)
@@ -113,18 +106,17 @@ class MenuItem(models.Model):
 
     def __str__(self):
         return self.name
-    
     class Meta:
         verbose_name = "Menu Item"
         verbose_name_plural = "Menu Items"
 
 class DietaryRestriction(models.Model):
     menu_items = models.ManyToManyField(MenuItem, related_name='dietary_restrictions') # relanted_name specified how to access the reverse relationship
-    name = models.CharField(max_length=99, null=True, blank=True)
+    name = models.CharField(max_length=99, null=True, blank=True, unique=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
+
     def __str__(self):
         return self.name
-
     class Meta:
         verbose_name = "Dietary Restriction"
         verbose_name_plural = "Dietary Restrictions"

@@ -42,7 +42,29 @@ def ai_call(menu, extension):
                                                 "name": "item name",
                                                 "description": "item description",
                                                 "price": float,
-                                                "dietary_restrictions": ["restriction1", "restriction2"]
+                                                "dietary_restrictions": dietary_restrictions = [
+                                                                                        "Vegetarian",
+                                                                                        "Vegan",
+                                                                                        "Gluten-Free",
+                                                                                        "Dairy-Free",
+                                                                                        "Nut-Free",
+                                                                                        "Halal",
+                                                                                        "Kosher",
+                                                                                        "Pescatarian",
+                                                                                        "Low-Carb",
+                                                                                        "Low-Sodium",
+                                                                                        "Soy-Free",
+                                                                                        "Egg-Free",
+                                                                                        "Shellfish-Free",
+                                                                                        "Sugar-Free",
+                                                                                        "Peanut-Free",
+                                                                                        "Paleo",
+                                                                                        "Keto",
+                                                                                        "Whole30",
+                                                                                        "FODMAP-Friendly",
+                                                                                        "No Pork",
+                                                                                        "Organic-Only"
+                                                                                    ]
                                             }
                                         ]
                                     }
@@ -52,6 +74,12 @@ def ai_call(menu, extension):
                                     "address": "restaurant address",
                                     "phone": "restaurant phone",
                                     "website": "restaurant website"
+                                    "email": "restaurant email"
+                                    "country": "restaurant country",
+                                    "city": "restaurant city",
+                                    "state": "restaurant state",
+                                    "zip": "restaurant zip" # -1 if not available
+                                    "street": "restaurant street"
                                 }
                             }"""
                         }

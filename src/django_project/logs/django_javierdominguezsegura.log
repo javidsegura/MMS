@@ -17677,3 +17677,1788 @@ INFO 2024-11-22 13:09:34,369 logging_middleware 12045 6218821632 Response: {
   }
 }
 INFO 2024-11-22 13:09:34,369 basehttp 12045 6218821632 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:16:27,542 autoreload 12045 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:16:28,554 autoreload 12415 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:16:31,849 autoreload 12415 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:16:32,537 autoreload 12437 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:16:34,812 autoreload 12437 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:16:35,581 autoreload 12450 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:16:46,051 autoreload 12450 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:16:46,964 autoreload 12469 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:16:51,283 autoreload 12469 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:16:52,010 autoreload 12482 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:16:58,398 autoreload 12482 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:16:59,184 autoreload 12500 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:17:00,444 autoreload 12500 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:17:01,136 autoreload 12512 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:17:08,519 autoreload 12512 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:17:08,948 autoreload 12527 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:17:10,116 autoreload 12527 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:17:10,780 autoreload 12530 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:17:21,234 autoreload 12530 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:17:22,192 autoreload 12555 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:18:20,957 autoreload 12555 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:18:21,949 autoreload 12608 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:18:27,289 autoreload 12608 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:18:28,020 autoreload 12625 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:19:35,988 autoreload 12625 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:19:37,106 autoreload 12677 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:19:47,600 autoreload 12677 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:19:48,498 autoreload 12708 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:19:59,009 autoreload 12708 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:19:59,889 autoreload 12726 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:03,257 autoreload 12726 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:20:03,985 autoreload 12754 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:07,264 autoreload 12754 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:20:07,925 autoreload 12767 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:11,225 autoreload 12767 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:20:11,917 autoreload 12782 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:32,623 autoreload 12782 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:20:33,549 autoreload 12808 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:40,953 autoreload 12808 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:20:41,660 autoreload 12826 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:47,011 autoreload 12826 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:20:47,776 autoreload 12840 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:52,099 autoreload 12840 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:20:52,880 autoreload 12857 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:56,219 autoreload 12857 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:20:56,944 autoreload 12872 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:20:58,208 autoreload 12872 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:20:58,939 autoreload 12876 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:21:45,184 autoreload 12967 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:21:46,393 logging_middleware 12967 6123581440 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:21:46,437 logging_middleware 12967 6123581440 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.06s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:21:46 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:21:46,438 basehttp 12967 6123581440 "GET /admin/ HTTP/1.1" 200 13862
+INFO 2024-11-22 13:21:46,467 basehttp 12967 6140407808 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,469 basehttp 12967 6157234176 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,470 basehttp 12967 6190886912 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,470 basehttp 12967 6174060544 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,472 basehttp 12967 6123581440 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,473 basehttp 12967 6207713280 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,475 basehttp 12967 6123581440 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,482 basehttp 12967 6174060544 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,483 basehttp 12967 6207713280 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:21:46,483 basehttp 12967 6123581440 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,593 logging_middleware 12967 6123581440 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:22:02,645 logging_middleware 12967 6123581440 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.06s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:22:02 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:22:02,645 basehttp 12967 6123581440 "GET /admin/menus/menu/ HTTP/1.1" 200 22055
+INFO 2024-11-22 13:22:02,663 basehttp 12967 6207713280 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,668 basehttp 12967 6157234176 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,668 basehttp 12967 6207713280 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,669 basehttp 12967 6174060544 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,670 basehttp 12967 6190886912 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,670 basehttp 12967 6140407808 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,671 basehttp 12967 6157234176 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,671 logging_middleware 12967 6123581440 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:22:02,672 basehttp 12967 6207713280 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,674 basehttp 12967 6174060544 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,676 basehttp 12967 6157234176 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,677 basehttp 12967 6207713280 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,678 logging_middleware 12967 6123581440 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:22:02,679 basehttp 12967 6123581440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:22:02,681 basehttp 12967 6123581440 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,701 basehttp 12967 6123581440 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:02,702 basehttp 12967 6123581440 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:25,996 logging_middleware 12967 6123581440 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/add/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:22:26,022 logging_middleware 12967 6123581440 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:22:26 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:22:26,023 basehttp 12967 6123581440 "GET /admin/menus/menu/add/ HTTP/1.1" 200 14974
+INFO 2024-11-22 13:22:26,042 basehttp 12967 6157234176 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:26,042 basehttp 12967 6207713280 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:26,043 basehttp 12967 6174060544 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:26,044 basehttp 12967 6190886912 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:26,045 logging_middleware 12967 6123581440 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:22:26,046 basehttp 12967 6190886912 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:26,048 logging_middleware 12967 6123581440 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:22:26,049 basehttp 12967 6123581440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:22:26,050 basehttp 12967 6190886912 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:26,091 basehttp 12967 6190886912 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-11-22 13:22:32,435 logging_middleware 12967 6190886912 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/admin/menus/menu/add/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "422953",
+    "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryipRQCeOZtYSdQcqy",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Origin": "http://127.0.0.1:8000",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+ERROR 2024-11-22 13:22:51,141 log 12967 6190886912 Internal Server Error: /admin/menus/menu/add/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'N/A'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py", line 54, in populate_menu_data
+    menu.restaurant = Restaurant.objects.create(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1835, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1758, in as_sql
+    value_rows = [
+                 ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1759, in <listcomp>
+    [
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1760, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1699, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1008, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2130, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1001, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'zip' expected a number but got 'N/A'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1871, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/admin.py", line 104, in save_model
+    ai_call_log.save()
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1129, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1194, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 2003, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 99, in _execute
+    self.db.validate_no_broken_transaction()
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/.venv/lib/python3.11/site-packages/django/db/backends/base/base.py", line 521, in validate_no_broken_transaction
+    raise TransactionManagementError(
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+INFO 2024-11-22 13:22:51,146 logging_middleware 12967 6190886912 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "18.72s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-11-22 13:22:51,146 basehttp 12967 6190886912 "POST /admin/menus/menu/add/ HTTP/1.1" 500 298925
+INFO 2024-11-22 13:23:15,120 autoreload 12967 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
+INFO 2024-11-22 13:23:16,060 autoreload 13020 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:25:00,546 logging_middleware 13020 6155268096 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/admin/menus/menu/add/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "422953",
+    "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundaryipRQCeOZtYSdQcqy",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Origin": "http://127.0.0.1:8000",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:25:31,204 logging_middleware 13020 6155268096 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "30.67s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/menus/menu/",
+    "Expires": "Fri, 22 Nov 2024 13:25:31 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private"
+  }
+}
+INFO 2024-11-22 13:25:31,204 basehttp 13020 6155268096 "POST /admin/menus/menu/add/ HTTP/1.1" 302 0
+INFO 2024-11-22 13:25:31,209 logging_middleware 13020 6155268096 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp; messages=.eJwdjssOgjAQAH9lUxNO1domBiPIHxg5eANCVro8DK3GtT74egmXuUwymaIQdX3ju68dMWNHQmppdlJceoIT-QBlMFvdpAj9k9pjKRRaN3jlZscL1T5WTY--I1WK7HwlilZfEycM-TBNCBG6RwI58gvXb30wOlWYLVULH2RAa8kCh6aZD9owjr-NkEJU1R90-DI4:1tETf9:Xn2oOwaqZJ2qQvzT6poxJJBOtLJMpfDvbFj3TST09pQ"
+  }
+}
+INFO 2024-11-22 13:25:31,260 logging_middleware 13020 6155268096 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:25:31 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:25:31,261 basehttp 13020 6155268096 "GET /admin/menus/menu/ HTTP/1.1" 200 23182
+INFO 2024-11-22 13:25:31,310 logging_middleware 13020 6155268096 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:25:31,312 logging_middleware 13020 6155268096 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:25:31,312 basehttp 13020 6155268096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:26:12,423 logging_middleware 13020 6155268096 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/media/PDF-Menus-For-Restaurants_1_XMUbADB.png",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:26:12,428 logging_middleware 13020 6155268096 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": null,
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "image/png",
+    "Content-Length": "422169",
+    "Content-Disposition": "inline; filename=\"PDF-Menus-For-Restaurants_1_XMUbADB.png\"",
+    "Last-Modified": "Fri, 22 Nov 2024 13:25:00 GMT"
+  }
+}
+INFO 2024-11-22 13:26:12,430 basehttp 13020 6155268096 "GET /media/PDF-Menus-For-Restaurants_1_XMUbADB.png HTTP/1.1" 200 422169
+INFO 2024-11-22 13:26:32,393 autoreload 13020 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:26:33,338 autoreload 13135 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:26:37,691 autoreload 13135 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-22 13:26:38,372 autoreload 13147 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:26:43,824 logging_middleware 13147 6167425024 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/dietaryrestriction/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:26:43,867 logging_middleware 13147 6167425024 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:26:43 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:26:43,868 basehttp 13147 6167425024 "GET /admin/menus/dietaryrestriction/ HTTP/1.1" 200 14096
+INFO 2024-11-22 13:26:43,898 logging_middleware 13147 6167425024 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:26:43,900 logging_middleware 13147 6167425024 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:26:43,900 basehttp 13147 6167425024 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:27:20,975 logging_middleware 13147 6167425024 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/restaurant/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:27:20,998 logging_middleware 13147 6167425024 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:27:20 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:27:20,999 basehttp 13147 6167425024 "GET /admin/menus/restaurant/ HTTP/1.1" 200 18319
+INFO 2024-11-22 13:27:21,020 logging_middleware 13147 6167425024 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/restaurant/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:27:21,021 logging_middleware 13147 6167425024 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:27:21,021 basehttp 13147 6167425024 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:27:47,382 autoreload 13147 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:27:48,369 autoreload 13216 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:27:56,855 autoreload 13216 7965332224 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-22 13:27:57,744 autoreload 13242 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 13:28:03,705 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/restaurant/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:03,758 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.06s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:03 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:03,759 basehttp 13242 6122106880 "GET /admin/menus/menuversion/ HTTP/1.1" 200 16917
+INFO 2024-11-22 13:28:03,781 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:03,782 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:03,783 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:13,148 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {
+    "restaurant__id__exact": [
+      "21"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:13,167 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:13 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:13,167 basehttp 13242 6122106880 "GET /admin/menus/menuversion/?restaurant__id__exact=21 HTTP/1.1" 200 13883
+INFO 2024-11-22 13:28:13,182 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/?restaurant__id__exact=21",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:13,183 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:13,183 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:15,219 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {
+    "restaurant__id__exact": [
+      "15"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/?restaurant__id__exact=21",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:15,243 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:15 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:15,243 basehttp 13242 6122106880 "GET /admin/menus/menuversion/?restaurant__id__exact=15 HTTP/1.1" 200 15372
+INFO 2024-11-22 13:28:15,259 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/?restaurant__id__exact=15",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:15,260 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:15,260 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:17,861 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/?restaurant__id__exact=15",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:17,943 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.09s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:17 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:17,944 basehttp 13242 6122106880 "GET /admin/menus/menusection/ HTTP/1.1" 200 31952
+INFO 2024-11-22 13:28:17,968 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:17,968 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:17,969 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:19,176 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuitem/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:19,365 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.19s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:19 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:19,365 basehttp 13242 6122106880 "GET /admin/menus/menuitem/ HTTP/1.1" 200 78229
+INFO 2024-11-22 13:28:19,389 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:19,390 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:19,390 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:20,473 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/dietaryrestriction/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:20,490 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:20 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:20,491 basehttp 13242 6122106880 "GET /admin/menus/dietaryrestriction/ HTTP/1.1" 200 14096
+INFO 2024-11-22 13:28:20,515 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:20,516 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:20,517 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:21,299 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuitem/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:21,486 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.19s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:21 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:21,487 basehttp 13242 6122106880 "GET /admin/menus/menuitem/ HTTP/1.1" 200 78229
+INFO 2024-11-22 13:28:21,510 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:21,511 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:21,511 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:37,721 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:37,750 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:37 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:37,750 basehttp 13242 6122106880 "GET /admin/menus/menuversion/ HTTP/1.1" 200 16917
+INFO 2024-11-22 13:28:37,776 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:37,778 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:37,778 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:39,499 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/dietaryrestriction/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:39,514 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:39 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:39,515 basehttp 13242 6122106880 "GET /admin/menus/dietaryrestriction/ HTTP/1.1" 200 14096
+INFO 2024-11-22 13:28:39,527 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:39,528 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:39,528 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:41,967 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:42,045 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.08s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:41 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:42,045 basehttp 13242 6122106880 "GET /admin/menus/menusection/ HTTP/1.1" 200 31952
+INFO 2024-11-22 13:28:42,062 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:42,063 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:42,063 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:50,275 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuitem/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:50,469 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.20s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:50 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:50,469 basehttp 13242 6122106880 "GET /admin/menus/menuitem/ HTTP/1.1" 200 78229
+INFO 2024-11-22 13:28:50,492 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:50,493 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:50,493 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 13:28:54,567 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/auditlog/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:54,600 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 13:28:54 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 13:28:54,600 basehttp 13242 6122106880 "GET /admin/menus/auditlog/ HTTP/1.1" 200 28376
+INFO 2024-11-22 13:28:54,626 logging_middleware 13242 6122106880 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/auditlog/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 13:28:54,627 logging_middleware 13242 6122106880 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 13:28:54,627 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342

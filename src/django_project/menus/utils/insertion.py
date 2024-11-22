@@ -17,6 +17,12 @@ def populate_menu_data(menu, menu_data: dict):
         phone = restaurant_info.get('phone')
         address = restaurant_info.get('address')
         website = restaurant_info.get('website')
+        email = restaurant_info.get('email')
+        country = restaurant_info.get('country')
+        city = restaurant_info.get('city')
+        state = restaurant_info.get('state')
+        zip = restaurant_info.get('zip')
+        street = restaurant_info.get('street')
         if restaurant_info:
             restaurant_name = restaurant_info.get('restaurant_name')
             if restaurant_name:
@@ -30,6 +36,18 @@ def populate_menu_data(menu, menu_data: dict):
                         menu.restaurant.street = address
                     if menu.restaurant.website != website:
                         menu.restaurant.website = website
+                    if menu.restaurant.email != email:
+                        menu.restaurant.email = email
+                    if menu.restaurant.country != country:
+                        menu.restaurant.country = country
+                    if menu.restaurant.city != city:
+                        menu.restaurant.city = city
+                    if menu.restaurant.state != state:
+                        menu.restaurant.state = state
+                    if menu.restaurant.zip != zip:
+                        menu.restaurant.zip = zip if zip != -1 else None
+                    if menu.restaurant.street != street:
+                        menu.restaurant.street = street
                     menu.restaurant.save()
                 else:
                     # Create new restaurant if it doesn't exist
@@ -37,7 +55,12 @@ def populate_menu_data(menu, menu_data: dict):
                         name=restaurant_name,
                         phone=phone,
                         street=address,
-                        website=website
+                        website=website,
+                        email=email,
+                        country=country,
+                        city=city,
+                        state=state,
+                        zip=zip if zip != -1 else None,
                     )
                 menu.save()  # Save the menu with the restaurant reference; IS THIS NECESSARY?
         
