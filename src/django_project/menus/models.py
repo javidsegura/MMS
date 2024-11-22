@@ -26,6 +26,14 @@ class User(AbstractUser):
     def __str__(self): 
         return self.username
 
+    class Meta:
+        indexes = [
+            models.Index(fields=['email']),  # Index for frequent email lookups
+            models.Index(fields=['username', 'email']),  # Composite Index
+            models.Index(fields=['country', 'city', 'state', 'zip', 'street'])  # Composite Index
+        ]
+
+
 class Restaurant(models.Model):
     name = models.CharField(max_length=50, null=True, unique=True)
     phone = models.CharField(max_length=50, null=True, blank=True)
@@ -43,6 +51,11 @@ class Restaurant(models.Model):
     class Meta:
         verbose_name = "Restaurant"
         verbose_name_plural = "Restaurants"
+        indexes = [
+            models.Index(fields=['name']),  # Index for restaurant name search
+            models.Index(fields=['country', 'city', 'state', 'zip', 'street']),  # Composite Index for location
+            models.Index(fields=['name', 'phone', 'email', 'website'])  # Composite Index for contact details
+        ]
 
 class MenuVersion(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, null=True, blank=True)
@@ -65,6 +78,9 @@ class MenuVersion(models.Model):
         return self.composite_id
     class Meta:
         verbose_name = verbose_name_plural = "Menu Versions"
+        indexes = [
+            models.Index(fields=['restaurant', 'version_number']),  # Index for frequent lookups on restaurant versions
+        ]
 
 class Menu(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, null=True, blank=True)
@@ -84,6 +100,9 @@ class Menu(models.Model):
     class Meta:
         verbose_name = "Menu"
         verbose_name_plural = "Menus"
+        indexes = [
+            models.Index(fields=['available_from', 'available_until']),  # Composite Index for availability
+        ]
 
 class MenuSection(models.Model):
     menu = models.ForeignKey(Menu, on_delete=models.CASCADE, null=True)
@@ -109,6 +128,9 @@ class MenuItem(models.Model):
     class Meta:
         verbose_name = "Menu Item"
         verbose_name_plural = "Menu Items"
+        indexes = [
+            models.Index(fields=['name']),  # Index for menu item name lookups
+        ]
 
 class DietaryRestriction(models.Model):
     menu_items = models.ManyToManyField(MenuItem, related_name='dietary_restrictions') # relanted_name specified how to access the reverse relationship
@@ -134,4 +156,7 @@ class AuditLog(models.Model):
     class Meta:
         verbose_name = "Audit Log"
         verbose_name_plural = "Audit Logs"
+        indexes = [
+            models.Index(fields=['menu_version']),  # Index for menu_version to speed up lookups
+        ]
     
