@@ -1,4 +1,4 @@
---1.
+--1. Frequently Accessed Menus
 
 CREATE MATERIALIZED VIEW FrequentlyAccessedMenus AS
 SELECT 
@@ -21,7 +21,7 @@ ORDER BY
 CREATE INDEX idx_fam_menu_id ON FrequentlyAccessedMenus(menu_id);
 CREATE INDEX idx_fam_access_count ON FrequentlyAccessedMenus(access_count);
 
---2.
+--2. Recently Updated Menus
 
 CREATE MATERIALIZED VIEW RecentlyUpdatedMenus AS
 SELECT 
@@ -44,7 +44,7 @@ ORDER BY
 CREATE INDEX idx_rum_last_updated ON RecentlyUpdatedMenus(last_updated);
 CREATE INDEX idx_rum_menu_id ON RecentlyUpdatedMenus(menu_id);
 
---3.
+--3. Menus By Location
 
 CREATE MATERIALIZED VIEW MenusByLocation AS
 SELECT 
@@ -67,7 +67,7 @@ ORDER BY
 CREATE INDEX idx_mbl_country_state_city ON MenusByLocation(country, state, city);
 CREATE INDEX idx_mbl_menu_id ON MenusByLocation(menu_id);
 
---4. 
+--4. Menu Version History
 
 CREATE MATERIALIZED VIEW MenuVersionHistory AS
 SELECT 
@@ -86,49 +86,3 @@ ORDER BY
 -- Add indexes
 CREATE INDEX idx_mvh_version_created_at ON MenuVersionHistory(version_created_at);
 CREATE INDEX idx_mvh_menu_id ON MenuVersionHistory(menu_id);
-
---5. Tracks inactive menus
-
-CREATE MATERIALIZED VIEW ArchivedMenus AS
-SELECT 
-    r.name AS restaurant_name,
-    m.menu_id,
-    m.section AS menu_section,
-    al.time_registered AS archive_date
-FROM
-    menu m
-JOIN 
-    restaurant r ON m.restaurant_id = r.restaurant_id
-JOIN 
-    audit_log al ON al.menu_id = m.menu_id
-WHERE 
-    m.activeStatus = FALSE
-ORDER BY 
-    al.time_registered DESC;
-
--- Add indexes
-CREATE INDEX idx_am_archive_date ON ArchivedMenus(archive_date);
-CREATE INDEX idx_am_menu_id ON ArchivedMenus(menu_id);
-
---6. 
-
-CREATE MATERIALIZED VIEW RestaurantPerformance AS
-SELECT 
-    r.name AS restaurant_name,
-    COUNT(m.menu_id) AS total_menus,
-    SUM(CASE WHEN m.activeStatus = TRUE THEN 1 ELSE 0 END) AS active_menus,
-    COUNT(al.log_id) AS total_views,
-    COUNT(DISTINCT al.user_id) AS unique_users,
-    MAX(m.timeUpload) AS last_menu_update
-FROM
-    restaurant r
-LEFT JOIN 
-    menu m ON r.restaurant_id = m.restaurant_id
-LEFT JOIN 
-    audit_log al ON m.menu_id = al.menu_id
-GROUP BY 
-    r.name;
-
--- Add indexes
-CREATE INDEX idx_rpd_restaurant_name ON RestaurantPerformance(restaurant_name);
-CREATE INDEX idx_rpd_last_menu_update ON RestaurantPerformance(last_menu_update);
