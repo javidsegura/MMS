@@ -91,30 +91,53 @@ ORDER BY
 -- 5. Handle Menu Updates and Versioning
 -- Inserts a new menu version or updates an existing one.
 
--- Insert a new menu version
-INSERT INTO menu_version (menu_version, user_id, post_id, timeUpload)
-VALUES 
-(1, 2, 1, NOW()) -- Replace with actual values
-ON DUPLICATE KEY UPDATE 
-menu_version = menu_version + 1;
+DELIMITER $$
 
--- Update an existing menu's status and upload time
-UPDATE menu_info
-SET 
-    activeStatus = FALSE,
-    available_until = '2024-12-31'
-WHERE 
-    menu_id = 1;
-
-
-
--- Add a new version of the menu file
-INSERT INTO menu_info (
-    menu_section, section, activeStatus, available_until, available_from, menu_id, country, city, state, zip, street
+CREATE PROCEDURE UpdateMenuVersion(
+    IN p_restaurant_id INT,   -- Restaurant ID (e.g., 18 for Nobu)
+    IN p_version INT,         -- Menu version (e.g., v1)
+    IN p_composite_id VARCHAR(255),  -- Composite ID (e.g., 'Restaurant-v1:18')
+    IN p_menu_file_url VARCHAR(255)  -- URL to the menu file (e.g., hosted on S3)
 )
-VALUES 
-(
-    2, 'Updated Dinner Menu', TRUE, '2024-12-31', '2024-01-01', 1, 'USA', 'New York', 'NY', 10001, 'Main Street'
+BEGIN
+    DECLARE new_version INT;
+
+    -- Check if the menu version for this restaurant already exists
+    SELECT MAX(SUBSTRING_INDEX(composite_id, '-', -1)) INTO new_version
+    FROM menu_info
+    WHERE restaurant_id = p_restaurant_id
+    AND composite_id LIKE CONCAT('%-', p_restaurant_id);
+
+    -- If no version exists, set the initial version to 1
+    IF new_version IS NULL THEN
+        SET new_version = 1;
+    ELSE
+        SET new_version = new_version + 1;
+    END IF;
+
+    -- Construct the new composite ID based on the new version
+    SET @new_composite_id = CONCAT('Restaurant-v', new_version, ':', p_restaurant_id);
+
+    -- Insert or update the menu version with the new composite ID and file URL
+    INSERT INTO menu_info (
+        restaurant_id, composite_id, menu_file_url
+    )
+    VALUES (
+        p_restaurant_id, @new_composite_id, p_menu_file_url
+    )
+    ON DUPLICATE KEY UPDATE
+        composite_id = @new_composite_id,
+        menu_file_url = p_menu_file_url;
+END $$
+
+DELIMITER ;
+
+CALL UpdateMenuVersion(
+    18,  -- p_restaurant_id (Nobu)
+    1,   -- p_version (e.g., 'v1')
+    'Restaurant-v1:18',  -- p_composite_id (e.g., 'Restaurant-v1:18')
+    'https://mms-storage-s3.s3.us-east-1.amazonaws.com/menu_files/PDF-Menus-For-Restaurants.png'  -- p_menu_file_url (URL to the menu PDF)
 );
+
 
 
