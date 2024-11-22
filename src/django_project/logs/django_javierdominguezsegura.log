@@ -19462,3 +19462,867 @@ INFO 2024-11-22 13:28:54,627 logging_middleware 13242 6122106880 Response: {
   }
 }
 INFO 2024-11-22 13:28:54,627 basehttp 13242 6122106880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:01:09,636 autoreload 30055 7965332224 Watching for file changes with StatReloader
+INFO 2024-11-22 18:01:14,526 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:01:14,564 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:01:14 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:01:14,565 basehttp 30055 6135443456 "GET /admin/ HTTP/1.1" 200 13876
+INFO 2024-11-22 18:01:14,664 basehttp 30055 6152269824 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,665 basehttp 30055 6169096192 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,666 basehttp 30055 6185922560 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,666 basehttp 30055 6135443456 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,666 basehttp 30055 6202748928 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,667 basehttp 30055 6219575296 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,671 basehttp 30055 6219575296 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,674 basehttp 30055 6219575296 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,675 basehttp 30055 6202748928 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,675 basehttp 30055 6185922560 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:14,775 logging_middleware 30055 6185922560 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/favicon.ico",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "image",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:01:14,778 logging_middleware 30055 6185922560 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-11-22 18:01:14,778 log 30055 6185922560 Not Found: /favicon.ico
+WARNING 2024-11-22 18:01:14,778 basehttp 30055 6185922560 "GET /favicon.ico HTTP/1.1" 404 2528
+INFO 2024-11-22 18:01:17,741 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:01:17,783 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:01:17 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:01:17,784 basehttp 30055 6135443456 "GET /admin/menus/menu/ HTTP/1.1" 200 22959
+INFO 2024-11-22 18:01:17,808 basehttp 30055 6152269824 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,810 basehttp 30055 6152269824 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,811 basehttp 30055 6169096192 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,811 basehttp 30055 6152269824 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,812 basehttp 30055 6185922560 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,812 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:01:17,813 basehttp 30055 6202748928 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,813 basehttp 30055 6219575296 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,814 basehttp 30055 6169096192 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,815 basehttp 30055 6219575296 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,815 basehttp 30055 6152269824 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,816 basehttp 30055 6169096192 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,817 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:01:17,817 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:01:17,819 basehttp 30055 6135443456 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,873 basehttp 30055 6169096192 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-11-22 18:01:17,873 basehttp 30055 6135443456 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-22 18:02:04,890 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {
+    "available_until__gte": [
+      "2024-11-22"
+    ],
+    "available_until__lt": [
+      "2024-11-23"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:04,908 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:04 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:04,908 basehttp 30055 6135443456 "GET /admin/menus/menu/?available_until__gte=2024-11-22&available_until__lt=2024-11-23 HTTP/1.1" 200 14865
+INFO 2024-11-22 18:02:04,943 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__gte=2024-11-22&available_until__lt=2024-11-23",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:04,946 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:04,946 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:02:06,278 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {
+    "available_until__gte": [
+      "2024-11-01"
+    ],
+    "available_until__lt": [
+      "2024-12-01"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__gte=2024-11-22&available_until__lt=2024-11-23",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:06,292 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:06 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:06,292 basehttp 30055 6135443456 "GET /admin/menus/menu/?available_until__gte=2024-11-01&available_until__lt=2024-12-01 HTTP/1.1" 200 14865
+INFO 2024-11-22 18:02:06,304 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__gte=2024-11-01&available_until__lt=2024-12-01",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:06,306 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:06,306 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:02:06,907 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {
+    "available_until__gte": [
+      "2024-11-15"
+    ],
+    "available_until__lt": [
+      "2024-11-23"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__gte=2024-11-01&available_until__lt=2024-12-01",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:06,923 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:06 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:06,923 basehttp 30055 6135443456 "GET /admin/menus/menu/?available_until__gte=2024-11-15&available_until__lt=2024-11-23 HTTP/1.1" 200 14865
+INFO 2024-11-22 18:02:06,936 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__gte=2024-11-15&available_until__lt=2024-11-23",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:06,937 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:06,937 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:02:08,142 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__gte=2024-11-15&available_until__lt=2024-11-23",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:08,160 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:08 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:08,161 basehttp 30055 6135443456 "GET /admin/menus/menu/? HTTP/1.1" 200 22959
+INFO 2024-11-22 18:02:08,172 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:08,173 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:08,173 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:02:09,716 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {
+    "available_until__isnull": [
+      "False"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:09,734 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:09 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:09,734 basehttp 30055 6135443456 "GET /admin/menus/menu/?available_until__isnull=False HTTP/1.1" 200 14309
+INFO 2024-11-22 18:02:09,746 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__isnull=False",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:09,746 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:09,746 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:02:11,159 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {
+    "available_until__isnull": [
+      "True"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__isnull=False",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:11,185 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:11 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:11,185 basehttp 30055 6135443456 "GET /admin/menus/menu/?available_until__isnull=True HTTP/1.1" 200 24306
+INFO 2024-11-22 18:02:11,198 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__isnull=True",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:11,198 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:11,199 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:02:12,289 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?available_until__isnull=True",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:12,318 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:12 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:12,318 basehttp 30055 6135443456 "GET /admin/menus/menu/? HTTP/1.1" 200 22959
+INFO 2024-11-22 18:02:12,336 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:12,336 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:12,336 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-22 18:02:50,300 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/auditlog/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/?",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:50,335 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Fri, 22 Nov 2024 18:02:50 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-11-22 18:02:50,336 basehttp 30055 6135443456 "GET /admin/menus/auditlog/ HTTP/1.1" 200 28376
+INFO 2024-11-22 18:02:50,358 logging_middleware 30055 6135443456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/auditlog/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=uKQJBU73rvbu8GSXQ2wEBjLfi7FXV5DW; sessionid=vfggt76p119gewsk4m28datc6je0e4pp"
+  }
+}
+INFO 2024-11-22 18:02:50,359 logging_middleware 30055 6135443456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-11-22 18:02:50,359 basehttp 30055 6135443456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
