@@ -13,13 +13,13 @@ SELECT
     mi.available,
     ms.section_id AS menu_section_id
 FROM 
-    menu_management_system.restaurant r
+    menus_restaurant r
 JOIN 
-    menu_management_system.menu_info m ON r.restaurant_id = m.menu_id
+    menus_menu m ON r.restaurant_id = m.menu_id
 JOIN 
-    menu_management_system.menu_section ms ON m.menu_id = ms.menu_id
+    menus_menusection ms ON m.menu_id = ms.menu_id
 JOIN 
-    menu_management_system.menu_item mi ON ms.section_id = mi.section_id
+    menus_menuitem mi ON ms.section_id = mi.section_id
 WHERE 
     m.activeStatus = TRUE;
 
@@ -36,17 +36,16 @@ BEGIN
         mi.currency,
         dr.description AS dietary_restriction
     FROM 
-        menu_item mi
+        menus_menu_item mi
     JOIN 
-        item_dietary_restrictions idr ON mi.menu_item_id = idr.menu_item_id
+        menus_dietaryrestriction_menu_items idr ON mi.menu_item_id = idr.menu_item_id
     JOIN 
-        dietary_restrictions dr ON idr.dietary_restrict_id = dr.dietary_restrict_id
+        menus_dietaryrestriction dr ON idr.dietaryrestriction_id = dr.dietaryrestriction_id
     WHERE 
         dr.description = dietaryType;
 END $$
 
 DELIMITER ;
-
 
 CALL GetMenuItemsByDietaryRestriction('Vegetarian');
 
@@ -60,9 +59,9 @@ SELECT
     al.other AS error_details, 
     al.time_registered AS updated_time
 FROM 
-    menu m
+    menus_menu m
 JOIN 
-    audit_log al ON m.menu_id = al.menu_id;
+    menus_auditlog al ON m.menu_id = al.menu_id;
 
 
 
@@ -76,9 +75,9 @@ SELECT
     mi.currency,
     ms.section_id AS section_name
 FROM 
-    restaurant r
+    menus_restaurant r
 JOIN 
-    menu_info m ON r.restaurant_id = m.menu_id
+    menus_menu m ON r.restaurant_id = m.menu_id
 JOIN 
     menu_section ms ON m.menu_id = ms.menu_id
 JOIN 

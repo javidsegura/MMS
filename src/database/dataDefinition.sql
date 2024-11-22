@@ -2,140 +2,126 @@ CREATE DATABASE IF NOT EXISTS menu_management_system;
 
 USE menu_management_system;
 
--- User Table
-CREATE TABLE IF NOT EXISTS user (
-    user_id INT PRIMARY KEY AUTO_INCREMENT,
-    userName VARCHAR(50) UNIQUE NOT NULL, -- Unique Index for quick lookup
-    PasswordHash VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL,
-    country VARCHAR(50) NOT NULL,
-    city VARCHAR(50) NOT NULL,
-    state VARCHAR(3) NOT NULL,
-    zip SMALLINT NOT NULL,
-    street VARCHAR(50) NOT NULL,
-    joinedDate TIMESTAMP NOT NULL,
-    permissions ENUM('admin', 'user') NOT NULL,
-    INDEX (email) -- Index for frequent email lookups
-);
+CREATE TABLE `menus_auditlog` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `status` varchar(99) DEFAULT NULL,
+  `other` varchar(99) DEFAULT NULL,
+  `phase` varchar(99) DEFAULT NULL,
+  `time_registered` datetime(6) DEFAULT NULL,
+  `menu_version_id` bigint DEFAULT NULL,
+  `last_edited` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `menus_auditlog_menu_version_id_bef77f0f_fk_menus_menuversion_id` (`menu_version_id`),
+  CONSTRAINT `menus_auditlog_menu_version_id_bef77f0f_fk_menus_menuversion_id` FOREIGN KEY (`menu_version_id`) REFERENCES `menus_menuversion` (`id`)
+)
 
--- Posts Table
-CREATE TABLE IF NOT EXISTS posts (
-    post_id INT PRIMARY KEY AUTO_INCREMENT,
-    user_id INT NOT NULL,
-    uploadTime TIMESTAMP NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES user(user_id),
-    INDEX (user_id) -- Index to speed up joins with user
-);
+CREATE TABLE `menus_dietaryrestriction` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(99) DEFAULT NULL,
+  `last_edited` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `menus_dietaryrestriction_name_e56b1d3d_uniq` (`name`)
+)
 
--- Menu Version Table
-CREATE TABLE IF NOT EXISTS menu_version (
-    menu_version INT PRIMARY KEY AUTO_INCREMENT,
-    user_id INT NOT NULL,
-    post_id INT,
-    timeUpload TIMESTAMP NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES user(user_id),
-    FOREIGN KEY (post_id) REFERENCES posts(post_id),
-    INDEX (user_id), -- Index to speed up joins
-    INDEX (post_id)  -- Index to optimize joins with posts
-);
+CREATE TABLE `menus_dietaryrestriction_menu_items` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `dietaryrestriction_id` bigint NOT NULL,
+  `menuitem_id` bigint NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `menus_dietaryrestriction_dietaryrestriction_id_me_00824ddf_uniq` (`dietaryrestriction_id`,`menuitem_id`),
+  KEY `menus_dietaryrestric_menuitem_id_750317e0_fk_menus_men` (`menuitem_id`),
+  CONSTRAINT `menus_dietaryrestric_dietaryrestriction_i_ee4f6c70_fk_menus_die` FOREIGN KEY (`dietaryrestriction_id`) REFERENCES `menus_dietaryrestriction` (`id`),
+  CONSTRAINT `menus_dietaryrestric_menuitem_id_750317e0_fk_menus_men` FOREIGN KEY (`menuitem_id`) REFERENCES `menus_menuitem` (`id`)
+)
 
--- Restaurant Table
-CREATE TABLE IF NOT EXISTS restaurant (
-    restaurant_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL,
-    phone VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    country VARCHAR(50) NOT NULL,
-    city VARCHAR(50) NOT NULL,
-    state VARCHAR(3) NOT NULL,
-    zip SMALLINT NOT NULL,
-    street VARCHAR(50) NOT NULL,
-    INDEX (name) -- Index for restaurant name search
-);
+CREATE TABLE `menus_menu` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `active_status` tinyint(1) DEFAULT NULL,
+  `available_until` date DEFAULT NULL,
+  `available_from` date DEFAULT NULL,
+  `menu_file` varchar(100) DEFAULT NULL,
+  `restaurant_id` bigint DEFAULT NULL,
+  `timeUpload` datetime(6) DEFAULT NULL,
+  `user_id_id` bigint DEFAULT NULL,
+  `version_id` bigint DEFAULT NULL,
+  `last_edited` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `menus_menu_user_id_id_87f756a1_fk_menus_user_id` (`user_id_id`),
+  KEY `menus_menu_version_id_b7b04197_fk_menus_menuversion_id` (`version_id`),
+  KEY `menus_menu_restaurant_id_fae48d76_fk_menus_restaurant_id` (`restaurant_id`),
+  CONSTRAINT `menus_menu_restaurant_id_fae48d76_fk_menus_restaurant_id` FOREIGN KEY (`restaurant_id`) REFERENCES `menus_restaurant` (`id`),
+  CONSTRAINT `menus_menu_user_id_id_87f756a1_fk_menus_user_id` FOREIGN KEY (`user_id_id`) REFERENCES `menus_user` (`id`),
+  CONSTRAINT `menus_menu_version_id_b7b04197_fk_menus_menuversion_id` FOREIGN KEY (`version_id`) REFERENCES `menus_menuversion` (`id`)
+)
 
--- Opening Hours Table
-CREATE TABLE IF NOT EXISTS opening_hours (
-    opening_hours_id INT PRIMARY KEY AUTO_INCREMENT,
-    day_of_week ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday') NOT NULL,
-    open_time TIME NOT NULL,
-    close_time TIME NOT NULL
-);
+CREATE TABLE `menus_menuitem` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(99) DEFAULT NULL,
+  `description` varchar(300) DEFAULT NULL,
+  `price` int DEFAULT NULL,
+  `currency` varchar(99) DEFAULT NULL,
+  `available` tinyint(1) DEFAULT NULL,
+  `menu_section_id` bigint DEFAULT NULL,
+  `last_edited` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `menus_menuitem_menu_section_id_a2019aee_fk_menus_menusection_id` (`menu_section_id`),
+  CONSTRAINT `menus_menuitem_menu_section_id_a2019aee_fk_menus_menusection_id` FOREIGN KEY (`menu_section_id`) REFERENCES `menus_menusection` (`id`)
+)
 
--- Opening Hours Bridge Table
-CREATE TABLE IF NOT EXISTS opening_hours_bridge (
-    restaurant_id INT NOT NULL,
-    opening_hours_id INT NOT NULL,
-    PRIMARY KEY (restaurant_id, opening_hours_id),
-    FOREIGN KEY (restaurant_id) REFERENCES restaurant(restaurant_id),
-    FOREIGN KEY (opening_hours_id) REFERENCES opening_hours(opening_hours_id)
-);
+CREATE TABLE `menus_menusection` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(99) DEFAULT NULL,
+  `menu_id` bigint DEFAULT NULL,
+  `last_edited` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `menus_menusection_menu_id_5d8f94b3_fk_menus_menu_id` (`menu_id`),
+  CONSTRAINT `menus_menusection_menu_id_5d8f94b3_fk_menus_menu_id` FOREIGN KEY (`menu_id`) REFERENCES `menus_menu` (`id`)
+)
 
--- Menu Info Table
-CREATE TABLE IF NOT EXISTS menu_info (
-    menu_id INT PRIMARY KEY AUTO_INCREMENT,
-    menu_section INT NOT NULL,
-    section VARCHAR(50),
-    activeStatus BOOLEAN DEFAULT TRUE,
-    available_until DATE,
-    available_from DATE,
-    country VARCHAR(50) NOT NULL,
-    city VARCHAR(50) NOT NULL,
-    state VARCHAR(3) NOT NULL,
-    zip SMALLINT NOT NULL,
-    street VARCHAR(50) NOT NULL,
-    FOREIGN KEY (menu_section) REFERENCES menu_section(section_id)
-);
+CREATE TABLE `menus_menuversion` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `version_number` int NOT NULL,
+  `composite_id` varchar(255) NOT NULL,
+  `restaurant_id` bigint DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `composite_id` (`composite_id`),
+  KEY `menus_menuversion_restaurant_id_688f3c51_fk_menus_restaurant_id` (`restaurant_id`),
+  CONSTRAINT `menus_menuversion_restaurant_id_688f3c51_fk_menus_restaurant_id` FOREIGN KEY (`restaurant_id`) REFERENCES `menus_restaurant` (`id`)
+)
 
--- Menu Section Table
-CREATE TABLE IF NOT EXISTS menu_section (
-    section_id INT PRIMARY KEY AUTO_INCREMENT,
-    menu_id INT NOT NULL,
-    FOREIGN KEY (menu_id) REFERENCES menu_info(menu_id),
-    INDEX (menu_id) -- Index to speed up joins with menu_info
-);
+CREATE TABLE `menus_user` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `password` varchar(128) NOT NULL,
+  `last_login` datetime(6) DEFAULT NULL,
+  `is_superuser` tinyint(1) NOT NULL,
+  `username` varchar(150) NOT NULL,
+  `first_name` varchar(150) NOT NULL,
+  `last_name` varchar(150) NOT NULL,
+  `email` varchar(254) NOT NULL,
+  `is_staff` tinyint(1) NOT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `date_joined` datetime(6) NOT NULL,
+  `country` varchar(50) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `state` varchar(3) DEFAULT NULL,
+  `zip` smallint DEFAULT NULL,
+  `street` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+)
 
--- Menu Item Table
-CREATE TABLE IF NOT EXISTS menu_item (
-    menu_item_id INT PRIMARY KEY AUTO_INCREMENT,
-    section_id INT NOT NULL,
-    name VARCHAR(99) NOT NULL,
-    description VARCHAR(99) NOT NULL,
-    price INT NOT NULL,
-    currency VARCHAR(99) DEFAULT 'dollar',
-    available BOOLEAN NOT NULL,
-    FOREIGN KEY (section_id) REFERENCES menu_section(section_id),
-    INDEX (name), -- Index for frequent item name lookups
-    INDEX (section_id) -- Index for joining with menu_section
-);
-
--- Dietary Restrictions Table
-CREATE TABLE IF NOT EXISTS dietary_restrictions (
-    dietary_restrict_id INT PRIMARY KEY AUTO_INCREMENT,
-    description VARCHAR(99) NOT NULL
-);
-
--- Item Dietary Restrictions Bridge Table
-CREATE TABLE IF NOT EXISTS item_dietary_restrictions (
-    menu_item_id INT NOT NULL,
-    dietary_restrict_id INT NOT NULL,
-    PRIMARY KEY (menu_item_id, dietary_restrict_id), -- Composite Primary Key
-    FOREIGN KEY (menu_item_id) REFERENCES menu_item(menu_item_id),
-    FOREIGN KEY (dietary_restrict_id) REFERENCES dietary_restrictions(dietary_restrict_id),
-    INDEX (menu_item_id), -- Index for joins
-    INDEX (dietary_restrict_id) -- Index for joins
-);
-
--- Audit Log Table
-CREATE TABLE IF NOT EXISTS audit_log (
-    log_id INT PRIMARY KEY AUTO_INCREMENT,
-    menu_id INT NOT NULL,
-    status ENUM('received', 'processed', 'uploaded') NOT NULL,
-    action VARCHAR(99) NOT NULL,
-    entity_affected VARCHAR(99) NOT NULL,
-    old_value VARCHAR(99),
-    new_value VARCHAR(99),
-    FOREIGN KEY (menu_id) REFERENCES menu_info(menu_id),
-    INDEX (menu_id) -- Index to speed up joins with menu_info
-);
+CREATE TABLE `menus_restaurant` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `country` varchar(50) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `state` varchar(3) DEFAULT NULL,
+  `zip` smallint DEFAULT NULL,
+  `street` varchar(50) DEFAULT NULL,
+  `website` varchar(200) DEFAULT NULL,
+  `last_edited` datetime(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `menus_restaurant_name_d5529e64_uniq` (`name`)
+) 
