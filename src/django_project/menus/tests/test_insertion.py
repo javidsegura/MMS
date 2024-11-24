@@ -1,152 +1,132 @@
-from django.test import TestCase
-from menus.utils.extraction import extract_pdf_content  # We should change this with our function to export text from a pdf
-import os
-
-class ExtractPdfContentTests(TestCase):
-    def test_extract_pdf_content(self):
-        # Path to the sample PDF file
-        pdf_path = os.path.join(os.path.dirname(__file__), "sample_menu.pdf") # We should change sample_menu.pdf with the name of the actual pdf
-
-        # and replace here with the actual expected data
-        expected_data = {
-            "restaurant_info": {
-                "restaurant_name": "Test Restaurant",
-                "phone": "123-456-7890",
-                "address": "123 Test St",
-                "website": "http://testrestaurant.com"
-            },
-            "menu_sections": [
-                {
-                    "section_name": "Starters",
-                    "items": [
-                        {"name": "Soup", "price": 5.99},
-                        {"name": "Salad", "price": 4.99}
-                    ]
-                }
-            ]
-        }
-
-
-        extracted_data = extract_pdf_content(pdf_path)
-
-        # Lastly verify the extracted data matches the expected data
-        self.assertEqual(extracted_data, expected_data)
-
-
 import pytest
-from menus.models import Menu, MenuSection, MenuItem, Restaurant
-from menus.utils.insertion import populate_menu_data # We should change this with our function to export text from a pdf
+from django.db import connection
+from menus.models import Restaurant, Menu, MenuSection, MenuItem, DietaryRestriction
+from menus.utils.insertion import populate_menu_data
 
+# Fixture to reset the database before each test
+@pytest.fixture
+def reset_db():
+    with connection.cursor() as cursor:
+        cursor.execute("DELETE FROM menus_menuitem")
+        cursor.execute("DELETE FROM menus_menusection")
+        cursor.execute("DELETE FROM menus_menu")
+        cursor.execute("DELETE FROM menus_restaurant")
+        cursor.execute("DELETE FROM menus_dietaryrestriction")
+    yield
+
+# Sample valid menu JSON
+@pytest.fixture
+def sample_menu():
+    return {
+        "restaurant_info": {
+            "restaurant_name": "Dynamic Restaurant",
+            "phone": "123-456-7890",
+            "address": "456 Real World St",
+            "website": "http://dynamicrestaurant.com",
+        },
+        "menu_sections": [
+            {
+                "name": "Appetizers",
+                "items": [
+                    {"name": "Bruschetta", "price": 8.99, "description": "Toasted bread with toppings"},
+                    {"name": "Garlic Bread", "price": 4.99},
+                ],
+            },
+            {
+                "name": "Main Course",
+                "items": [
+                    {"name": "Steak", "price": 19.99},
+                    {"name": "Salmon", "price": 17.99},
+                ],
+            },
+        ],
+    }
 
 @pytest.mark.django_db
-class TestPopulateMenuData:
+def test_valid_menu_insertion(reset_db, sample_menu):
+    # Call the function to populate menu data
+    menu_instance = Menu.objects.create()
+    populate_menu_data(menu=menu_instance, menu_data=sample_menu)
 
-    def test_valid_data_population(self):
-        
-        # Test if valid data is correctly processed and saved into the database. (sample menu of course)
-        
-        
-        menu = Menu.objects.create(name="Test Menu")
-        valid_data = {
-            "restaurant_info": {
-                "restaurant_name": "Dynamic Restaurant",
-                "phone": "123-456-7890",
-                "address": "456 Real World St",
-                "website": "http://dynamicrestaurant.com"
-            },
-            "menu_sections": [
-                {
-                    "section_name": "Appetizers",
-                    "items": [
-                        {"name": "Bruschetta", "price": 8.99},
-                        {"name": "Garlic Bread", "price": 4.99}
-                    ]
-                }
-            ]
-        }
+    # Verify restaurant creation
+    restaurant = Restaurant.objects.get(name="Dynamic Restaurant")
+    assert restaurant.phone == "123-456-7890"
+    assert restaurant.website == "http://dynamicrestaurant.com"
+    assert restaurant.street == "456 Real World St"
 
-       
-        populate_menu_data(menu, valid_data)
+    # Verify menu association
+    menu = Menu.objects.get(restaurant=restaurant)
+    assert menu.restaurant == restaurant
 
-        # This part of the test verifies that valid data is correctly stored in the database after being 
-        # processed by the populate_menu_data function. It checks if the data (restaurant, menu sections, and menu items), 
-        # matches what was provided as input.
-        restaurant = Restaurant.objects.get(name="Dynamic Restaurant")
-        assert restaurant.phone == "123-456-7890"
-        assert restaurant.street == "456 Real World St"
-        assert restaurant.website == "http://dynamicrestaurant.com"
+    # Verify menu sections
+    sections = MenuSection.objects.filter(menu=menu)
+    assert len(sections) == 2
+    section_names = {section.name for section in sections}
+    assert section_names == {"Appetizers", "Main Course"}
 
-        section = MenuSection.objects.get(menu=menu, name="Appetizers")
-        assert section.name == "Appetizers"
+    # Verify menu items
+    items = MenuItem.objects.filter(menu_section__menu=menu)
+    assert len(items) == 4
+    item_names = {item.name for item in items}
+    assert item_names == {"Bruschetta", "Garlic Bread", "Steak", "Salmon"}
 
-        items = MenuItem.objects.filter(menu_section=section)
-        assert items.count() == 2
-        assert items.filter(name="Bruschetta", price=8.99).exists()
-        assert items.filter(name="Garlic Bread", price=4.99).exists()
+    # Verify data types
+    bruschetta = MenuItem.objects.get(name="Bruschetta")
+    assert isinstance(bruschetta.price, int), "Price should be stored as an integer"
+    assert isinstance(bruschetta.name, str), "Name should be a string"
 
-    def test_invalid_data_handling(self):
-       
-        # this part tests if invalid data (exceeding model constraints) raises appropriate exceptions.
-        
-        menu = Menu.objects.create(name="Test Menu")
-        invalid_data = {
-            "restaurant_info": {
-                "restaurant_name": "A" * 60,  # Exceeds max_length of 50
-                "phone": "123-456-7890",
-                "address": "789 Error St",
-                "website": "http://errorrestaurant.com"
-            },
-            "menu_sections": [
-                {
-                    "section_name": "Main Course",
-                    "items": [
-                        {"name": "A" * 120, "price": 12.99}  # Exceeds max_length of 99
-                    ]
-                }
-            ]
-        }
+@pytest.mark.django_db
+def test_exceeding_max_length(reset_db):
+    oversized_name = "a" * 256  # Exceeding the 255-character limit for a name
+    invalid_menu = {
+        "restaurant_info": {
+            "restaurant_name": oversized_name,
+            "phone": "123-456-7890",
+            "address": "123 Test Street",
+        },
+        "menu_sections": [],
+    }
 
-        # Act & Assert: Ensure invalid data raises exceptions
-        with pytest.raises(Exception) as excinfo:
-            populate_menu_data(menu, invalid_data)
+    menu_instance = Menu.objects.create()
+    with pytest.raises(Exception):
+        populate_menu_data(menu=menu_instance, menu_data=invalid_menu)
 
-        assert "restaurant_name exceeds max_length" in str(excinfo.value) or \
-               "name exceeds max_length" in str(excinfo.value)
+@pytest.mark.django_db
+def test_incomplete_data(reset_db):
+    incomplete_menu = {
+        "restaurant_info": {},  # Missing required fields
+        "menu_sections": [],
+    }
 
-    def test_partial_data_handling(self):
-        
-        # Test if partial or incomplete data is gracefully handled without crashing.
-    
-        menu = Menu.objects.create(name="Test Menu")
-        partial_data = {
-            "restaurant_info": {
-                "restaurant_name": "Partial Restaurant",
-                "phone": None,  # Missing phone number
-                "address": None,
-                "website": "http://partialrestaurant.com"
-            },
-            "menu_sections": [
-                {
-                    "section_name": None,  # Missing section name
-                    "items": [
-                        {"name": "Pasta", "price": 10.99}
-                    ]
-                }
-            ]
-        }
+    menu_instance = Menu.objects.create()
+    with pytest.raises(Exception):
+        populate_menu_data(menu=menu_instance, menu_data=incomplete_menu)
 
-        populate_menu_data(menu, partial_data)
+@pytest.mark.django_db
+def test_dietary_restrictions(reset_db):
+    menu_with_dietary = {
+        "restaurant_info": {
+            "restaurant_name": "Dietary Restaurant",
+            "phone": "555-555-5555",
+        },
+        "menu_sections": [
+            {
+                "name": "Healthy Options",
+                "items": [
+                    {
+                        "name": "Gluten-Free Pizza",
+                        "price": 12.99,
+                        "dietary_restrictions": ["Gluten-Free", "Vegetarian"],
+                    }
+                ],
+            }
+        ],
+    }
 
+    menu_instance = Menu.objects.create()
+    populate_menu_data(menu=menu_instance, menu_data=menu_with_dietary)
 
-        restaurant = Restaurant.objects.get(name="Partial Restaurant")
-        assert restaurant.website == "http://partialrestaurant.com"
-        assert restaurant.phone is None
-        assert restaurant.street is None
-
-        # Validate that menu section and items were partially saved
-        section = MenuSection.objects.filter(menu=menu).first()
-        assert section is None or section.name is None
-
-        item = MenuItem.objects.filter(name="Pasta").first()
-        assert item and item.price == 10.99
-
+    # Verify dietary restrictions
+    pizza = MenuItem.objects.get(name="Gluten-Free Pizza")
+    restrictions = [r.name for r in pizza.dietary_restrictions.all()]
+    assert set(restrictions) == {"Gluten-Free", "Vegetarian"}
