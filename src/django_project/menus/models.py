@@ -41,7 +41,7 @@ class Restaurant(models.Model):
     email = models.EmailField(max_length=50, null=True, blank=True)
     country = models.CharField(max_length=50, null=True, blank=True)
     city = models.CharField(max_length=50, null=True, blank=True)
-    state = models.CharField(max_length=3, null=True, blank=True)
+    state = models.CharField(max_length=99, null=True, blank=True)
     zip = models.SmallIntegerField(null=True, blank=True)
     street = models.CharField(max_length=50, null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
