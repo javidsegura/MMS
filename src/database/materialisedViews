@@ -84,7 +84,3 @@ CREATE INDEX idx_mbl_menu_id ON MenusByLocation(menu_id);
 
 
 
-
-CREATE INDEX idx_rpd_restaurant_name ON RestaurantPerformance(restaurant_name);
-CREATE INDEX idx_rpd_last_menu_update ON RestaurantPerformance(last_menu_update);
-
