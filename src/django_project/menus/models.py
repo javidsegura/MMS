@@ -35,15 +35,15 @@ class User(AbstractUser):
 
 
 class Restaurant(models.Model):
-    name = models.CharField(max_length=50, null=True, unique=True)
-    phone = models.CharField(max_length=50, null=True, blank=True)
-    website = models.URLField(max_length=200, null=True, blank=True)
-    email = models.EmailField(max_length=50, null=True, blank=True)
-    country = models.CharField(max_length=50, null=True, blank=True)
-    city = models.CharField(max_length=50, null=True, blank=True)
+    name = models.CharField(max_length=99, null=True, unique=True)
+    phone = models.CharField(max_length=99, null=True, blank=True)
+    website = models.URLField(max_length=99, null=True, blank=True)
+    email = models.EmailField(max_length=99, null=True, blank=True)
+    country = models.CharField(max_length=99, null=True, blank=True)
+    city = models.CharField(max_length=99, null=True, blank=True)
     state = models.CharField(max_length=99, null=True, blank=True)
     zip = models.SmallIntegerField(null=True, blank=True)
-    street = models.CharField(max_length=50, null=True, blank=True)
+    street = models.CharField(max_length=99, null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     def __str__(self):
@@ -117,7 +117,7 @@ class MenuSection(models.Model):
 class MenuItem(models.Model):
     menu_section = models.ForeignKey(MenuSection, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=99, null=True, blank=True)
-    description = models.CharField(max_length=300, null=True, blank=True)
+    description = models.CharField(max_length=199, null=True, blank=True)
     price = models.IntegerField(null=True, blank=True)
     currency = models.CharField(max_length=99, default='dollar', null=True, blank=True)
     available = models.BooleanField(null=True, blank=True)

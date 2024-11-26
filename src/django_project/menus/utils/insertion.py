@@ -23,6 +23,19 @@ def populate_menu_data(menu, menu_data: dict):
         state = restaurant_info.get('state')
         zip = restaurant_info.get('zip')
         street = restaurant_info.get('street')
+
+        # Reducing size of big fields
+        if len(restaurant_info) > 0:
+            restaurant_info['restaurant_name'] = restaurant_info['restaurant_name'][:99]
+            restaurant_info['phone'] = restaurant_info['phone'][:99]
+            restaurant_info['address'] = restaurant_info['address'][:99]
+            restaurant_info['website'] = restaurant_info['website'][:99]
+            restaurant_info['email'] = restaurant_info['email'][:99]
+            restaurant_info['country'] = restaurant_info['country'][:99]
+            restaurant_info['city'] = restaurant_info['city'][:99]
+            restaurant_info['state'] = restaurant_info['state'][:99]
+            restaurant_info['street'] = restaurant_info['street'][:99]
+
         if restaurant_info:
             restaurant_name = restaurant_info.get('restaurant_name')
             if restaurant_name:
@@ -66,16 +79,22 @@ def populate_menu_data(menu, menu_data: dict):
         
         # Create menu sections and populate them with items 
         for section_data in menu_data.get('menu_sections', []):
+            section_name = section_data.get('name', '')
+            if len(section_name) > 99:
+                section_name = section_name[:99]
             section = MenuSection.objects.create(
                 menu=menu,
-                name=section_data.get('name', '')
+                name=section_name
             )
             
             # Create menu items for this section
             for item_data in section_data.get('items', []):
+                item_name = item_data.get('name', '')
+                if len(item_name) > 99:
+                    item_name = item_name[:99]
                 menu_item = MenuItem.objects.create(
                     menu_section=section,
-                    name=item_data.get('name', ''),
+                    name=item_name,
                     description=item_data.get('description', ''),
                     price=item_data.get('price', 0.0),
                     available=True
@@ -85,6 +104,8 @@ def populate_menu_data(menu, menu_data: dict):
                 dietary_restrictions = item_data.get('dietary_restrictions', [])
                 if dietary_restrictions:
                     for restriction in dietary_restrictions:
+                        if len(restriction) > 99:
+                            restriction = restriction[:99]
                         restriction_obj, _ = DietaryRestriction.objects.get_or_create(
                             name=restriction
                         )

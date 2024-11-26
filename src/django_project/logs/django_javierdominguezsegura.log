@@ -2530,3 +2530,87 @@ INFO 2024-11-26 09:57:11,032 logging_middleware 22857 6132002816 Response: {
   }
 }
 INFO 2024-11-26 09:57:11,032 basehttp 22857 6132002816 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-26 10:09:06,369 autoreload 22857 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-26 10:09:07,347 autoreload 23165 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:09:08,627 autoreload 23165 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-26 10:09:09,300 autoreload 23176 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:09:13,626 autoreload 23176 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-26 10:09:14,275 autoreload 23198 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:10:25,542 autoreload 23198 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-26 10:10:26,470 autoreload 23218 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:10:55,529 autoreload 23218 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:10:56,499 autoreload 23252 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:10:57,767 autoreload 23252 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:10:58,484 autoreload 23259 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:10:59,687 autoreload 23259 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:00,361 autoreload 23268 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:03,633 autoreload 23268 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:04,266 autoreload 23272 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:05,479 autoreload 23272 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:06,140 autoreload 23283 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:12,440 autoreload 23283 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:13,171 autoreload 23300 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:14,459 autoreload 23300 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:15,239 autoreload 23301 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:17,570 autoreload 23301 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:18,276 autoreload 23314 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:25,673 autoreload 23314 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:26,352 autoreload 23324 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:28,621 autoreload 23324 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:29,301 autoreload 23338 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:31,622 autoreload 23338 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:32,325 autoreload 23344 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:36,647 autoreload 23344 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:37,314 autoreload 23374 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:11:44,665 autoreload 23374 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:11:45,382 autoreload 23394 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:14:58,321 autoreload 23394 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:14:59,373 autoreload 23505 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:15:00,740 autoreload 23505 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:15:01,430 autoreload 23518 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:16:22,114 autoreload 23518 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:16:23,077 autoreload 23544 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:16:24,345 autoreload 23544 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:16:24,985 autoreload 23549 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:16:30,343 autoreload 23549 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:16:31,057 autoreload 23563 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:16:33,323 autoreload 23563 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:16:33,997 autoreload 23577 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:16:40,376 autoreload 23577 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-11-26 10:16:41,077 autoreload 23594 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:16:52,624 autoreload 23594 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:16:53,508 autoreload 23616 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:16:59,962 autoreload 23616 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:17:00,900 autoreload 23630 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:17:02,161 autoreload 23630 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:17:02,854 autoreload 23635 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:17:05,140 autoreload 23635 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:17:05,800 autoreload 23647 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:17:07,096 autoreload 23647 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:17:07,785 autoreload 23651 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:17:13,161 autoreload 23651 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:17:13,868 autoreload 23665 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:17:16,148 autoreload 23665 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:17:16,859 autoreload 23678 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:17:18,116 autoreload 23678 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:17:18,773 autoreload 23680 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:18:07,412 autoreload 23680 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:18:08,353 autoreload 23729 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:18:11,673 autoreload 23729 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:18:12,386 autoreload 23743 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:18:14,606 autoreload 23743 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:18:15,284 autoreload 23760 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:18:24,738 autoreload 23760 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:18:25,626 autoreload 23775 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:18:56,842 autoreload 23775 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:18:57,829 autoreload 23803 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:19:03,266 autoreload 23803 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:19:04,146 autoreload 23820 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:19:08,486 autoreload 23820 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:19:09,190 autoreload 23837 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:19:10,439 autoreload 23837 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:19:11,140 autoreload 23842 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:19:14,437 autoreload 23842 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:19:15,130 autoreload 23858 7993774848 Watching for file changes with StatReloader
+INFO 2024-11-26 10:19:51,310 autoreload 23858 7993774848 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/Final project/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-11-26 10:19:52,262 autoreload 23904 7993774848 Watching for file changes with StatReloader
