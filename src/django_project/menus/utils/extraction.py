@@ -2,7 +2,7 @@ import base64
 import os
 from openai import OpenAI
 import json
-from menus.models import AuditLog, Menu
+#from menus.models import AuditLog, Menu
 from PyPDF2 import PdfReader
 
 # TO DO: get a dict with all the info. Then write it to the db
@@ -14,11 +14,13 @@ def ai_call(menu, extension):
     """
     print(f"AI call for uploaded file. Extension: {extension}")
     
-    menu_file = menu.menu_file
-    ai_call_log = AuditLog.objects.create(
-        phase="Extraction",
-        status="Started"
-    )
+    # For testing use hasattr checking
+    menu_file = menu.menu_file if hasattr(menu, 'menu_file') else open(menu, "rb")
+
+    # ai_call_log = AuditLog.objects.create(
+    #     phase="Extraction",
+    #     status="Started"
+    # )
     try:
         if extension not in ["png", "html", "pdf", "jpg", "jpeg"]:
             raise ValueError(f"Unsupported file extension: {extension}")
@@ -139,19 +141,20 @@ def ai_call(menu, extension):
                 
             print(f"Successfully parsed JSON: {json_response}")
             
-            ai_call_log.status = "Finished Successfully"
-            return json_response, ai_call_log
+            # ai_call_log.status = "Finished Successfully"
+            return json_response 
+            # ai_call_log
         
         except Exception as e:
-            print(f"Error processing OpenAI response: {str(e)}")
-            ai_call_log.status = "Failed"
-            ai_call_log.other = f"Error processing response: {str(e)}\nRaw content: {content[:500]}..."  # Store first 500 chars of content
-            ai_call_log.save()
+            # print(f"Error processing OpenAI response: {str(e)}")
+            # ai_call_log.status = "Failed"
+            # ai_call_log.other = f"Error processing response: {str(e)}\nRaw content: {content[:500]}..."  # Store first 500 chars of content
+            # ai_call_log.save()
             raise
     
     except Exception as e:
         print(f"Error in ai_call: {str(e)}")
-        ai_call_log.status = "Failed"
-        ai_call_log.other = str(e)
-        ai_call_log.save()
-        return None, ai_call_log
+        # ai_call_log.status = "Failed"
+        # ai_call_log.other = str(e)
+        # ai_call_log.save()
+        return None #ai_call_log
