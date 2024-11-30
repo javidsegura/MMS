@@ -1,0 +1,86 @@
+-- 1.
+CREATE MATERIALIZED VIEW FrequentlyAccessedMenus AS
+SELECT 
+    m.id AS menu_id,
+    ms.name AS menu_section,
+    COUNT(al.id) AS access_count,
+    r.name AS restaurant_name
+FROM
+    menus_auditlog al
+JOIN 
+    menus_menu m ON al.menu_version_id = m.version_id -- Connects the audit log to the menu table via menu version ID.
+JOIN 
+    menus_menusection ms ON ms.menu_id = m.id -- Links the menu to its sections using the menu ID.
+JOIN 
+    menus_restaurant r ON m.restaurant_id = r.id -- Associates the menu with its parent restaurant using the restaurant ID.
+GROUP BY 
+    m.id, ms.name, r.name -- Groups by menu ID, section name, and restaurant name to aggregate the access counts for each unique menu.
+ORDER BY 
+    access_count DESC; -- Orders the result by the most accessed menus in descending order.
+
+
+
+CREATE INDEX idx_fam_menu_id ON FrequentlyAccessedMenus(menu_id); 
+-- Optimizes lookups for specific menus by menu_id.
+
+CREATE INDEX idx_fam_access_count ON FrequentlyAccessedMenus(access_count); 
+-- Speeds up sorting and filtering by access count.
+
+
+-- 2.
+CREATE MATERIALIZED VIEW RecentlyUpdatedMenus AS
+SELECT 
+    m.id AS menu_id,
+    ms.name AS menu_section,
+    r.name AS restaurant_name,
+    al.time_registered AS last_updated
+FROM
+    menus_menu m
+JOIN 
+    menus_menusection ms ON ms.menu_id = m.id -- Links the menu to its sections using the menu ID.
+JOIN 
+    menus_restaurant r ON m.restaurant_id = r.id -- Connects the menu to the restaurant it belongs to using the restaurant ID.
+JOIN 
+    menus_auditlog al ON al.menu_version_id = m.version_id -- Links the audit log to the menu table via menu version ID to track updates.
+WHERE 
+    al.phase = 'Updated' -- Filters only records where the menu's audit log indicates an update action.
+ORDER BY 
+    al.time_registered DESC; -- Orders the menus by their most recent update timestamp, from latest to earliest.
+
+
+CREATE INDEX idx_rum_last_updated ON RecentlyUpdatedMenus(last_updated); 
+-- Speeds up queries filtering or sorting by the last update timestamp.
+
+CREATE INDEX idx_rum_menu_id ON RecentlyUpdatedMenus(menu_id); 
+-- Optimizes lookups for specific menus by menu_id.
+
+
+-- 3.
+CREATE MATERIALIZED VIEW MenusByLocation AS
+SELECT 
+    r.name AS restaurant_name,
+    ms.name AS menu_section,
+    r.country,
+    r.state,
+    r.city,
+    m.id AS menu_id
+FROM
+    menus_menu m
+JOIN 
+    menus_menusection ms ON ms.menu_id = m.id -- Links the menu to its sections using the menu ID.
+JOIN 
+    menus_restaurant r ON m.restaurant_id = r.id -- Connects the menu to the restaurant it belongs to using the restaurant ID.
+WHERE 
+    m.active_status = TRUE -- Filters to include only menus marked as active.
+ORDER BY 
+    r.country, r.state, r.city, r.name; -- Organizes results hierarchically by country, state, city, and restaurant name.
+
+
+CREATE INDEX idx_mbl_country_state_city ON MenusByLocation(country, state, city); 
+-- Speeds up location-based filtering or sorting by country, state, and city.
+
+CREATE INDEX idx_mbl_menu_id ON MenusByLocation(menu_id); 
+-- Optimizes lookups for specific menus by menu_id.
+
+
+
