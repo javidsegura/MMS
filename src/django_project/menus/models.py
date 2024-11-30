@@ -114,6 +114,7 @@ class MenuSection(models.Model):
         verbose_name = "Menu Section"
         verbose_name_plural = "Menu Sections"
 
+
 class MenuItem(models.Model):
     menu_section = models.ForeignKey(MenuSection, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=99, null=True, blank=True)
@@ -125,12 +126,14 @@ class MenuItem(models.Model):
 
     def __str__(self):
         return self.name
+
     class Meta:
         verbose_name = "Menu Item"
         verbose_name_plural = "Menu Items"
         indexes = [
             models.Index(fields=['name']),  # Index for menu item name lookups
         ]
+
 
 class DietaryRestriction(models.Model):
     menu_items = models.ManyToManyField(MenuItem, related_name='dietary_restrictions') # relanted_name specified how to access the reverse relationship

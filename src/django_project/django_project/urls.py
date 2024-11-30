@@ -20,8 +20,14 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import RedirectView  # Add this import
+from menus.views import full_text_search # for full text search
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', RedirectView.as_view(url='admin/', permanent=True)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns = [
+    path('search/', full_text_search, name='full_text_search'), # for full text search
+]

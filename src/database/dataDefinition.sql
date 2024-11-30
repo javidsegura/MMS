@@ -65,7 +65,8 @@ CREATE TABLE `menus_menuitem` (
   `last_edited` datetime(6) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `menus_menuitem_menu_section_id_a2019aee_fk_menus_menusection_id` (`menu_section_id`),
-  CONSTRAINT `menus_menuitem_menu_section_id_a2019aee_fk_menus_menusection_id` FOREIGN KEY (`menu_section_id`) REFERENCES `menus_menusection` (`id`)
+  CONSTRAINT `menus_menuitem_menu_section_id_a2019aee_fk_menus_menusection_id` FOREIGN KEY (`menu_section_id`) REFERENCES `menus_menusection` (`id`),
+  FULLTEXT KEY `fulltext_name_description` (`name`, `description`) -- Added FULLTEXT index for `name` and `description`
 )
 
 CREATE TABLE `menus_menusection` (
@@ -75,7 +76,8 @@ CREATE TABLE `menus_menusection` (
   `last_edited` datetime(6) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `menus_menusection_menu_id_5d8f94b3_fk_menus_menu_id` (`menu_id`),
-  CONSTRAINT `menus_menusection_menu_id_5d8f94b3_fk_menus_menu_id` FOREIGN KEY (`menu_id`) REFERENCES `menus_menu` (`id`)
+  CONSTRAINT `menus_menusection_menu_id_5d8f94b3_fk_menus_menu_id` FOREIGN KEY (`menu_id`) REFERENCES `menus_menu` (`id`),
+  FULLTEXT KEY `fulltext_name` (`name`) -- Added FULLTEXT index for `name`
 )
 
 CREATE TABLE `menus_menuversion` (
@@ -123,5 +125,6 @@ CREATE TABLE `menus_restaurant` (
   `website` varchar(200) DEFAULT NULL,
   `last_edited` datetime(6) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `menus_restaurant_name_d5529e64_uniq` (`name`)
-) 
+  UNIQUE KEY `menus_restaurant_name_d5529e64_uniq` (`name`),
+  FULLTEXT KEY `fulltext_name` (`name`) -- Added FULLTEXT index for `name`
+)
