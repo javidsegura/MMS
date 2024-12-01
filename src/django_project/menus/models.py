@@ -8,7 +8,7 @@ from django.contrib.auth.models import AbstractUser
 from storages.backends.s3boto3 import S3Boto3Storage
 
 class User(AbstractUser):
-     # These fields are already included from AbstractUser:
+    # These fields are already included from AbstractUser:
     # username
     # password
     # first_name
@@ -48,6 +48,7 @@ class Restaurant(models.Model):
 
     def __str__(self):
         return self.name
+
     class Meta:
         verbose_name = "Restaurant"
         verbose_name_plural = "Restaurants"
@@ -56,6 +57,7 @@ class Restaurant(models.Model):
             models.Index(fields=['country', 'city', 'state', 'zip', 'street']),  # Composite Index for location
             models.Index(fields=['name', 'phone', 'email', 'website'])  # Composite Index for contact details
         ]
+
 
 class MenuVersion(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, null=True, blank=True)
@@ -76,11 +78,13 @@ class MenuVersion(models.Model):
     
     def __str__(self):
         return self.composite_id
+
     class Meta:
         verbose_name = verbose_name_plural = "Menu Versions"
         indexes = [
             models.Index(fields=['restaurant', 'version_number']),  # Index for frequent lookups on restaurant versions
         ]
+
 
 class Menu(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, null=True, blank=True)
@@ -97,6 +101,7 @@ class Menu(models.Model):
 
     def __str__(self):
         return f"{self.version}" if self.version else f"No version: {self.id}"
+
     class Meta:
         verbose_name = "Menu"
         verbose_name_plural = "Menus"
@@ -104,12 +109,15 @@ class Menu(models.Model):
             models.Index(fields=['available_from', 'available_until']),  # Composite Index for availability
         ]
 
+
 class MenuSection(models.Model):
     menu = models.ForeignKey(Menu, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=99, null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
+
     def __str__(self):
         return f"{self.menu.restaurant.name}:{self.menu.id}:{self.name}"
+
     class Meta:
         verbose_name = "Menu Section"
         verbose_name_plural = "Menu Sections"
@@ -127,6 +135,16 @@ class MenuItem(models.Model):
     def __str__(self):
         return self.name
 
+    @staticmethod
+    def search_menuitems(query):
+        """
+        Perform a full-text search on the 'name' and 'description' columns.
+        """
+        return MenuItem.objects.raw(
+            "SELECT * FROM menus_menuitem WHERE MATCH(name, description) AGAINST (%s IN NATURAL LANGUAGE MODE)",
+            [query],
+        )  # for full text search
+
     class Meta:
         verbose_name = "Menu Item"
         verbose_name_plural = "Menu Items"
@@ -142,9 +160,11 @@ class DietaryRestriction(models.Model):
 
     def __str__(self):
         return self.name
+
     class Meta:
         verbose_name = "Dietary Restriction"
         verbose_name_plural = "Dietary Restrictions"
+
 
 class AuditLog(models.Model):
     menu_version = models.ForeignKey(MenuVersion, on_delete=models.CASCADE, null=True, blank=True)
@@ -153,6 +173,7 @@ class AuditLog(models.Model):
     time_registered = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     other = models.CharField(max_length=99, null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
+
     def __str__(self):
         return f"{self.menu_version}:{self.phase}"
     
@@ -162,4 +183,3 @@ class AuditLog(models.Model):
         indexes = [
             models.Index(fields=['menu_version']),  # Index for menu_version to speed up lookups
         ]
-    
