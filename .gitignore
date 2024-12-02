@@ -3,4 +3,5 @@
 src/backend/django_project/media/*
 src/django_project/.env
 
-
+# DATABASE
+src/django_project/django_project/.env
