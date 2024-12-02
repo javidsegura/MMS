@@ -2699,3 +2699,864 @@ INFO 2024-12-02 17:04:24,483 logging_middleware 10058 6167605248 Response: {
   }
 }
 INFO 2024-12-02 17:04:24,483 basehttp 10058 6167605248 "GET /api/restaurants/ HTTP/1.1" 200 1506
+INFO 2024-12-02 17:32:12,425 autoreload 11225 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:33:06,080 logging_middleware 11225 6123089920 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=dc4a3cf606247e3d4b1c453cd9e0ea91",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:33:06,102 logging_middleware 11225 6123089920 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-02 17:33:06,103 basehttp 11225 6123089920 "POST /api/restaurants/ HTTP/1.1" 201 171
+INFO 2024-12-02 17:33:06,105 logging_middleware 11225 6139916288 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:33:06,108 logging_middleware 11225 6139916288 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-02 17:33:06,108 basehttp 11225 6139916288 "GET /api/restaurants/ HTTP/1.1" 200 1678
+INFO 2024-12-02 17:34:52,205 autoreload 11225 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-02 17:34:53,080 autoreload 11426 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:35:08,698 autoreload 11426 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:35:09,640 autoreload 11468 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:35:11,840 autoreload 11468 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:35:12,514 autoreload 11483 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:39:00,193 autoreload 11483 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:39:01,129 autoreload 11666 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:42:05,887 autoreload 13089 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:42:17,104 autoreload 13187 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:44:48,967 logging_middleware 13187 6201896960 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=041b1cd80fed0074a343c2541f6068d8",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:44:48,970 logging_middleware 13187 6201896960 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+ERROR 2024-12-02 17:44:48,970 log 13187 6201896960 Internal Server Error: /api/upload-menu/
+ERROR 2024-12-02 17:44:48,971 basehttp 13187 6201896960 "POST /api/upload-menu/ HTTP/1.1" 500 155
+INFO 2024-12-02 17:45:47,411 autoreload 13187 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:45:48,357 autoreload 13751 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:45:50,757 autoreload 13751 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:45:51,441 autoreload 13761 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:45:52,722 autoreload 13761 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:45:53,361 autoreload 13762 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:48:33,604 logging_middleware 13762 6160068608 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=e8fdaf187abb0605ebe5bdd3fe3619d6",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Basic dGVzdDp0ZXN0"
+  }
+}
+INFO 2024-12-02 17:48:33,606 logging_middleware 13762 6160068608 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:48:33,607 log 13762 6160068608 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:48:33,607 basehttp 13762 6160068608 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:49:19,241 autoreload 14015 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:49:35,447 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=6ce4517601395a1619b2e9784c26154d",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Basic dGVzdDp0ZXN0"
+  }
+}
+INFO 2024-12-02 17:49:35,447 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:49:35,448 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:49:35,448 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:51:46,663 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=f0ab2896a0b2d5e0a167ae07292b8f73",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Basic dGVzdDE6dGVzdDI="
+  }
+}
+INFO 2024-12-02 17:51:46,664 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:51:46,665 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:51:46,665 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:52:20,298 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=29b831357f25d784636d461d102ef704",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Basic dGVzdDE6dGVzdDE="
+  }
+}
+INFO 2024-12-02 17:52:20,298 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:52:20,298 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:52:20,299 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:52:21,510 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=0173b2761d6bef6edaaa3a423048057b",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Basic dGVzdDE6dGVzdDE="
+  }
+}
+INFO 2024-12-02 17:52:21,510 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:52:21,510 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:52:21,511 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:52:22,840 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=7d99905784d46fa3a0cd49ac7527f983",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Basic dGVzdDE6dGVzdDE="
+  }
+}
+INFO 2024-12-02 17:52:22,840 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:52:22,840 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:52:22,840 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+WARNING 2024-12-02 17:53:46,487 base 14015 6123171840 Session data corrupted
+INFO 2024-12-02 17:53:46,488 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=eJin1TqrMyEB7ApPVq6fnBT9KL0yGYIH; sessionid=cczm49rw4ubqpkmgrma2vpd5dwfw1121"
+  }
+}
+INFO 2024-12-02 17:53:46,502 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/login/?next=/admin/",
+    "Expires": "Mon, 02 Dec 2024 17:53:46 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private"
+  }
+}
+INFO 2024-12-02 17:53:46,502 basehttp 14015 6123171840 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2024-12-02 17:53:46,506 base 14015 6123171840 Session data corrupted
+INFO 2024-12-02 17:53:46,507 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {
+    "next": [
+      "/admin/"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=eJin1TqrMyEB7ApPVq6fnBT9KL0yGYIH; sessionid=cczm49rw4ubqpkmgrma2vpd5dwfw1121"
+  }
+}
+INFO 2024-12-02 17:53:46,530 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Mon, 02 Dec 2024 17:53:46 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-02 17:53:46,530 basehttp 14015 6123171840 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-02 17:53:46,617 basehttp 14015 6156824576 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2024-12-02 17:53:46,618 basehttp 14015 6207303680 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-12-02 17:53:46,618 basehttp 14015 6139998208 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2024-12-02 17:53:46,618 basehttp 14015 6123171840 "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2024-12-02 17:53:46,619 basehttp 14015 6190477312 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2024-12-02 17:53:46,619 basehttp 14015 6173650944 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2024-12-02 17:53:46,622 basehttp 14015 6173650944 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2024-12-02 17:53:46,754 base 14015 6173650944 Session data corrupted
+INFO 2024-12-02 17:53:46,754 logging_middleware 14015 6173650944 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/favicon.ico",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "image",
+    "Referer": "http://127.0.0.1:8000/admin/login/?next=/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=eJin1TqrMyEB7ApPVq6fnBT9KL0yGYIH; sessionid=cczm49rw4ubqpkmgrma2vpd5dwfw1121"
+  }
+}
+INFO 2024-12-02 17:53:46,757 logging_middleware 14015 6173650944 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-02 17:53:46,757 log 14015 6173650944 Not Found: /favicon.ico
+WARNING 2024-12-02 17:53:46,757 basehttp 14015 6173650944 "GET /favicon.ico HTTP/1.1" 404 2675
+WARNING 2024-12-02 17:53:56,612 base 14015 6123171840 Session data corrupted
+INFO 2024-12-02 17:53:56,613 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/login",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=eJin1TqrMyEB7ApPVq6fnBT9KL0yGYIH; sessionid=cczm49rw4ubqpkmgrma2vpd5dwfw1121"
+  }
+}
+INFO 2024-12-02 17:53:56,614 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/login/?next=/admin/login",
+    "Expires": "Mon, 02 Dec 2024 17:53:56 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private"
+  }
+}
+INFO 2024-12-02 17:53:56,614 basehttp 14015 6123171840 "GET /admin/login HTTP/1.1" 302 0
+WARNING 2024-12-02 17:53:56,618 base 14015 6123171840 Session data corrupted
+INFO 2024-12-02 17:53:56,619 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {
+    "next": [
+      "/admin/login"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=eJin1TqrMyEB7ApPVq6fnBT9KL0yGYIH; sessionid=cczm49rw4ubqpkmgrma2vpd5dwfw1121"
+  }
+}
+INFO 2024-12-02 17:53:56,622 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Mon, 02 Dec 2024 17:53:56 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-02 17:53:56,622 basehttp 14015 6123171840 "GET /admin/login/?next=/admin/login HTTP/1.1" 200 4170
+WARNING 2024-12-02 17:54:01,840 base 14015 6123171840 Session data corrupted
+INFO 2024-12-02 17:54:01,841 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=eJin1TqrMyEB7ApPVq6fnBT9KL0yGYIH; sessionid=cczm49rw4ubqpkmgrma2vpd5dwfw1121"
+  }
+}
+INFO 2024-12-02 17:54:01,846 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Mon, 02 Dec 2024 17:54:01 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-02 17:54:01,848 basehttp 14015 6123171840 "GET /admin/login/ HTTP/1.1" 200 4147
+INFO 2024-12-02 17:54:10,338 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/login/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {
+    "username": [
+      "test1"
+    ],
+    "password": [
+      "test1"
+    ]
+  },
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "29",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:54:10,341 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-02 17:54:10,341 log 14015 6123171840 Not Found: /login/
+WARNING 2024-12-02 17:54:10,341 basehttp 14015 6123171840 "POST /login/ HTTP/1.1" 404 2661
+INFO 2024-12-02 17:54:10,343 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=08fdd21be35268a31b097f590f34693b",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:54:10,344 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:54:10,344 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:54:10,344 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:54:12,100 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/login/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {
+    "username": [
+      "test1"
+    ],
+    "password": [
+      "test1"
+    ]
+  },
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "29",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:54:12,102 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-02 17:54:12,102 log 14015 6123171840 Not Found: /login/
+WARNING 2024-12-02 17:54:12,102 basehttp 14015 6123171840 "POST /login/ HTTP/1.1" 404 2661
+INFO 2024-12-02 17:54:12,104 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=b0c92aad9761dce8a4ba5fde2e2079ad",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:54:12,105 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:54:12,105 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:54:12,105 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:54:13,659 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/login/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {
+    "username": [
+      "test1"
+    ],
+    "password": [
+      "test1"
+    ]
+  },
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "29",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:54:13,662 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-02 17:54:13,662 log 14015 6123171840 Not Found: /login/
+WARNING 2024-12-02 17:54:13,662 basehttp 14015 6123171840 "POST /login/ HTTP/1.1" 404 2661
+INFO 2024-12-02 17:54:13,664 logging_middleware 14015 6123171840 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255440",
+    "Content-Type": "multipart/form-data; boundary=b9e6b3f18b497dcdd6cfc1686c76f1fb",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:54:13,664 logging_middleware 14015 6123171840 Response: {
+  "type": "response",
+  "status_code": 401,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "WWW-Authenticate": "Token",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-02 17:54:13,664 log 14015 6123171840 Unauthorized: /api/upload-menu/
+WARNING 2024-12-02 17:54:13,664 basehttp 14015 6123171840 "POST /api/upload-menu/ HTTP/1.1" 401 58
+INFO 2024-12-02 17:54:24,311 autoreload 14015 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:54:25,252 autoreload 14559 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:54:26,645 autoreload 14559 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:54:27,294 autoreload 14575 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:54:36,767 autoreload 14575 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:54:37,580 autoreload 14592 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:54:57,404 autoreload 14592 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:54:58,264 autoreload 14604 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:55:59,214 autoreload 14604 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:56:00,242 autoreload 14676 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:56:02,565 autoreload 14676 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:56:03,229 autoreload 14689 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:56:05,605 autoreload 14689 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:56:06,287 autoreload 14699 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:56:12,705 autoreload 14699 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:56:13,454 autoreload 14715 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:57:29,880 autoreload 14715 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-02 17:57:30,793 autoreload 14836 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-02 17:58:07,581 logging_middleware 14836 6135033856 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255529",
+    "Content-Type": "multipart/form-data; boundary=549c4da022f4cdb6887dbadd47ca63ab",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:58:07,583 logging_middleware 14836 6135033856 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "OPTIONS, POST"
+  }
+}
+ERROR 2024-12-02 17:58:07,583 log 14836 6135033856 Internal Server Error: /api/upload-menu/
+ERROR 2024-12-02 17:58:07,583 basehttp 14836 6135033856 "POST /api/upload-menu/ HTTP/1.1" 500 94
+INFO 2024-12-02 17:58:10,590 logging_middleware 14836 6135033856 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255529",
+    "Content-Type": "multipart/form-data; boundary=cbda546dd8560d243dfb17042b7092b5",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-02 17:58:10,591 logging_middleware 14836 6135033856 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "OPTIONS, POST"
+  }
+}
+ERROR 2024-12-02 17:58:10,591 log 14836 6135033856 Internal Server Error: /api/upload-menu/
+ERROR 2024-12-02 17:58:10,591 basehttp 14836 6135033856 "POST /api/upload-menu/ HTTP/1.1" 500 94

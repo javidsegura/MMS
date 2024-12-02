@@ -1,6 +1,13 @@
+
+
 import requests
+from requests.auth import HTTPBasicAuth
 
-#files = {'menu_file': open('path/to/your/menu.pdf', 'rb')}
-response = requests.get('http://localhost:8000/api/restaurants/')
+url = 'http://localhost:8000/api/upload-menu/'
+files = {
+    'menu_file': open('../../others/menuExamples/images/defaultRestaurant.png', 'rb')
+}
 
+# Then make the request
+response = requests.post(url, files=files, data={'user_id': 1}) # Data is failing to work
 print(response.json())
