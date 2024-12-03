@@ -118,6 +118,7 @@ def ai_call(menu, extension):
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=messages
+
         )
 
         content = response.choices[0].message.content.replace('```json', '').replace('```', '').strip()

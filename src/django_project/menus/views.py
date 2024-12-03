@@ -1,23 +1,56 @@
+from .utils.extraction import ai_call
+from .utils.insertion import populate_menu_data
 from django.shortcuts import render
 from rest_framework import viewsets, status
 from rest_framework.decorators import api_view, parser_classes
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
-from .models import Restaurant, Menu, MenuSection, MenuItem, DietaryRestriction
+from .models import (
+    Restaurant, 
+    Menu, 
+    MenuSection, 
+    MenuItem, 
+    DietaryRestriction, 
+    User, 
+    MenuVersion
+)
 from .serializers import (
+    UserSerializer,
     RestaurantSerializer, 
     MenuSerializer,
     MenuSectionSerializer,
     MenuItemSerializer,
-    DietaryRestrictionSerializer
+    DietaryRestrictionSerializer,
+    MenuVersionSerializer
 )
-from .utils.extraction import ai_call
-from .utils.insertion import populate_menu_data
 
 # Class-Based Views
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 class RestaurantViewSet(viewsets.ModelViewSet):
     queryset = Restaurant.objects.all()
     serializer_class = RestaurantSerializer
+
+class MenuVersionViewSet(viewsets.ModelViewSet):
+    queryset = MenuVersion.objects.all()
+    serializer_class = MenuVersionSerializer
+class MenuItemViewSet(viewsets.ModelViewSet):
+    queryset = MenuItem.objects.all()
+    serializer_class = MenuItemSerializer
+
+class MenuViewSet(viewsets.ModelViewSet):
+    queryset = Menu.objects.all()
+    serializer_class = MenuSerializer
+
+class MenuSectionViewSet(viewsets.ModelViewSet):
+    queryset = MenuSection.objects.all()
+    serializer_class = MenuSectionSerializer
+
+class DietaryRestrictionViewSet(viewsets.ModelViewSet):
+    queryset = DietaryRestriction.objects.all()
+    serializer_class = DietaryRestrictionSerializer
+
 
 @api_view(['POST'])
 @parser_classes([MultiPartParser, FormParser])
@@ -35,7 +68,9 @@ def upload_menu(request):
         
         if not menu_file:
             return Response({'error': 'No file provided'}, status=status.HTTP_400_BAD_REQUEST)
-            
+        
+        # User_id object
+        user_id = User.objects.get(id=user_id)
         # Create menu instance
         menu = Menu.objects.create(
             menu_file=menu_file,
@@ -56,6 +91,10 @@ def upload_menu(request):
         # Populate menu data
         try:
             populate_menu_data(menu, menu_json)
+            if menu.restaurant.name:
+                menu_version = MenuVersion.objects.create(restaurant=menu.restaurant) # For each restaurant there is a menu version
+                menu.version = menu_version
+                menu.save()
             return Response({
                 'message': 'Menu processed successfully',
                 'menu_id': menu.id

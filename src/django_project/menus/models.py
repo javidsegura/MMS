@@ -25,15 +25,12 @@ class User(AbstractUser):
 
     def __str__(self): 
         return self.username
-
     class Meta:
         indexes = [
             models.Index(fields=['email']),  # Index for frequent email lookups
             models.Index(fields=['username', 'email']),  # Composite Index
             models.Index(fields=['country', 'city', 'state', 'zip', 'street'])  # Composite Index
         ]
-
-
 class Restaurant(models.Model):
     name = models.CharField(max_length=99, null=True, unique=True)
     phone = models.CharField(max_length=99, null=True, blank=True)
@@ -109,7 +106,7 @@ class MenuSection(models.Model):
     name = models.CharField(max_length=99, null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
     def __str__(self):
-        return f"{self.menu.restaurant.name}:{self.menu.id}:{self.name}"
+        return f"{self.menu.restaurant.name}:{self.menu.version}:{self.name}"
     class Meta:
         verbose_name = "Menu Section"
         verbose_name_plural = "Menu Sections"

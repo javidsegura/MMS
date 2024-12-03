@@ -1475,3 +1475,2948 @@ INFO 2024-12-03 08:48:16,865 logging_middleware 22328 6192082944 Response: {
   }
 }
 INFO 2024-12-03 08:48:16,866 basehttp 22328 6192082944 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:27:12,223 autoreload 28402 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:27:14,228 logging_middleware 28402 6157955072 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:27:14,266 logging_middleware 28402 6157955072 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:27:14 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:27:14,267 basehttp 28402 6157955072 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:27:14,589 basehttp 28402 6174781440 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,590 basehttp 28402 6157955072 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,590 basehttp 28402 6191607808 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,591 basehttp 28402 6208434176 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,591 basehttp 28402 6225260544 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,592 basehttp 28402 6242086912 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,593 basehttp 28402 6242086912 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,604 basehttp 28402 6191607808 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,604 basehttp 28402 6225260544 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,605 basehttp 28402 6242086912 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:14,716 logging_middleware 28402 6242086912 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/favicon.ico",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "image",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:27:14,718 logging_middleware 28402 6242086912 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 11:27:14,718 log 28402 6242086912 Not Found: /favicon.ico
+WARNING 2024-12-03 11:27:14,718 basehttp 28402 6242086912 "GET /favicon.ico HTTP/1.1" 404 2675
+INFO 2024-12-03 11:27:18,002 logging_middleware 28402 6242086912 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:27:18,047 logging_middleware 28402 6242086912 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:27:18 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:27:18,047 basehttp 28402 6242086912 "GET /admin/menus/menu/ HTTP/1.1" 200 28218
+INFO 2024-12-03 11:27:18,069 basehttp 28402 6225260544 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,069 basehttp 28402 6191607808 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,069 basehttp 28402 6157955072 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,071 basehttp 28402 6208434176 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,071 basehttp 28402 6174781440 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,073 basehttp 28402 6191607808 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,073 basehttp 28402 6225260544 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,073 basehttp 28402 6157955072 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,074 logging_middleware 28402 6242086912 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:27:18,075 basehttp 28402 6191607808 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,075 basehttp 28402 6174781440 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,076 basehttp 28402 6225260544 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,077 logging_middleware 28402 6242086912 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:27:18,078 basehttp 28402 6242086912 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:27:18,080 basehttp 28402 6242086912 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,100 basehttp 28402 6242086912 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:18,101 basehttp 28402 6242086912 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:20,083 logging_middleware 28402 6242086912 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/add/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:27:20,104 logging_middleware 28402 6242086912 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:27:20 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:27:20,105 basehttp 28402 6242086912 "GET /admin/menus/menu/add/ HTTP/1.1" 200 14974
+INFO 2024-12-03 11:27:20,120 basehttp 28402 6191607808 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:20,120 basehttp 28402 6157955072 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:20,120 basehttp 28402 6225260544 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:20,121 basehttp 28402 6174781440 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:20,124 logging_middleware 28402 6242086912 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:27:20,124 basehttp 28402 6174781440 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:20,125 logging_middleware 28402 6242086912 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:27:20,125 basehttp 28402 6242086912 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:27:20,127 basehttp 28402 6242086912 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:20,155 basehttp 28402 6242086912 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-12-03 11:27:32,867 logging_middleware 28402 6242086912 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:27:32,882 logging_middleware 28402 6242086912 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:27:32 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:27:32,883 basehttp 28402 6242086912 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:28:46,299 logging_middleware 28402 6258913280 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255529",
+    "Content-Type": "multipart/form-data; boundary=8c4b7d5088286d369974ee8e192001c4",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 11:29:05,037 logging_middleware 28402 6258913280 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "18.74s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+INFO 2024-12-03 11:29:05,037 basehttp 28402 6258913280 "POST /api/upload-menu/ HTTP/1.1" 201 55
+INFO 2024-12-03 11:29:15,322 logging_middleware 28402 6157955072 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:29:15,364 logging_middleware 28402 6157955072 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:29:15 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:29:15,364 basehttp 28402 6157955072 "GET /admin/menus/menu/ HTTP/1.1" 200 29042
+INFO 2024-12-03 11:29:15,393 logging_middleware 28402 6157955072 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:29:15,394 logging_middleware 28402 6157955072 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:29:15,394 basehttp 28402 6157955072 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:29:28,896 logging_middleware 28402 6157955072 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:29:29,000 logging_middleware 28402 6157955072 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.11s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:29:28 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:29:29,001 basehttp 28402 6157955072 "GET /admin/menus/menusection/ HTTP/1.1" 200 49512
+INFO 2024-12-03 11:29:29,022 logging_middleware 28402 6157955072 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:29:29,023 logging_middleware 28402 6157955072 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:29:29,023 basehttp 28402 6157955072 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:29:31,629 logging_middleware 28402 6157955072 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:29:31,666 logging_middleware 28402 6157955072 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:29:31 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:29:31,666 basehttp 28402 6157955072 "GET /admin/menus/menu/ HTTP/1.1" 200 29042
+INFO 2024-12-03 11:29:31,687 logging_middleware 28402 6157955072 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:29:31,688 logging_middleware 28402 6157955072 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:29:31,688 basehttp 28402 6157955072 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:30:01,978 autoreload 28402 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/admin.py changed, reloading.
+INFO 2024-12-03 11:30:02,722 autoreload 28794 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:33:00,699 autoreload 28794 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:33:01,506 autoreload 28876 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:33:04,747 autoreload 28876 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:33:05,289 autoreload 28887 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:34:53,194 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "255529",
+    "Content-Type": "multipart/form-data; boundary=b8a6ff20bfdf1f733a2f7738522526ab",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 11:35:09,129 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "15.93s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "OPTIONS, POST"
+  }
+}
+INFO 2024-12-03 11:35:09,129 basehttp 28887 6134378496 "POST /api/upload-menu/ HTTP/1.1" 201 55
+INFO 2024-12-03 11:35:56,102 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:35:56,155 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.06s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:35:56 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:35:56,156 basehttp 28887 6134378496 "GET /admin/menus/menu/ HTTP/1.1" 200 29873
+INFO 2024-12-03 11:35:56,214 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:35:56,215 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:35:56,216 basehttp 28887 6134378496 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:36:21,074 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "407334",
+    "Content-Type": "multipart/form-data; boundary=9c6520ab1f06e1a3ddb0a76a42832985",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 11:36:59,863 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "38.79s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "OPTIONS, POST"
+  }
+}
+INFO 2024-12-03 11:36:59,864 basehttp 28887 6134378496 "POST /api/upload-menu/ HTTP/1.1" 201 55
+INFO 2024-12-03 11:37:11,147 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:37:11,185 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:37:11 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:37:11,185 basehttp 28887 6134378496 "GET /admin/menus/menu/ HTTP/1.1" 200 30701
+INFO 2024-12-03 11:37:11,213 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:37:11,214 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:37:11,215 basehttp 28887 6134378496 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:37:17,166 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:37:17,278 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.12s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:37:17 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:37:17,278 basehttp 28887 6134378496 "GET /admin/menus/menusection/ HTTP/1.1" 200 53497
+INFO 2024-12-03 11:37:17,302 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:37:17,303 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:37:17,303 basehttp 28887 6134378496 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:37:19,030 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:37:19,056 log 28887 6134378496 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:37:19,058 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:37:19,059 basehttp 28887 6134378496 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156088
+INFO 2024-12-03 11:37:29,799 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:37:29,915 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.12s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:37:29 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:37:29,915 basehttp 28887 6134378496 "GET /admin/menus/menusection/ HTTP/1.1" 200 53497
+INFO 2024-12-03 11:37:31,579 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuitem/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:37:31,777 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.20s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:37:31 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:37:31,777 basehttp 28887 6134378496 "GET /admin/menus/menuitem/ HTTP/1.1" 200 83385
+INFO 2024-12-03 11:37:31,801 logging_middleware 28887 6134378496 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:37:31,801 logging_middleware 28887 6134378496 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:37:31,802 basehttp 28887 6134378496 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:39:08,624 autoreload 29368 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:39:10,714 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:10,739 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:10 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:10,740 basehttp 29368 6131281920 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:39:19,669 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:19,793 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.13s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:19 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:19,793 basehttp 29368 6131281920 "GET /admin/menus/menusection/ HTTP/1.1" 200 53497
+INFO 2024-12-03 11:39:19,813 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:19,816 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:39:19,817 basehttp 29368 6131281920 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:39:22,714 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:22,727 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:22 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:22,727 basehttp 29368 6131281920 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:39:24,148 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:24,188 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:24 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:24,188 basehttp 29368 6131281920 "GET /admin/menus/menu/ HTTP/1.1" 200 30701
+INFO 2024-12-03 11:39:24,202 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:24,203 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:39:24,203 basehttp 29368 6131281920 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:39:26,805 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:26,820 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:26 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:26,820 basehttp 29368 6131281920 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:39:28,150 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:28,267 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.12s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:28 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:28,268 basehttp 29368 6131281920 "GET /admin/menus/menusection/ HTTP/1.1" 200 53497
+INFO 2024-12-03 11:39:28,286 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:28,287 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:39:28,287 basehttp 29368 6131281920 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:39:30,828 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuitem/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:31,013 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.19s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:30 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:31,013 basehttp 29368 6131281920 "GET /admin/menus/menuitem/ HTTP/1.1" 200 83385
+INFO 2024-12-03 11:39:31,035 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:31,036 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:39:31,036 basehttp 29368 6131281920 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:39:32,055 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:39:32,080 log 29368 6131281920 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:39:32,083 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:39:32,083 basehttp 29368 6131281920 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156085
+INFO 2024-12-03 11:39:33,773 logging_middleware 29368 6131281920 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuitem/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:39:33,963 logging_middleware 29368 6131281920 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.19s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:39:33 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:39:33,963 basehttp 29368 6131281920 "GET /admin/menus/menuitem/ HTTP/1.1" 200 83385
+INFO 2024-12-03 11:40:00,965 autoreload 29368 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:40:01,967 autoreload 29426 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:40:26,662 autoreload 29426 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:40:27,052 autoreload 29476 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:40:32,209 autoreload 29476 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:40:32,807 autoreload 29490 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:40:34,455 logging_middleware 29490 6122876928 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:40:34,486 log 29490 6122876928 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:40:34,488 logging_middleware 29490 6122876928 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:40:34,489 basehttp 29490 6122876928 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156085
+INFO 2024-12-03 11:41:00,585 autoreload 29490 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:41:00,952 autoreload 29523 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:41:03,103 autoreload 29523 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:41:03,642 autoreload 29541 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:41:06,937 autoreload 29541 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:41:07,188 autoreload 29550 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:41:09,337 autoreload 29550 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:41:09,773 autoreload 29557 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:41:12,957 logging_middleware 29557 6134591488 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:41:12,984 log 29557 6134591488 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:41:12,986 logging_middleware 29557 6134591488 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:41:12,986 basehttp 29557 6134591488 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156222
+INFO 2024-12-03 11:42:29,547 autoreload 29557 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:42:30,407 autoreload 29639 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:42:56,651 autoreload 29713 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:42:58,054 logging_middleware 29713 6137393152 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:42:58,092 logging_middleware 29713 6137393152 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:42:58 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:42:58,092 basehttp 29713 6137393152 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:43:00,039 logging_middleware 29713 6137393152 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:43:00,065 log 29713 6137393152 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:43:00,067 logging_middleware 29713 6137393152 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:43:00,067 basehttp 29713 6137393152 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156070
+INFO 2024-12-03 11:43:02,000 logging_middleware 29713 6137393152 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:43:02,013 logging_middleware 29713 6137393152 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:43:02 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:43:02,015 basehttp 29713 6137393152 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:43:44,786 logging_middleware 29713 6137393152 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:43:44,814 log 29713 6137393152 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:43:44,816 logging_middleware 29713 6137393152 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:43:44,816 basehttp 29713 6137393152 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156070
+INFO 2024-12-03 11:44:29,446 autoreload 29809 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:44:30,663 logging_middleware 29809 6163460096 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:44:30,699 logging_middleware 29809 6163460096 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:44:30 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:44:30,700 basehttp 29809 6163460096 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:44:32,074 logging_middleware 29809 6163460096 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:44:32,100 log 29809 6163460096 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:44:32,103 logging_middleware 29809 6163460096 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:44:32,103 basehttp 29809 6163460096 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156070
+INFO 2024-12-03 11:44:58,309 autoreload 29809 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/models.py changed, reloading.
+INFO 2024-12-03 11:44:59,054 autoreload 29827 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:45:26,986 autoreload 29917 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:45:28,931 logging_middleware 29917 6131412992 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:45:28,965 logging_middleware 29917 6131412992 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:45:28 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:45:28,966 basehttp 29917 6131412992 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:45:31,915 logging_middleware 29917 6131412992 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:45:31,941 log 29917 6131412992 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:45:31,942 logging_middleware 29917 6131412992 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:45:31,943 basehttp 29917 6131412992 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156070
+INFO 2024-12-03 11:48:39,005 autoreload 30344 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:48:40,368 logging_middleware 30344 6132068352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:48:40,410 logging_middleware 30344 6132068352 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:48:40 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:48:40,410 basehttp 30344 6132068352 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:48:44,839 logging_middleware 30344 6132068352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+ERROR 2024-12-03 11:48:44,864 log 30344 6132068352 Internal Server Error: /admin/menus/menuversion/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 145, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 545, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/views/main.py", line 216, in get_filters
+    spec = field_list_filter_class(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 217, in create
+    return list_filter_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 232, in __init__
+    self.lookup_choices = self.field_choices(field, request, model_admin)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/contrib/admin/filters.py", line 273, in field_choices
+    return field.get_choices(include_blank=False, ordering=ordering)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1076, in get_choices
+    return (blank_choice if include_blank else []) + [
+                                                     ^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1077, in <listcomp>
+    (choice_func(x), str(x)) for x in qs
+                     ^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+INFO 2024-12-03 11:48:44,866 logging_middleware 30344 6132068352 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 11:48:44,867 basehttp 30344 6132068352 "GET /admin/menus/menuversion/ HTTP/1.1" 500 156070
+INFO 2024-12-03 11:48:46,235 logging_middleware 30344 6132068352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:48:46,247 logging_middleware 30344 6132068352 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:48:46 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:48:46,248 basehttp 30344 6132068352 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 11:48:47,153 logging_middleware 30344 6132068352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuitem/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:48:47,394 logging_middleware 30344 6132068352 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.24s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:48:47 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:48:47,394 basehttp 30344 6132068352 "GET /admin/menus/menuitem/ HTTP/1.1" 200 86777
+INFO 2024-12-03 11:48:47,415 logging_middleware 30344 6132068352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:48:47,417 logging_middleware 30344 6132068352 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:48:47,418 basehttp 30344 6132068352 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:48:54,596 logging_middleware 30344 6132068352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuitem/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:48:54,704 logging_middleware 30344 6132068352 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.11s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 11:48:54 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 11:48:54,705 basehttp 30344 6132068352 "GET /admin/menus/menusection/ HTTP/1.1" 200 55144
+INFO 2024-12-03 11:48:54,732 logging_middleware 30344 6132068352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 11:48:54,733 logging_middleware 30344 6132068352 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-03 11:48:54,733 basehttp 30344 6132068352 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-03 11:50:24,450 autoreload 30344 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:50:25,352 autoreload 30430 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:50:27,573 autoreload 30430 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:50:28,095 autoreload 30441 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:50:41,490 autoreload 30441 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:50:42,239 autoreload 30459 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:50:52,616 autoreload 30459 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:50:53,436 autoreload 30477 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:50:54,578 autoreload 30477 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:50:55,110 autoreload 30481 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:51:06,486 autoreload 30481 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:51:07,185 autoreload 30496 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:51:11,453 autoreload 30496 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:51:12,100 autoreload 30509 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:51:51,022 autoreload 30509 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:51:51,704 autoreload 30549 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:53:56,530 autoreload 30549 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:53:57,313 autoreload 30708 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:54:03,544 autoreload 30708 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:54:04,053 autoreload 30726 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:54:57,235 autoreload 30726 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:54:57,956 autoreload 30772 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:55:00,186 autoreload 30772 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:55:00,721 autoreload 30789 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:55:02,941 autoreload 30789 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:55:03,484 autoreload 30793 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:56:17,967 autoreload 30793 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:56:18,629 autoreload 30845 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:56:23,913 autoreload 30845 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:56:24,456 autoreload 30859 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:56:35,854 autoreload 30859 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/serializers.py changed, reloading.
+INFO 2024-12-03 11:56:36,481 autoreload 30882 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:56:40,747 autoreload 30882 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:56:41,274 autoreload 30894 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:56:48,588 autoreload 30894 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:56:49,111 autoreload 30911 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:56:53,370 autoreload 30911 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:56:53,892 autoreload 30923 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:57:07,320 autoreload 30923 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:57:08,059 autoreload 30936 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:57:09,277 autoreload 30936 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:57:09,785 autoreload 30945 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:57:20,216 autoreload 30945 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:57:20,893 autoreload 30984 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:57:23,082 autoreload 30984 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:57:23,586 autoreload 30993 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:57:33,953 autoreload 30993 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:57:34,620 autoreload 31013 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:57:49,057 autoreload 31013 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:57:49,590 autoreload 31030 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:57:57,986 autoreload 31030 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:57:58,516 autoreload 31046 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:58:00,761 autoreload 31046 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:58:01,319 autoreload 31062 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:58:29,024 autoreload 31062 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 11:58:29,685 autoreload 31077 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:58:30,895 autoreload 31077 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 11:58:31,471 autoreload 31082 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:58:38,787 autoreload 31082 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 11:58:39,323 autoreload 31099 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:58:43,597 autoreload 31099 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 11:58:44,180 autoreload 31111 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 11:59:10,868 autoreload 31111 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 11:59:11,834 autoreload 31127 8088310528 Watching for file changes with StatReloader

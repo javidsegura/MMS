@@ -70,7 +70,7 @@ class MenuAdmin(admin.ModelAdmin):
         """
         # Log the event
     
-        super().save_model(request, menu, form, change) # maybe this can be edeleted with super.savaemodelr
+        super().save_model(request, menu, form, change) 
 
 
         if menu.menu_file and not change:  # Only process on new uploads
@@ -103,9 +103,6 @@ class MenuAdmin(admin.ModelAdmin):
                 ai_call_log.other = str(e)
                 ai_call_log.save()
                 menu.delete() # consider deleting it instead 
-                
-
-
 
     def menu_file_link(self, menu): # referred in list_display
         if menu.menu_file:
