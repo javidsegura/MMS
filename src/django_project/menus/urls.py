@@ -14,5 +14,6 @@ router.register('dietary-restrictions', views.DietaryRestrictionViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('upload-menu/', views.upload_menu, name='upload-menu'),
+    path("all-cheap-items/", views.all_cheap_items, name="all-cheap-items"),
 ] 
 

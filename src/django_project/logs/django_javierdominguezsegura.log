@@ -5017,3 +5017,616 @@ INFO 2024-12-03 14:08:12,439 logging_middleware 36314 6164148224 Response: {
   }
 }
 INFO 2024-12-03 14:08:12,439 basehttp 36314 6164148224 "PATCH /api/users/1/ HTTP/1.1" 200 421
+INFO 2024-12-03 14:17:02,984 autoreload 36314 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 14:17:04,104 autoreload 37897 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:19:07,403 autoreload 37897 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 14:19:08,360 autoreload 37961 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:19:09,544 autoreload 37961 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 14:19:10,227 autoreload 37967 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:19:13,425 autoreload 37967 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 14:19:14,083 autoreload 37984 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:19:20,348 autoreload 37984 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 14:19:21,072 autoreload 37995 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:19:24,297 autoreload 37995 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 14:19:25,034 autoreload 38013 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:19:40,611 autoreload 38013 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 14:19:41,703 autoreload 38081 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:24:42,721 autoreload 38367 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:27:48,405 autoreload 38367 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/django_project/settings.py changed, reloading.
+INFO 2024-12-03 14:27:49,407 autoreload 38681 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:27:51,797 autoreload 38681 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/django_project/settings.py changed, reloading.
+INFO 2024-12-03 14:27:52,512 autoreload 38702 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:28:10,144 autoreload 38702 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/manage.py changed, reloading.
+INFO 2024-12-03 14:28:11,185 autoreload 38734 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:28:13,538 autoreload 38734 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/manage.py changed, reloading.
+INFO 2024-12-03 14:28:14,258 autoreload 38752 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:28:25,785 autoreload 38752 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/manage.py changed, reloading.
+INFO 2024-12-03 14:28:26,725 autoreload 38772 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:29:07,688 autoreload 38900 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:30:35,725 logging_middleware 38900 6138245120 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM users WHERE age > %s",
+    "params": [
+      25
+    ]
+  },
+  "headers": {
+    "Content-Length": "63",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+WARNING 2024-12-03 14:30:35,729 log 38900 6138245120 Forbidden (CSRF cookie not set.): /api/all-cheap-items/
+INFO 2024-12-03 14:30:35,729 logging_middleware 38900 6138245120 Response: {
+  "type": "response",
+  "status_code": 403,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 14:30:35,730 basehttp 38900 6138245120 "POST /api/all-cheap-items/ HTTP/1.1" 403 2855
+INFO 2024-12-03 14:32:08,937 logging_middleware 38900 6138245120 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM users WHERE age > %s",
+    "params": [
+      25
+    ]
+  },
+  "headers": {
+    "Content-Length": "63",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+WARNING 2024-12-03 14:32:08,939 log 38900 6138245120 Forbidden (CSRF cookie not set.): /api/all-cheap-items/
+INFO 2024-12-03 14:32:08,939 logging_middleware 38900 6138245120 Response: {
+  "type": "response",
+  "status_code": 403,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 14:32:08,939 basehttp 38900 6138245120 "POST /api/all-cheap-items/ HTTP/1.1" 403 2855
+INFO 2024-12-03 14:35:43,743 autoreload 38900 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 14:35:44,888 autoreload 39642 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:35:55,824 autoreload 39741 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:35:59,794 logging_middleware 39741 6134853632 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM users WHERE age > %s",
+    "params": [
+      25
+    ]
+  },
+  "headers": {
+    "Content-Length": "63",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:35:59,803 logging_middleware 39741 6134853632 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+WARNING 2024-12-03 14:35:59,803 log 39741 6134853632 Bad Request: /api/all-cheap-items/
+WARNING 2024-12-03 14:35:59,804 basehttp 39741 6134853632 "POST /api/all-cheap-items/ HTTP/1.1" 400 75
+INFO 2024-12-03 14:39:00,761 logging_middleware 39741 6134853632 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SHOW TABLES;",
+    "params": []
+  },
+  "headers": {
+    "Content-Length": "39",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:39:00,770 logging_middleware 39741 6134853632 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+INFO 2024-12-03 14:39:00,771 basehttp 39741 6134853632 "POST /api/all-cheap-items/ HTTP/1.1" 200 21
+INFO 2024-12-03 14:39:28,526 logging_middleware 39741 6134853632 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SHOW TABLES;",
+    "params": []
+  },
+  "headers": {
+    "Content-Length": "39",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:39:28,531 logging_middleware 39741 6134853632 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+INFO 2024-12-03 14:39:28,531 basehttp 39741 6134853632 "POST /api/all-cheap-items/ HTTP/1.1" 200 21
+INFO 2024-12-03 14:40:35,906 autoreload 39741 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 14:40:37,032 autoreload 40114 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:40:40,902 logging_middleware 40114 6156005376 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SHOW TABLES;",
+    "params": []
+  },
+  "headers": {
+    "Content-Length": "39",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:40:40,908 logging_middleware 40114 6156005376 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+INFO 2024-12-03 14:40:40,908 basehttp 40114 6156005376 "POST /api/all-cheap-items/ HTTP/1.1" 200 1083
+INFO 2024-12-03 14:46:05,982 logging_middleware 40114 6156005376 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM menus_users WHERE age > %s",
+    "params": [
+      25
+    ]
+  },
+  "headers": {
+    "Content-Length": "69",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:46:05,990 logging_middleware 40114 6156005376 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+WARNING 2024-12-03 14:46:05,990 log 40114 6156005376 Bad Request: /api/all-cheap-items/
+WARNING 2024-12-03 14:46:05,991 basehttp 40114 6156005376 "POST /api/all-cheap-items/ HTTP/1.1" 400 81
+INFO 2024-12-03 14:46:43,671 logging_middleware 40114 6156005376 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM menus_user WHERE age > %s",
+    "params": [
+      25
+    ]
+  },
+  "headers": {
+    "Content-Length": "68",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:46:43,674 logging_middleware 40114 6156005376 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+WARNING 2024-12-03 14:46:43,674 log 40114 6156005376 Bad Request: /api/all-cheap-items/
+WARNING 2024-12-03 14:46:43,674 basehttp 40114 6156005376 "POST /api/all-cheap-items/ HTTP/1.1" 400 63
+INFO 2024-12-03 14:47:35,971 logging_middleware 40114 6156005376 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM menus_user WHERE is_staff = %s",
+    "params": [
+      1
+    ]
+  },
+  "headers": {
+    "Content-Length": "72",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:47:35,977 logging_middleware 40114 6156005376 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+INFO 2024-12-03 14:47:35,977 basehttp 40114 6156005376 "POST /api/all-cheap-items/ HTTP/1.1" 200 821
+INFO 2024-12-03 14:51:13,878 logging_middleware 40114 6156005376 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 14:51:14,021 logging_middleware 40114 6156005376 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.19s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 14:51:13 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 14:51:14,022 basehttp 40114 6156005376 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 14:51:14,516 basehttp 40114 6325039104 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,518 basehttp 40114 6172831744 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,518 basehttp 40114 6156005376 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,520 basehttp 40114 6341865472 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,522 basehttp 40114 6358691840 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,524 basehttp 40114 6375518208 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,531 basehttp 40114 6375518208 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,551 basehttp 40114 6358691840 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,552 basehttp 40114 6341865472 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,553 basehttp 40114 6375518208 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-03 14:51:14,741 logging_middleware 40114 6375518208 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/favicon.ico",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "image",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 14:51:14,747 logging_middleware 40114 6375518208 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 14:51:14,747 log 40114 6375518208 Not Found: /favicon.ico
+WARNING 2024-12-03 14:51:14,748 basehttp 40114 6375518208 "GET /favicon.ico HTTP/1.1" 404 2675
+INFO 2024-12-03 14:51:36,124 logging_middleware 40114 6375518208 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/upload-menu",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 14:51:36,131 logging_middleware 40114 6375518208 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 14:51:36,131 log 40114 6375518208 Not Found: /admin/upload-menu
+WARNING 2024-12-03 14:51:36,132 basehttp 40114 6375518208 "GET /admin/upload-menu HTTP/1.1" 404 7234
+INFO 2024-12-03 14:52:06,978 logging_middleware 40114 6375518208 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Purpose": "prefetch;prerender",
+    "Purpose": "prefetch",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 14:52:06,992 logging_middleware 40114 6375518208 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Tue, 03 Dec 2024 14:52:06 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-03 14:52:06,992 basehttp 40114 6375518208 "GET /admin/ HTTP/1.1" 200 13964
+INFO 2024-12-03 14:52:07,627 logging_middleware 40114 6375518208 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/all-cheap-items",
+  "user": "test1",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=jbCoRnGhM3vRewJS8tqiCZDmL3lVlcwX; sessionid=vrazqfl5vyjwwdx2k0u4gflmpylk6dcb"
+  }
+}
+INFO 2024-12-03 14:52:07,636 logging_middleware 40114 6375518208 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 14:52:07,636 log 40114 6375518208 Not Found: /admin/all-cheap-items
+WARNING 2024-12-03 14:52:07,636 basehttp 40114 6375518208 "GET /admin/all-cheap-items HTTP/1.1" 404 7246
+INFO 2024-12-03 14:52:52,142 logging_middleware 40114 6392344576 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM menus_user WHERE is_staff = %s",
+    "params": [
+      1
+    ]
+  },
+  "headers": {
+    "Content-Length": "72",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:52:52,145 logging_middleware 40114 6392344576 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+INFO 2024-12-03 14:52:52,145 basehttp 40114 6392344576 "POST /api/all-cheap-items/ HTTP/1.1" 200 821
+INFO 2024-12-03 14:55:39,856 autoreload 40936 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:55:51,874 logging_middleware 40936 6194212864 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "query": "SELECT * FROM menus_user WHERE is_staff = %s",
+    "params": [
+      1
+    ]
+  },
+  "headers": {
+    "Content-Length": "72",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:55:51,879 logging_middleware 40936 6194212864 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+INFO 2024-12-03 14:55:51,879 basehttp 40936 6194212864 "POST /api/all-cheap-items/ HTTP/1.1" 200 821
+INFO 2024-12-03 14:57:08,452 autoreload 40936 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 14:57:09,756 autoreload 41368 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:57:17,262 autoreload 41368 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-03 14:57:18,205 autoreload 41395 8088310528 Watching for file changes with StatReloader

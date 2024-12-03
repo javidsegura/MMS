@@ -1,7 +1,7 @@
 import requests
 
 """
-The JSON  passed should be {db_field: value} (not not all are mandatory)
+The JSON  passed should be {db_field: value} (note not all are mandatory)
 """
 
 class UploadMenu:
@@ -70,6 +70,30 @@ class Users:
             except Exception as e:
                 print(f"Error patching user: {e}")
 
+class DatabaseQueries():
+    def execute_raw_sql(self, query: str, params: tuple = None):
+        try:
+            url = 'http://localhost:8000/api/all-cheap-items/'
+            data = {
+                'query': query,
+                'params': params if params else []
+            }
+            headers = {'Content-Type': 'application/json'}
+            response = requests.post(url, 
+                                    json=data,
+                                    headers=headers)
+            
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print(f"Server error: {response.text}")
+                return None
+                
+        except Exception as e:
+            print(f"Error executing raw SQL: {e}")
+            return None
+
 if __name__ == "__main__":
-    users = Users()
-    users.patch_user(1, {"name": "Dana Smith"})
+    db = DatabaseQueries()
+    temp = db.execute_raw_sql("SELECT * FROM menus_user WHERE is_staff = %s", (1,))
+    print(temp)
