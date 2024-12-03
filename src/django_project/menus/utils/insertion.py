@@ -5,12 +5,12 @@ After png info has been extracted, write it to the database.
 
 from menus.models import MenuItem, MenuSection, DietaryRestriction, AuditLog, Restaurant
 
-def populate_menu_data(menu, menu_data: dict):
+def populate_menu_data(menu, menu_data: dict) -> AuditLog:
     print(f"Populating menu data for {menu}")
-    # ai_insertion_restaurant_log = AuditLog.objects.create(
-    #     phase="Inserting data",
-    #     status="Processing"
-    # )
+    ai_insertion_log = AuditLog.objects.create(
+        phase="Inserting data",
+        status="Processing"
+    )
     try:
         # Get or create restaurant based on name
         restaurant_info = menu_data.get('restaurant_info', {})
@@ -75,7 +75,7 @@ def populate_menu_data(menu, menu_data: dict):
                         state=state,
                         zip=zip if zip != -1 else None,
                     )
-                menu.save()  # Save the menu with the restaurant reference; IS THIS NECESSARY?
+                menu.save()  # Save the menu with the saved restaurant
         
         # Create menu sections and populate them with items 
         for section_data in menu_data.get('menu_sections', []):
@@ -111,12 +111,11 @@ def populate_menu_data(menu, menu_data: dict):
                         )
                         menu_item.dietary_restrictions.add(restriction_obj)
             
-        # ai_process_log.status = "Processed"
-        # ai_process_log.save()
+        ai_insertion_log.status = "Success"
+        return ai_insertion_log
                 
     except Exception as e:
         print(f"Error in populate_menu_data: {str(e)}")
-        # ai_insertion_log.status = "Failed"
-        # ai_insertion_log.other = str(e)
-        # ai_insertion_log.save()
-        raise ValueError(f"Error processing menu data: {str(e)}")
+        ai_insertion_log.status = "Failed"
+        ai_insertion_log.other = str(e)
+        return ai_insertion_log

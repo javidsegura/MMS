@@ -23,6 +23,9 @@ from .serializers import (
     DietaryRestrictionSerializer,
     MenuVersionSerializer
 )
+from django.http import JsonResponse
+from django.db import connection
+import json
 
 # Class-Based Views
 class UserViewSet(viewsets.ModelViewSet):
@@ -112,10 +115,6 @@ def upload_menu(request):
             {'error': f'Server error: {str(e)}'}, 
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
-
-from django.http import JsonResponse
-from django.db import connection
-import json
 
 from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt

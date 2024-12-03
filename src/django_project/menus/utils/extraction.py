@@ -7,7 +7,7 @@ from PyPDF2 import PdfReader
 
 # TO DO: get a dict with all the info. Then write it to the db
 
-def ai_call(menu, extension):
+def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
     """ Send the menu file to OpenAI to process 
     
     Note: extension is the file extension of the menu file (e.g: .png, .html, .pdf)
@@ -17,7 +17,7 @@ def ai_call(menu, extension):
     menu_file = menu.menu_file
     ai_call_log = AuditLog.objects.create(
         phase="Extraction",
-        status="Started"
+        status="Processing"
     )
     try:
         if extension not in ["png", "html", "pdf", "jpg", "jpeg"]:
@@ -140,7 +140,7 @@ def ai_call(menu, extension):
                 
             print(f"Successfully parsed JSON: {json_response}")
             
-            ai_call_log.status = "Finished Successfully"
+            ai_call_log.status = "Success"
             return json_response, ai_call_log
         
         except Exception as e:

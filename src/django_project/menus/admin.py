@@ -82,26 +82,27 @@ class MenuAdmin(admin.ModelAdmin):
             uploaded_log.status = "Stored successfully"
             try:
                 extension = menu.menu_file.name.split(".")[-1]
-                menu_json, ai_call_log = ai_call(menu, extension=extension)
+                menu_json, extraction_log = ai_call(menu, extension=extension)
                 if menu_json is None:
                     raise ValueError("No menu_json returned from AI call")
                 
-                populate_menu_data(menu, menu_json)
+                insertion_log = populate_menu_data(menu, menu_json)
                 if menu.restaurant.name:
                     menu_version = MenuVersion.objects.create(restaurant=menu.restaurant) # For each restaurant there is a menu version
                     menu.version = menu_version
                     menu.save()
                     uploaded_log.menu_version = menu_version
-                    ai_call_log.menu_version = menu_version
+                    extraction_log.menu_version = menu_version
+                    insertion_log.menu_version = menu_version
                     uploaded_log.save()
-                    ai_call_log.save()
-
+                    extraction_log.save()
+                    insertion_log.save()
                 else:
                     raise ValueError("Restaurant must be set before creating MenuVersion")
             except Exception as e:
-                ai_call_log.status = "Failed"
-                ai_call_log.other = str(e)
-                ai_call_log.save()
+                extraction_log.status = "Failed"
+                extraction_log.other = str(e)
+                extraction_log.save()
                 menu.delete() # consider deleting it instead 
 
     def menu_file_link(self, menu): # referred in list_display
@@ -139,7 +140,7 @@ class MenuVersionAdmin(admin.ModelAdmin):
 
 @admin.register(AuditLog)
 class AuditLogAdmin(admin.ModelAdmin):
-    list_display = ('id', 'menu_version', 'status', 'phase', 
+    list_display = ('id', 'menu_version', 'phase', 'status',
                     'time_registered', 'other', 'last_edited')
     list_filter = ('status',)
     readonly_fields = ('menu_version', 'status', 'phase', 'other', "time_registered", "other")
