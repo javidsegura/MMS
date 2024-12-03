@@ -1,3 +1,15 @@
+"""
+This module defines middleware for logging HTTP requests and responses in a Django application.
+It logs key details such as request headers, parameters, body, and response details, including
+status code, headers, and execution time.
+
+Dependencies:
+    - logging
+    - json
+    - time
+    - django.conf.settings
+"""
+
 import logging
 import json
 import time
@@ -5,11 +17,34 @@ from django.conf import settings
 
 logger = logging.getLogger('app')
 
+
 class LoggingMiddleware:
+    """
+    Middleware for logging HTTP requests and responses in the application.
+
+    Attributes:
+        get_response (callable): The next middleware or view in the Django request/response cycle.
+    """
+
     def __init__(self, get_response):
+        """
+        Initializes the middleware with the get_response function.
+
+        Args:
+            get_response (callable): The next middleware or view in the request/response cycle.
+        """
         self.get_response = get_response
 
     def __call__(self, request):
+        """
+        Handles the request and response logging.
+
+        Args:
+            request (HttpRequest): The incoming HTTP request.
+
+        Returns:
+            HttpResponse: The outgoing HTTP response after processing the request.
+        """
         # Start timing the request
         start_time = time.time()
 
@@ -28,7 +63,20 @@ class LoggingMiddleware:
         return response
 
     def log_request(self, request):
-        # Get request body
+        """
+        Logs details about the incoming HTTP request.
+
+        Args:
+            request (HttpRequest): The HTTP request to log.
+
+        Captures:
+            - Request method (GET, POST, etc.)
+            - Path
+            - User (authenticated user or anonymous)
+            - GET and POST parameters
+            - Request body (if not binary)
+            - Headers
+        """
         body = None
         if request.body:
             try:
@@ -52,7 +100,19 @@ class LoggingMiddleware:
         logger.info(f"Request: {json.dumps(log_data, indent=2)}")
 
     def log_response(self, response, duration):
-        # Get response content
+        """
+        Logs details about the outgoing HTTP response.
+
+        Args:
+            response (HttpResponse): The HTTP response to log.
+            duration (float): The time taken to process the request, in seconds.
+
+        Captures:
+            - Response status code
+            - Response content (if not binary)
+            - Headers
+            - Duration of the request
+        """
         content = None
         if hasattr(response, 'content'):
             if response.get('Content-Type', '').startswith(('image/', 'application/', 'multipart/form-data')):
