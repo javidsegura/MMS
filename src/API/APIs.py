@@ -94,6 +94,10 @@ class DatabaseQueries():
             return None
 
 if __name__ == "__main__":
-    db = DatabaseQueries()
-    temp = db.execute_raw_sql("SELECT * FROM menus_user WHERE is_staff = %s", (1,))
-    print(temp)
+    users = Users()
+    users.add_user(
+        json={"name": "TestUser", 
+              "password": "TestPassword", 
+              "username": "TestUsername"})
+    
+   

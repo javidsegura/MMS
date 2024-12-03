@@ -6227,3 +6227,778 @@ INFO 2024-12-03 15:43:47,142 logging_middleware 45742 8088310528 Response: {
     "Allow": "GET, POST, HEAD, OPTIONS"
   }
 }
+INFO 2024-12-03 16:26:00,762 autoreload 48581 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 16:26:51,495 logging_middleware 48581 6122205184 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 16:26:51,520 logging_middleware 48581 6122205184 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:26:51,520 basehttp 48581 6122205184 "GET /api/users/ HTTP/1.1" 200 1641
+INFO 2024-12-03 16:27:33,456 logging_middleware 48581 6122205184 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "Test User",
+    "password": "Test Password",
+    "username": "Test Username"
+  },
+  "headers": {
+    "Content-Length": "79",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 16:27:33,461 logging_middleware 48581 6122205184 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 16:27:33,461 log 48581 6122205184 Bad Request: /api/users/
+WARNING 2024-12-03 16:27:33,462 basehttp 48581 6122205184 "POST /api/users/ HTTP/1.1" 400 112
+INFO 2024-12-03 16:27:48,147 logging_middleware 48581 6122205184 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "TestUser",
+    "password": "TestPassword",
+    "username": "TestUsername"
+  },
+  "headers": {
+    "Content-Length": "76",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 16:27:48,166 logging_middleware 48581 6122205184 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:27:48,166 basehttp 48581 6122205184 "POST /api/users/ HTTP/1.1" 201 318
+INFO 2024-12-03 16:30:25,816 logging_middleware 49433 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:30:25,818 logging_middleware 49433 8088310528 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 16:30:25,818 log 49433 8088310528 Bad Request: /api/users/
+INFO 2024-12-03 16:30:25,819 logging_middleware 49433 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:30:25,820 logging_middleware 49433 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:30:42,314 logging_middleware 49514 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:30:42,316 logging_middleware 49514 8088310528 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 16:30:42,316 log 49514 8088310528 Bad Request: /api/users/
+INFO 2024-12-03 16:30:42,317 logging_middleware 49514 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:30:42,318 logging_middleware 49514 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:31:11,263 logging_middleware 49565 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:31:11,266 logging_middleware 49565 8088310528 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 16:31:11,266 log 49565 8088310528 Bad Request: /api/users/
+INFO 2024-12-03 16:31:11,266 logging_middleware 49565 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:31:11,267 logging_middleware 49565 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:32:32,418 logging_middleware 49768 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:32:32,421 logging_middleware 49768 8088310528 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 16:32:32,421 log 49768 8088310528 Bad Request: /api/users/
+INFO 2024-12-03 16:32:32,422 logging_middleware 49768 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:32:32,423 logging_middleware 49768 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:33:50,079 logging_middleware 49923 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:33:50,087 logging_middleware 49923 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:33:50,088 logging_middleware 49923 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:33:50,091 logging_middleware 49923 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:34:36,252 logging_middleware 50010 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:34:36,259 logging_middleware 50010 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:34:36,260 logging_middleware 50010 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:34:36,262 logging_middleware 50010 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:34:52,600 logging_middleware 50063 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:34:52,608 logging_middleware 50063 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:34:52,609 logging_middleware 50063 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:34:52,613 logging_middleware 50063 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:35:16,843 logging_middleware 50142 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:35:16,851 logging_middleware 50142 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:35:16,852 logging_middleware 50142 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:35:16,857 logging_middleware 50142 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:35:52,359 logging_middleware 50238 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:35:52,368 logging_middleware 50238 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:35:52,369 logging_middleware 50238 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:35:52,372 logging_middleware 50238 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:36:16,453 logging_middleware 50295 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:36:16,462 logging_middleware 50295 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:36:16,462 logging_middleware 50295 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:36:16,467 logging_middleware 50295 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:39:03,839 logging_middleware 50387 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:39:03,847 logging_middleware 50387 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:39:03,848 logging_middleware 50387 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:39:03,852 logging_middleware 50387 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:39:42,793 logging_middleware 50448 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:39:42,803 logging_middleware 50448 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:39:42,803 logging_middleware 50448 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:39:42,806 logging_middleware 50448 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:44:36,572 logging_middleware 50757 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:44:36,581 logging_middleware 50757 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:44:36,581 logging_middleware 50757 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:44:36,592 logging_middleware 50757 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:44:53,069 logging_middleware 50805 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "261",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 16:44:53,077 logging_middleware 50805 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 16:44:53,078 logging_middleware 50805 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/usersaa/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 16:44:53,084 logging_middleware 50805 8088310528 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 16:44:53,084 log 50805 8088310528 Not Found: /api/usersaa/

@@ -5,18 +5,21 @@ from .serializers import RestaurantSerializer
 # Create your tests here.
 
 # Testing views
-# class MenuTestCase(TestCase):
-#     def test_get_restaurants(self):
-#         post = self.client.post("http://localhost:8000/api/restaurants/", 
-#                                json={"name": "TestRestaurant"})
-#         response = self.client.get("http://localhost:8000/api/restaurants/")
-#         self.assertEqual(response.status_code, 200)
-#         self.assertIn('TestRestaurant', response.json())
-#         self.assertEqual(len(response.json()), 1)
-#         print(f"Restaurants: {response.json()}")    
+class MenuTestCase(TestCase):
+    def testUsers(self):
+        url = 'http://localhost:8000/api/users/'
+        userResponse = self.client.post(url, 
+                                     data={"name": "TestUser", 
+                                     "password": "TestPassword", 
+                                     "username": "TestUsername"})
+        response = self.client.get("http://localhost:8000/api/users/")
+        print(f"Users: {response.json()}")    
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('TestUsername', list(response.json()[0].values()))
+        self.assertEqual(len(response.json()), 1)
 
 
-# # Testing models
+# Testing models
 class RestaurantTest(TestCase):
     def test_create_restaurant(self):
         prior_length = Restaurant.objects.count()
@@ -27,7 +30,7 @@ class RestaurantTest(TestCase):
         self.assertEqual(restaurant.name, "Test Restaurant")
         self.assertEqual(Restaurant.objects.count(), prior_length + 1)
 
-# # Testing serializers
+# Testing serializers
 class RestaurantSerializerTest(TestCase):
       def test_restaurant_serializer(self):
         data = {'name': 'Test Restaurant'}
