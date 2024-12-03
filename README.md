@@ -61,10 +61,14 @@ ETL stands for Extract, Transform, Load.
 1. Django project ✅
 2. Database schema ✅
 3. Test cases
-4. Database triggers
+4. Database triggers 
 5. Database queries
-6. Indexes
+6. Indexes ✅
 7. Materialized views
 8. Full-text search
 9. Presentation
 10. Documentation
+
+
+- ADD LAST EDIT SQL
+- 

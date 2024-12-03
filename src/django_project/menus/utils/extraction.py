@@ -2,7 +2,7 @@ import base64
 import os
 from openai import OpenAI
 import json
-from menus.models import AuditLog, Menu
+from menus.models import AuditLog
 from PyPDF2 import PdfReader
 
 # TO DO: get a dict with all the info. Then write it to the db
