@@ -4420,3 +4420,600 @@ INFO 2024-12-03 11:58:43,597 autoreload 31099 8088310528 /Users/javierdominguezs
 INFO 2024-12-03 11:58:44,180 autoreload 31111 8088310528 Watching for file changes with StatReloader
 INFO 2024-12-03 11:59:10,868 autoreload 31111 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
 INFO 2024-12-03 11:59:11,834 autoreload 31127 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 13:19:53,046 autoreload 31127 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 13:19:54,314 autoreload 33221 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 13:19:55,650 autoreload 33221 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-03 13:19:56,376 autoreload 33233 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 13:20:28,856 logging_middleware 33233 6199652352 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 13:20:28,952 logging_middleware 33233 6199652352 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.10s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 13:20:28,953 basehttp 33233 6199652352 "GET /api/users/ HTTP/1.1" 200 1310
+INFO 2024-12-03 13:20:28,959 logging_middleware 33233 6216478720 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 13:20:28,964 logging_middleware 33233 6216478720 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 13:20:28,964 basehttp 33233 6216478720 "GET /api/restaurants/ HTTP/1.1" 200 1988
+INFO 2024-12-03 13:20:28,967 logging_middleware 33233 6233305088 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/menu-versions/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 13:20:28,971 logging_middleware 33233 6233305088 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 13:20:28,971 basehttp 33233 6233305088 "GET /api/menu-versions/ HTTP/1.1" 200 1536
+INFO 2024-12-03 13:20:28,974 logging_middleware 33233 6250131456 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/menus/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 13:20:29,052 logging_middleware 33233 6250131456 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.08s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 13:20:29,053 basehttp 33233 6250131456 "GET /api/menus/ HTTP/1.1" 200 78392
+INFO 2024-12-03 13:20:29,060 logging_middleware 33233 6266957824 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/menu-sections/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 13:20:29,123 logging_middleware 33233 6266957824 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.06s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 13:20:29,123 basehttp 33233 6266957824 "GET /api/menu-sections/ HTTP/1.1" 200 73230
+INFO 2024-12-03 13:20:29,130 logging_middleware 33233 6283784192 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/dietary-restrictions/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 13:20:29,142 logging_middleware 33233 6283784192 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 13:20:29,142 basehttp 33233 6283784192 "GET /api/dietary-restrictions/ HTTP/1.1" 200 304
+INFO 2024-12-03 13:20:29,145 logging_middleware 33233 6300610560 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/menu-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 13:20:29,157 logging_middleware 33233 6300610560 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 13:20:29,157 basehttp 33233 6300610560 "GET /api/menu-items/ HTTP/1.1" 200 64327
+INFO 2024-12-03 13:59:39,384 autoreload 36314 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 14:00:06,898 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:00:06,916 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 14:00:06,916 basehttp 36314 6164148224 "GET /api/users/ HTTP/1.1" 200 1310
+INFO 2024-12-03 14:00:19,734 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/1",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:00:19,741 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+INFO 2024-12-03 14:00:19,741 basehttp 36314 6164148224 "GET /api/users/1 HTTP/1.1" 301 0
+INFO 2024-12-03 14:00:19,744 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:00:19,750 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 14:00:19,751 basehttp 36314 6164148224 "GET /api/users/1/ HTTP/1.1" 200 421
+INFO 2024-12-03 14:01:28,804 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "DELETE",
+  "path": "/api/users/3",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "0",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:01:28,808 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 14:01:28,822 log 36314 6164148224 Internal Server Error: /api/users/3
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to localhost:8000/api/users/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-03 14:01:28,823 basehttp 36314 6164148224 "DELETE /api/users/3 HTTP/1.1" 500 69811
+INFO 2024-12-03 14:02:44,450 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  },
+  "headers": {
+    "Content-Length": "53",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:02:44,453 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 14:02:44,453 log 36314 6164148224 Bad Request: /api/users/
+WARNING 2024-12-03 14:02:44,454 basehttp 36314 6164148224 "POST /api/users/ HTTP/1.1" 400 79
+INFO 2024-12-03 14:03:06,906 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "username": "john.doe",
+    "password": "password"
+  },
+  "headers": {
+    "Content-Length": "101",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:03:07,017 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.11s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 14:03:07,017 basehttp 36314 6164148224 "POST /api/users/ HTTP/1.1" 201 330
+INFO 2024-12-03 14:03:43,812 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:03:43,822 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 14:03:43,822 basehttp 36314 6164148224 "GET /api/users/ HTTP/1.1" 200 1641
+INFO 2024-12-03 14:04:09,851 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/1",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "Dana Smith"
+  },
+  "headers": {
+    "Content-Length": "22",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:04:09,855 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 14:04:09,867 log 36314 6164148224 Internal Server Error: /api/users/1
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/users/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-03 14:04:09,868 basehttp 36314 6164148224 "PUT /api/users/1 HTTP/1.1" 500 69773
+INFO 2024-12-03 14:04:49,325 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/1",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "Dana Smith"
+  },
+  "headers": {
+    "Content-Length": "22",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:04:49,329 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+ERROR 2024-12-03 14:04:49,341 log 36314 6164148224 Internal Server Error: /api/users/1
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/users/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-03 14:04:49,341 basehttp 36314 6164148224 "PUT /api/users/1 HTTP/1.1" 500 69773
+INFO 2024-12-03 14:07:04,294 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "Dana Smith"
+  },
+  "headers": {
+    "Content-Length": "22",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:07:04,299 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 14:07:04,299 log 36314 6164148224 Bad Request: /api/users/1/
+WARNING 2024-12-03 14:07:04,299 basehttp 36314 6164148224 "PUT /api/users/1/ HTTP/1.1" 400 79
+INFO 2024-12-03 14:08:12,428 logging_middleware 36314 6164148224 Request: {
+  "type": "request",
+  "method": "PATCH",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "Dana Smith"
+  },
+  "headers": {
+    "Content-Length": "22",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-03 14:08:12,439 logging_middleware 36314 6164148224 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 14:08:12,439 basehttp 36314 6164148224 "PATCH /api/users/1/ HTTP/1.1" 200 421
