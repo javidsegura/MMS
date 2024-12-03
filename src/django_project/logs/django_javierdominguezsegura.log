@@ -5630,3 +5630,600 @@ INFO 2024-12-03 14:57:08,452 autoreload 40936 8088310528 /Users/javierdominguezs
 INFO 2024-12-03 14:57:09,756 autoreload 41368 8088310528 Watching for file changes with StatReloader
 INFO 2024-12-03 14:57:17,262 autoreload 41368 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
 INFO 2024-12-03 14:57:18,205 autoreload 41395 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-03 15:29:35,077 logging_middleware 43712 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/menus/all_cheap_items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "129",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:29:35,080 logging_middleware 43712 8088310528 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 15:29:35,081 log 43712 8088310528 Not Found: /menus/all_cheap_items/
+INFO 2024-12-03 15:29:35,082 logging_middleware 43712 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/menus/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "276",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:29:35,082 logging_middleware 43712 8088310528 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 15:29:35,083 log 43712 8088310528 Not Found: /menus/upload-menu/
+INFO 2024-12-03 15:30:46,386 logging_middleware 43855 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/menus/all_cheap_items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "129",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:30:46,389 logging_middleware 43855 8088310528 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 15:30:46,389 log 43855 8088310528 Not Found: /menus/all_cheap_items/
+INFO 2024-12-03 15:30:46,391 logging_middleware 43855 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/menus/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "276",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:30:46,391 logging_middleware 43855 8088310528 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+WARNING 2024-12-03 15:30:46,391 log 43855 8088310528 Not Found: /menus/upload-menu/
+INFO 2024-12-03 15:32:05,678 logging_middleware 44100 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "129",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+ERROR 2024-12-03 15:32:05,683 log 44100 8088310528 Internal Server Error: /api/all-cheap-items/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py", line 124, in all_cheap_items
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO 2024-12-03 15:32:05,685 logging_middleware 44100 8088310528 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+INFO 2024-12-03 15:32:05,689 logging_middleware 44100 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/upload-menu/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "276",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:32:05,689 logging_middleware 44100 8088310528 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "POST, OPTIONS"
+  }
+}
+WARNING 2024-12-03 15:32:05,689 log 44100 8088310528 Bad Request: /api/upload-menu/
+INFO 2024-12-03 15:32:47,784 logging_middleware 44275 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "129",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+ERROR 2024-12-03 15:32:47,788 log 44275 8088310528 Internal Server Error: /api/all-cheap-items/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py", line 124, in all_cheap_items
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO 2024-12-03 15:32:47,791 logging_middleware 44275 8088310528 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+INFO 2024-12-03 15:34:29,567 logging_middleware 44464 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/all-cheap-items/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "129",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+ERROR 2024-12-03 15:34:29,571 log 44464 8088310528 Internal Server Error: /api/all-cheap-items/
+Traceback (most recent call last):
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py", line 124, in all_cheap_items
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.10/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO 2024-12-03 15:34:29,574 logging_middleware 44464 8088310528 Response: {
+  "type": "response",
+  "status_code": 500,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+INFO 2024-12-03 15:37:12,155 logging_middleware 44793 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:37:12,157 logging_middleware 44793 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:37:46,620 logging_middleware 44858 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:37:46,621 logging_middleware 44858 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:38:26,466 logging_middleware 44988 8088310528 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "79",
+    "Content-Type": "application/octet-stream"
+  }
+}
+INFO 2024-12-03 15:38:26,468 logging_middleware 44988 8088310528 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 15:38:26,468 log 44988 8088310528 Not Found: /api/users/1/
+INFO 2024-12-03 15:38:26,468 logging_middleware 44988 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:38:26,469 logging_middleware 44988 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:39:00,887 logging_middleware 45072 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "264",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:39:00,891 logging_middleware 45072 8088310528 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 15:39:00,891 log 45072 8088310528 Bad Request: /api/users/
+INFO 2024-12-03 15:39:00,891 logging_middleware 45072 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:39:00,892 logging_middleware 45072 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:39:56,447 logging_middleware 45165 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:39:56,449 logging_middleware 45165 8088310528 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-03 15:39:56,450 log 45165 8088310528 Bad Request: /api/users/
+INFO 2024-12-03 15:39:56,450 logging_middleware 45165 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:39:56,451 logging_middleware 45165 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:41:28,106 logging_middleware 45336 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:41:28,111 logging_middleware 45336 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:41:28,112 logging_middleware 45336 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:41:28,114 logging_middleware 45336 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:42:37,475 logging_middleware 45573 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:42:37,478 logging_middleware 45573 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:42:37,479 logging_middleware 45573 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:42:37,480 logging_middleware 45573 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:43:47,136 logging_middleware 45742 8088310528 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Cookie": "",
+    "Content-Length": "20",
+    "Content-Type": "multipart/form-data; boundary=BoUnDaRyStRiNg"
+  }
+}
+INFO 2024-12-03 15:43:47,140 logging_middleware 45742 8088310528 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-03 15:43:47,141 logging_middleware 45742 8088310528 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Cookie": ""
+  }
+}
+INFO 2024-12-03 15:43:47,142 logging_middleware 45742 8088310528 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
