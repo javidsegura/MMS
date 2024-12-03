@@ -8,7 +8,7 @@ from django.contrib.auth.models import AbstractUser
 from storages.backends.s3boto3 import S3Boto3Storage
 
 class User(AbstractUser):
-     # These fields are already included from AbstractUser:
+     # These fields are already included:
     # username
     # password
     # first_name
@@ -82,13 +82,13 @@ class MenuVersion(models.Model):
 class Menu(models.Model):
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, null=True, blank=True)
     version = models.ForeignKey(MenuVersion, on_delete=models.CASCADE, null=True, blank=True)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     menu_file = models.FileField(
                         null=True,
                         blank=True) # add storage=S3Boto3Storage() if using AWS S3
     available_until = models.DateField(null=True, blank=True)
     available_from = models.DateField(null=True, blank=True)
     active_status = models.BooleanField(default=True, null=True, blank=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     timeUpload = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     last_edited = models.DateTimeField(auto_now=True, null=True, blank=True)
 

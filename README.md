@@ -45,8 +45,6 @@ ETL stands for Extract, Transform, Load.
 2 Create a menu_version
 
 
-
-
 # Extra features
 1. Deploy to the cloud ✅
 2. Implement database triggers
@@ -60,15 +58,11 @@ ETL stands for Extract, Transform, Load.
 # DELIVERABLES
 1. Django project ✅
 2. Database schema ✅
-3. Test cases
-4. Database triggers 
-5. Database queries
+3. Test cases 🟡
+4. Database triggers 🟡
+5. Database queries 🟡
 6. Indexes ✅
-7. Materialized views
-8. Full-text search
-9. Presentation
+7. Materialized views 
+8. Full-text search ✅
+9. Presentation 
 10. Documentation
-
-
-- ADD LAST EDIT SQL
-- ADD MENU VERSION TO ITEMS 
