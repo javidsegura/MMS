@@ -32,7 +32,7 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
                     "content": [
                         {
                             "type": "text",
-                            "text": """Please analyze this menu image and return a JSON with the following structure:
+                            "text": """Please analyze this menu image and return a JSON with the following structure. Dont add any comments or explanations:
                             {
                                 "menu_sections": [
                                     {
@@ -118,19 +118,17 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=messages
-
         )
 
         content = response.choices[0].message.content.replace('```json', '').replace('```', '').strip()
-
-        print(f"Raw content from OpenAI: {content}")  # Add this debug line
+        print(f"Raw content from OpenAI: {content}")  
     
         try:
-            # Extract just the JSON part
+            # Remove markdown from JSON
             json_str = content[content.find('{'):content.rfind('}')+1]
-            print(f"Extracted JSON string: {json_str}")  # Add this debug line
+            print(f"Extracted JSON string: {json_str}")  
             
-            # Try to parse with more lenient error handling
+            # Parse JSON in string to actual JSON
             try:
                 json_response = json.loads(json_str)
             except json.JSONDecodeError as json_err:
@@ -139,7 +137,6 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
                 raise
                 
             print(f"Successfully parsed JSON: {json_response}")
-            
             ai_call_log.status = "Success"
             return json_response, ai_call_log
         
@@ -148,11 +145,13 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
             ai_call_log.status = "Failed"
             ai_call_log.other = f"Error processing response: {str(e)}\nRaw content: {content[:500]}..."  # Store first 500 chars of content
             ai_call_log.save()
-            raise
+            return None, ai_call_log
     
     except Exception as e:
         print(f"Error in ai_call: {str(e)}")
-        ai_call_log.status = "Failed"
-        ai_call_log.other = str(e)
-        ai_call_log.save()
-        return None, ai_call_log
+        try:
+            ai_call_log.status = "Failed"
+            ai_call_log.other = str(e)
+            return None, ai_call_log
+        except:
+            pass
