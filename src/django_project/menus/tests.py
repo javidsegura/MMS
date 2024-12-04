@@ -1,5 +1,4 @@
 from django.test import TestCase
-from django.test import TestCase
 from .models import Restaurant
 from .serializers import RestaurantSerializer
 # Create your tests here.

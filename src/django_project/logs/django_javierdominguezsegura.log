@@ -3606,3 +3606,1264 @@ INFO 2024-12-04 16:21:36,794 logging_middleware 88125 6189658112 Response: {
   }
 }
 INFO 2024-12-04 16:21:36,795 basehttp 88125 6189658112 "DELETE /api/restaurants/1/ HTTP/1.1" 204 0
+INFO 2024-12-04 17:50:53,703 autoreload 91420 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 17:50:55,178 logging_middleware 91420 6200389632 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=YEoQA6AQwp6aLSEHOd5GYyT6Agk54McN; sessionid=szjd8bjziwj27wisagqbpax1t54cbj07"
+  }
+}
+INFO 2024-12-04 17:50:55,197 logging_middleware 91420 6200389632 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/login/?next=/admin/",
+    "Expires": "Wed, 04 Dec 2024 17:50:55 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private"
+  }
+}
+INFO 2024-12-04 17:50:55,219 basehttp 91420 6200389632 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:50:55,265 logging_middleware 91420 6200389632 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {
+    "next": [
+      "/admin/"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=YEoQA6AQwp6aLSEHOd5GYyT6Agk54McN; sessionid=szjd8bjziwj27wisagqbpax1t54cbj07"
+  }
+}
+INFO 2024-12-04 17:50:55,292 logging_middleware 91420 6200389632 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:50:55 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:50:55,292 basehttp 91420 6200389632 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-04 17:50:55,684 basehttp 91420 6200389632 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:50:55,685 basehttp 91420 6217216000 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:50:55,686 basehttp 91420 6250868736 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:50:55,687 basehttp 91420 6234042368 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:50:55,687 basehttp 91420 6267695104 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:50:55,687 basehttp 91420 6284521472 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:50:55,691 basehttp 91420 6284521472 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:50:59,079 logging_middleware 91420 6284521472 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {
+    "next": [
+      "/admin/"
+    ]
+  },
+  "POST_params": {
+    "csrfmiddlewaretoken": [
+      "VwlqQmFqofrw3Wna6Z4mCCpFe2KFwWsBJ0z6gi56KunwEERHK2ZSq08BE8UAqyue"
+    ],
+    "username": [
+      "test"
+    ],
+    "password": [
+      "test"
+    ],
+    "next": [
+      "/admin/"
+    ]
+  },
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "129",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Origin": "http://127.0.0.1:8000",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/login/?next=/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=YEoQA6AQwp6aLSEHOd5GYyT6Agk54McN; sessionid=szjd8bjziwj27wisagqbpax1t54cbj07"
+  }
+}
+INFO 2024-12-04 17:50:59,441 logging_middleware 91420 6284521472 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.38s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:50:59 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:50:59,442 basehttp 91420 6284521472 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4320
+INFO 2024-12-04 17:51:02,411 logging_middleware 91420 6200389632 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {
+    "next": [
+      "/admin/"
+    ]
+  },
+  "POST_params": {
+    "csrfmiddlewaretoken": [
+      "ckuxJ5NhA9Ltoj7dFGPJ5lmjdOS0OJRe0OId91dXWoHtZ1BKjJKfTJ5fDU2VIlTR"
+    ],
+    "username": [
+      "test"
+    ],
+    "password": [
+      "test"
+    ],
+    "next": [
+      "/admin/"
+    ]
+  },
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "129",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Origin": "http://127.0.0.1:8000",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/login/?next=/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=YEoQA6AQwp6aLSEHOd5GYyT6Agk54McN; sessionid=szjd8bjziwj27wisagqbpax1t54cbj07"
+  }
+}
+INFO 2024-12-04 17:51:02,769 logging_middleware 91420 6200389632 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.37s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:51:02 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:51:02,770 basehttp 91420 6200389632 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4320
+INFO 2024-12-04 17:54:56,711 autoreload 91736 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 17:54:57,934 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=YEoQA6AQwp6aLSEHOd5GYyT6Agk54McN; sessionid=szjd8bjziwj27wisagqbpax1t54cbj07"
+  }
+}
+INFO 2024-12-04 17:54:57,959 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/login/?next=/admin/",
+    "Expires": "Wed, 04 Dec 2024 17:54:57 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private"
+  }
+}
+INFO 2024-12-04 17:54:57,959 basehttp 91736 6189625344 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:54:57,965 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {
+    "next": [
+      "/admin/"
+    ]
+  },
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=YEoQA6AQwp6aLSEHOd5GYyT6Agk54McN; sessionid=szjd8bjziwj27wisagqbpax1t54cbj07"
+  }
+}
+INFO 2024-12-04 17:54:57,996 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:54:57 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:54:57,997 basehttp 91736 6189625344 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-04 17:55:01,255 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/admin/login/",
+  "user": "AnonymousUser",
+  "GET_params": {
+    "next": [
+      "/admin/"
+    ]
+  },
+  "POST_params": {
+    "csrfmiddlewaretoken": [
+      "RCRPtzYZea9tAbwj0HvxhmrkM8xh2JVsF65vTvoFAp5tbT0QEKq35KagceHcWlX5"
+    ],
+    "username": [
+      "test"
+    ],
+    "password": [
+      "test"
+    ],
+    "next": [
+      "/admin/"
+    ]
+  },
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "129",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Origin": "http://127.0.0.1:8000",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/login/?next=/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=YEoQA6AQwp6aLSEHOd5GYyT6Agk54McN; sessionid=szjd8bjziwj27wisagqbpax1t54cbj07"
+  }
+}
+INFO 2024-12-04 17:55:01,627 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "0.38s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/",
+    "Expires": "Wed, 04 Dec 2024 17:55:01 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:55:01,631 basehttp 91736 6189625344 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:55:01,639 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Referer": "http://127.0.0.1:8000/admin/login/?next=/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:55:01,662 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:55:01 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:55:01,663 basehttp 91736 6189625344 "GET /admin/ HTTP/1.1" 200 10391
+INFO 2024-12-04 17:55:01,710 basehttp 91736 6189625344 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:01,716 basehttp 91736 6206451712 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:01,717 basehttp 91736 6189625344 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,180 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:55:06,207 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:55:06 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:55:06,207 basehttp 91736 6189625344 "GET /admin/menus/menu/ HTTP/1.1" 200 13097
+INFO 2024-12-04 17:55:06,227 basehttp 91736 6206451712 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,229 basehttp 91736 6223278080 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,229 basehttp 91736 6240104448 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,230 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:55:06,230 basehttp 91736 6256930816 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,231 basehttp 91736 6206451712 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,231 basehttp 91736 6273757184 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,233 basehttp 91736 6223278080 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,234 basehttp 91736 6240104448 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,235 basehttp 91736 6273757184 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,235 basehttp 91736 6256930816 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,237 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 17:55:06,237 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 17:55:06,239 basehttp 91736 6189625344 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,259 basehttp 91736 6273757184 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:06,259 basehttp 91736 6189625344 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:40,061 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/add/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:55:40,087 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.05s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:55:40 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:55:40,087 basehttp 91736 6189625344 "GET /admin/menus/menu/add/ HTTP/1.1" 200 14973
+INFO 2024-12-04 17:55:40,115 basehttp 91736 6206451712 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:40,116 basehttp 91736 6223278080 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:40,120 basehttp 91736 6240104448 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:40,120 basehttp 91736 6256930816 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:40,121 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:55:40,121 basehttp 91736 6223278080 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:40,123 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 17:55:40,123 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 17:55:40,124 basehttp 91736 6223278080 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:40,165 basehttp 91736 6223278080 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-12-04 17:55:48,709 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/admin/menus/menu/add/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "422953",
+    "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundarykvoN4CdS6UFcF2Uj",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Origin": "http://127.0.0.1:8000",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:56:05,346 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "16.65s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/menus/menu/",
+    "Expires": "Wed, 04 Dec 2024 17:56:05 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private"
+  }
+}
+INFO 2024-12-04 17:56:05,347 basehttp 91736 6189625344 "POST /admin/menus/menu/add/ HTTP/1.1" 302 0
+INFO 2024-12-04 17:56:05,354 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn; messages=.eJwdjcsKwjAQAH9lWaGnaGxEBFv7B2IP3tpS1mb7kCaKa3z065Ve5jIwUxRY11e5-dqxCHWMKlZmq_DcMxzZByiDWcdNStA_uD2UqMm6wWv3dzJTG9305DvWJWanC3O0-JhdIpAP00QQkbsnkJM8afmK95tUUzY3LbxJgKxlCxKa5v9vwzh-V6gQq-oHHSgxyw:1tItbZ:HoTlDcVEeccI2QNIp15VsT85TfBaEE7ntpbpJ9huCEk"
+  }
+}
+INFO 2024-12-04 17:56:05,368 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:56:05 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:56:05,368 basehttp 91736 6189625344 "GET /admin/menus/menu/ HTTP/1.1" 200 16552
+INFO 2024-12-04 17:56:05,393 basehttp 91736 6206451712 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-12-04 17:56:05,394 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:56:05,394 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 17:56:05,395 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 17:56:35,753 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/dietaryrestriction/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:56:35,776 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.04s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:56:35 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:56:35,777 basehttp 91736 6189625344 "GET /admin/menus/dietaryrestriction/ HTTP/1.1" 200 13149
+INFO 2024-12-04 17:56:35,823 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:56:35,825 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 17:56:35,825 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 17:56:39,853 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/dietaryrestriction/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:56:39,877 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 17:56:39 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 17:56:39,878 basehttp 91736 6189625344 "GET /admin/menus/menuversion/ HTTP/1.1" 200 13182
+INFO 2024-12-04 17:56:39,903 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 17:56:39,904 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 17:56:39,905 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 18:01:46,741 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menuversion/add/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:01:46,763 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.10s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 18:01:46 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 18:01:46,764 basehttp 91736 6189625344 "GET /admin/menus/menuversion/add/ HTTP/1.1" 200 12975
+INFO 2024-12-04 18:01:46,799 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:01:46,801 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 18:01:46,801 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 18:01:49,143 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menuversion/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:01:49,167 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.03s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 18:01:49 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 18:01:49,167 basehttp 91736 6189625344 "GET /admin/menus/menu/ HTTP/1.1" 200 16331
+INFO 2024-12-04 18:01:49,187 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:01:49,188 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 18:01:49,188 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 18:01:50,695 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/add/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:01:50,710 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 18:01:50 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 18:01:50,710 basehttp 91736 6189625344 "GET /admin/menus/menu/add/ HTTP/1.1" 200 14973
+INFO 2024-12-04 18:01:50,730 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:01:50,731 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 18:01:50,731 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 18:02:01,269 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/admin/menus/menu/add/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": "<file upload>",
+  "body": "<binary data>",
+  "headers": {
+    "Content-Length": "407855",
+    "Content-Type": "multipart/form-data; boundary=----WebKitFormBoundary7Jlnrho4w6ZSc9np",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Origin": "http://127.0.0.1:8000",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:02:23,209 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 302,
+  "content": "<undecodable content>",
+  "duration": "21.94s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Location": "/admin/menus/menu/",
+    "Expires": "Wed, 04 Dec 2024 18:02:23 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private"
+  }
+}
+INFO 2024-12-04 18:02:23,210 basehttp 91736 6189625344 "POST /admin/menus/menu/add/ HTTP/1.1" 302 0
+INFO 2024-12-04 18:02:23,228 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menu/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Cache-Control": "max-age=0",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/add/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn; messages=.eJwdjbEOgjAQQH_lcnO1FnUxyKiTmxslzaU9KITWxEsx_L2E5S0vL69t0blJPtklFqGBURlVXRW-I8OLcwFbqpPxNUH8cn-3qCmkMeu0Odmpz9pHygNri81jXBieZZXDYm6XWlOz9wF-JEAhcAAp3m-vvszzekSF2HV_i7Urxg:1tIthf:ywxW37-PSp5rx1DdJwMJH_-c_re-i5_qXopFjCgPSco"
+  }
+}
+INFO 2024-12-04 18:02:23,240 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 18:02:23 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 18:02:23,240 basehttp 91736 6189625344 "GET /admin/menus/menu/ HTTP/1.1" 200 17350
+INFO 2024-12-04 18:02:23,259 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 18:02:23,260 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 18:02:23,261 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
