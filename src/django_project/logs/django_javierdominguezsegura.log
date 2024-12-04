@@ -3458,3 +3458,151 @@ INFO 2024-12-04 13:32:12,506 autoreload 85644 8088310528 /Users/javierdominguezs
 INFO 2024-12-04 13:32:12,828 autoreload 85656 8088310528 Watching for file changes with StatReloader
 INFO 2024-12-04 13:32:15,054 autoreload 85656 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/extraction.py changed, reloading.
 INFO 2024-12-04 13:32:15,773 autoreload 85657 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:22,176 autoreload 85657 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:23,214 autoreload 85906 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:26,655 autoreload 85906 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:27,322 autoreload 85920 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:28,635 autoreload 85920 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:29,288 autoreload 85932 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:40,721 autoreload 85932 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:41,637 autoreload 85948 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:43,118 autoreload 85948 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:43,826 autoreload 85958 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:46,145 autoreload 85958 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:46,791 autoreload 85972 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:55,273 autoreload 85972 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:55,993 autoreload 85997 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:37:57,271 autoreload 85997 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:37:57,913 autoreload 86004 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:38:03,279 autoreload 86004 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:38:04,023 autoreload 86014 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:38:09,459 autoreload 86014 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:38:10,112 autoreload 86025 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:38:20,647 autoreload 86025 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:38:21,617 autoreload 86036 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:38:22,917 autoreload 86036 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:38:23,575 autoreload 86040 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:38:32,162 autoreload 86040 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:38:32,875 autoreload 86057 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:38:52,723 autoreload 86057 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:38:53,709 autoreload 86080 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:38:58,097 autoreload 86080 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:38:58,859 autoreload 86100 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:39:04,247 autoreload 86100 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:39:04,992 autoreload 86132 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:39:10,406 autoreload 86132 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:39:11,110 autoreload 86145 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:39:21,513 autoreload 86145 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:39:22,403 autoreload 86184 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 13:39:29,859 autoreload 86184 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/utils/insertion.py changed, reloading.
+INFO 2024-12-04 13:39:30,716 autoreload 86201 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:01:59,290 autoreload 86201 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-04 16:02:00,395 autoreload 87381 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:02:02,725 autoreload 87381 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-04 16:02:03,360 autoreload 87403 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:02:10,779 autoreload 87403 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-04 16:02:11,524 autoreload 87417 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:02:16,942 autoreload 87417 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-04 16:02:17,613 autoreload 87441 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:02:19,925 autoreload 87441 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-04 16:02:20,602 autoreload 87454 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:02:25,058 autoreload 87454 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/urls.py changed, reloading.
+INFO 2024-12-04 16:02:25,740 autoreload 87464 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:02:53,648 autoreload 87464 8088310528 /Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/src/django_project/menus/views.py changed, reloading.
+INFO 2024-12-04 16:02:54,635 autoreload 87540 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:12:00,262 autoreload 88125 8088310528 Watching for file changes with StatReloader
+INFO 2024-12-04 16:15:44,328 logging_middleware 88125 6189658112 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 16:15:44,336 logging_middleware 88125 6189658112 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 16:15:44,336 basehttp 88125 6189658112 "GET /api/restaurants/ HTTP/1.1" 200 261
+INFO 2024-12-04 16:18:12,950 logging_middleware 88125 6189658112 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/restaurants/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "name": "Test Restaurant",
+    "address": "123 Test St",
+    "city": "Test City",
+    "state": "Test State",
+    "zip_code": "12345"
+  },
+  "headers": {
+    "Content-Length": "118",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 16:18:12,972 logging_middleware 88125 6189658112 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 16:18:12,972 basehttp 88125 6189658112 "POST /api/restaurants/ HTTP/1.1" 201 198
+INFO 2024-12-04 16:21:36,774 logging_middleware 88125 6189658112 Request: {
+  "type": "request",
+  "method": "DELETE",
+  "path": "/api/restaurants/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "0",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 16:21:36,794 logging_middleware 88125 6189658112 Response: {
+  "type": "response",
+  "status_code": 204,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 16:21:36,795 basehttp 88125 6189658112 "DELETE /api/restaurants/1/ HTTP/1.1" 204 0

@@ -3,16 +3,24 @@
 After png info has been extracted, write it to the database. 
 """
 
-from menus.models import MenuItem, MenuSection, DietaryRestriction, AuditLog, Restaurant
+from menus.models import (MenuItem, 
+                          MenuSection, 
+                          DietaryRestriction, 
+                          AuditLog, 
+                          Restaurant, 
+                          Menu)
 
-def populate_menu_data(menu, menu_data: dict) -> AuditLog:
+def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
+    """
+    Populate the database with the data extracted from the menu file
+    """
     print(f"Populating menu data for {menu}")
     ai_insertion_log = AuditLog.objects.create(
         phase="Inserting data",
         status="Processing"
     )
     try:
-        # Get or create restaurant based on name
+        # Get info from the dictionary
         restaurant_info = menu_data.get('restaurant_info', {})
         phone = restaurant_info.get('phone')
         address = restaurant_info.get('address')
@@ -24,7 +32,7 @@ def populate_menu_data(menu, menu_data: dict) -> AuditLog:
         zip = restaurant_info.get('zip')
         street = restaurant_info.get('street')
 
-        # Reducing size of big fields
+        # Making sure that all fields adhere to schema constraints 
         if len(restaurant_info) > 0:
             restaurant_info['restaurant_name'] = restaurant_info['restaurant_name'][:99]
             restaurant_info['phone'] = restaurant_info['phone'][:99]

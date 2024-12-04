@@ -136,7 +136,10 @@ def upload_menu(request):
 
 from django.views.decorators.csrf import csrf_exempt
 @csrf_exempt
-def all_cheap_items(request):
+def raw_sql_query(request):
+    """
+    Execute a raw SQL query to the db and return the results
+    """
     if request.method == 'POST':
         data = json.loads(request.body)
         query = data.get('query')
