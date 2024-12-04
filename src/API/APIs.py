@@ -15,7 +15,10 @@ class UploadMenu:
                                          files=files)
             print(f"Menu: {menuResponse.json()}")
         except Exception as e:
-            print(f"Error uploading menu: {e}")
+            error = e
+            if menuResponse:
+                error += f". Response: {menuResponse.text}"
+            print(f"Error uploading menu: {error}")
 
 class Users:
         def get_users(self, userID:int=None):
@@ -27,7 +30,12 @@ class Users:
                 usersResponse = requests.get(url)
                 print(f"Users {userID if userID else ''}: {usersResponse.json()}")
             except Exception as e:
-                print(f"Error getting users: {e}")
+                error = e
+                try:
+                    error += f". Response: {usersResponse.text}"
+                except:
+                    pass
+                print(f"Error getting users: {error}")
         
         def add_user(self, json:dict=None):
             try:
@@ -38,7 +46,12 @@ class Users:
                                             json=json)
                 print(f"User: {userResponse.json()}")
             except Exception as e:
-                print(f"Error adding user: {e}")
+                error = e
+                try:
+                    error += f". Response: {userResponse.text}"
+                except:
+                    pass
+                print(f"Error adding user: {error}")
         
         def update_user(self, userID:int, json:dict=None):
             try:
@@ -51,8 +64,26 @@ class Users:
                                         json=json)
                 print(f"User {userID}: {userResponse.json()}")
             except Exception as e:
-                print(f"Error updating user: {e}")
+                error = e
+                try:
+                    error += f". Response: {userResponse.text}"
+                except:
+                    pass
+                print(f"Error updating user: {error}")
         
+        def patch_user(self, userID:int, json:dict=None):
+            try:
+                url = f'http://localhost:8000/api/users/{userID}/'
+                userResponse = requests.patch(url, json=json)
+                print(f"User {userID}: {userResponse.json()}")
+            except Exception as e:
+                error = e
+                try:
+                    error += f". Response: {userResponse.text}"
+                except:
+                    pass
+                print(f"Error patching user: {error}")
+                
         def delete_user(self, userID:int):
             try:
                 if not userID:
@@ -61,15 +92,13 @@ class Users:
                 userResponse = requests.delete(url)
                 print(f"User {userID}: {userResponse.json()}")
             except Exception as e:
-                print(f"Error deleting user: {e}")
+                error = e
+                try:
+                    error += f". Response: {userResponse.text}"
+                except:
+                    pass
+                print(f"Error deleting user: {error}")
         
-        def patch_user(self, userID:int, json:dict=None):
-            try:
-                url = f'http://localhost:8000/api/users/{userID}/'
-                userResponse = requests.patch(url, json=json)
-                print(f"User {userID}: {userResponse.json()}")
-            except Exception as e:
-                print(f"Error patching user: {e}")
 
 class DatabaseQueries():
     def execute_raw_sql(self, query: str, params: tuple = None):
@@ -91,11 +120,15 @@ class DatabaseQueries():
                 return None
                 
         except Exception as e:
-            print(f"Error executing raw SQL: {e}")
+            error = e
+            try:
+                error += f". Response: {response.text}"
+            except:
+                pass
+            print(f"Error executing raw SQL: {error}")
             return None
 
 if __name__ == "__main__":
-    uploadMenu = UploadMenu()
-    uploadMenu.upload_menu(data={"user_id": 1}, 
-                           filePath="/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/others/menuExamples/images/fiveguys.png")
+    users = Users()
+    users.add_user()
    
