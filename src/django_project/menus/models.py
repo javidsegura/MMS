@@ -85,7 +85,8 @@ class Menu(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     menu_file = models.FileField(
                         null=True,
-                        blank=True) # add storage=S3Boto3Storage() if using AWS S3
+                        blank=True, 
+                        storage=S3Boto3Storage()) 
     available_until = models.DateField(null=True, blank=True)
     available_from = models.DateField(null=True, blank=True)
     active_status = models.BooleanField(default=True, null=True, blank=True)
