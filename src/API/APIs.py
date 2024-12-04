@@ -849,12 +849,125 @@ class RawSQLQueries():
             print(f"Error executing raw SQL: {error}")
             return None
         
-    def general_queries(self, query: str, params: tuple = None):
+    def completeMenuInfo(self):
         try:
+            query = "CALL GetCompleteMenuInfo();"
             url = 'http://localhost:8000/api/raw-sql/'
             data = {
                 'query': query,
-                'params': params if params else []
+                'params': []
+            }
+            headers = {'Content-Type': 'application/json'}
+            response = requests.post(url, 
+                                    json=data,
+                                    headers=headers)
+            
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print(f"Server error: {response.text}")
+                return None
+                
+        except Exception as e:
+            error = e
+            try:
+                error += f". Response: {response.text} Status Code: {response.status_code}"
+            except:
+                pass
+            print(f"Error executing raw SQL: {error}")
+            return None
+
+    def filterItemsByDietaryRestrictions(self, restrictionID: int):
+        try:
+            query = "CALL GetMenuItemsByDietaryRestriction();"
+            url = 'http://localhost:8000/api/raw-sql/'
+            data = {
+                'query': query,
+                'params': [restrictionID]
+            }
+            headers = {'Content-Type': 'application/json'}
+            response = requests.post(url, 
+                                    json=data,
+                                    headers=headers)
+            
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print(f"Server error: {response.text}")
+                return None
+                
+        except Exception as e:
+            error = e
+            try:
+                error += f". Response: {response.text} Status Code: {response.status_code}"
+            except:
+                pass
+            print(f"Error executing raw SQL: {error}")
+            return None
+    
+    def trackPDFProcessingStatus(self):
+        try:
+            query = "CALL GetPDFProcessingStatus();"
+            url = 'http://localhost:8000/api/raw-sql/'
+            data = {
+                'query': query,
+                'params': []
+            }
+            headers = {'Content-Type': 'application/json'}
+            response = requests.post(url, 
+                                    json=data,
+                                    headers=headers)
+            
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print(f"Server error: {response.text}")
+                return None
+                
+        except Exception as e:
+            error = e
+            try:
+                error += f". Response: {response.text} Status Code: {response.status_code}"
+            except:
+                pass
+            print(f"Error executing raw SQL: {error}")
+            return None
+        
+    def getMenuItemsAndPrices(self):
+        try:
+            query = "CALL GetMenuItemsAndPrices();"
+            url = 'http://localhost:8000/api/raw-sql/'
+            data = {
+                'query': query,
+                'params': []
+            }
+            headers = {'Content-Type': 'application/json'}
+            response = requests.post(url, 
+                                    json=data,
+                                    headers=headers)
+            
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print(f"Server error: {response.text}")
+                return None
+                
+        except Exception as e:
+            error = e
+            try:
+                error += f". Response: {response.text} Status Code: {response.status_code}"
+            except:
+                pass
+            print(f"Error executing raw SQL: {error}")
+            return None
+
+    def updateMenuVersion(self, restaurantID: int, menuFileURL: str):
+        try:
+            query = "CALL UpdateMenuVersion();"
+            url = 'http://localhost:8000/api/raw-sql/'
+            data = {
+                'query': query,
+                'params': [restaurantID, menuFileURL]
             }
             headers = {'Content-Type': 'application/json'}
             response = requests.post(url, 

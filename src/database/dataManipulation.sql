@@ -1,8 +1,12 @@
 
 
 -- FIRST QUERY
-SELECT 
-	mitem.name as item_name,
+DELIMITER $$
+
+CREATE PROCEDURE GetCompleteMenuInfo()
+BEGIN
+	SELECT 
+		mitem.name as item_name,
     mitem.description as item_desscription,
     mitem.price as item_price,
     mitem.currency as item_currency,
@@ -20,6 +24,12 @@ INNER JOIN menus_menuitem mitem
 	ON mitem.menu_section_id = msection.id
 INNER JOIN menus_restaurant mrestaurant
 	ON mrestaurant.id = mmenu.restaurant_id;
+END$$
+
+DELIMITER ;
+
+CALL GetCompleteMenuInfo();
+
 
 
 --2. Filter Items by Dietary Restrictions
@@ -55,8 +65,12 @@ CALL GetMenuItemsByDietaryRestriction('Lactose Intolerant');
 --3. Track PDF Processing Status
 -- Retrieves information about menu uploads and their status from the audit log.
 
-SELECT 
-    m.id AS menu_id,                       -- menus_menu.id
+DELIMITER $$
+
+CREATE PROCEDURE GetPDFProcessingStatus()
+BEGIN
+    SELECT 
+        m.id AS menu_id,                       -- menus_menu.id
     ms.name AS menu_section,               -- menus_menusection.name
     al.status,                             -- menus_auditlog.status
     al.phase,                              -- menus_auditlog.phase
@@ -68,12 +82,21 @@ JOIN
     menus_menusection ms ON m.id = ms.menu_id -- menus_menusection.menu_id links to menus_menu.id
 JOIN 
     menus_auditlog al ON m.id = al.menu_version_id; -- menus_auditlog.menu_version_id links to menus_menu.id
+END$$
+
+DELIMITER ;
+
+CALL GetPDFProcessingStatus();
 
 --4. Generate Reports on Menu Items and Prices
 -- Creates a summary report of menu items with their prices grouped by restaurant.
 
-SELECT 
-    mr.name AS restaurant_name,         -- menus_restaurant.name
+DELIMITER $$
+
+CREATE PROCEDURE GetMenuItemsAndPrices()
+BEGIN
+    SELECT 
+        mr.name AS restaurant_name,         -- menus_restaurant.name
     mi.name AS item_name,               -- menus_menuitem.name
     mi.price,                           -- menus_menuitem.price
     mi.currency,                        -- menus_menuitem.currency
@@ -90,9 +113,13 @@ WHERE
     mi.available = TRUE                 -- Only include available items
 ORDER BY 
     mr.name,                            -- Order by restaurant name
-    ms.name,                            -- Then by section name
-    mi.price;                           -- Finally by price
-    
+        ms.name,                            -- Then by section name
+        mi.price;                           -- Finally by price
+END$$
+
+DELIMITER ;
+
+CALL GetMenuItemsAndPrices();
 
 --5. Handle Menu Updates and Versioning
 -- Inserts a new menu version or updates an existing one.
