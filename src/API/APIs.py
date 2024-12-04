@@ -9,9 +9,10 @@ class UploadMenu:
         try:
             with open(filePath, 'rb') as file:
                 url = 'http://localhost:8000/api/upload-menu/'
+                files = {'menu_file': file}
                 menuResponse = requests.post(url, 
                                          data=data, 
-                                         files=file)
+                                         files=files)
             print(f"Menu: {menuResponse.json()}")
         except Exception as e:
             print(f"Error uploading menu: {e}")
@@ -94,10 +95,7 @@ class DatabaseQueries():
             return None
 
 if __name__ == "__main__":
-    users = Users()
-    users.add_user(
-        json={"name": "TestUser", 
-              "password": "TestPassword", 
-              "username": "TestUsername"})
-    
+    uploadMenu = UploadMenu()
+    uploadMenu.upload_menu(data={"user_id": 1}, 
+                           filePath="/Users/javierdominguezsegura/Programming/College/Sophomore/Databases/MMS/others/menuExamples/images/fiveguys.png")
    

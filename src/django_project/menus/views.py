@@ -12,7 +12,8 @@ from .models import (
     MenuItem, 
     DietaryRestriction, 
     User, 
-    MenuVersion
+    MenuVersion, 
+    AuditLog
 )
 from .serializers import (
     UserSerializer,
@@ -68,36 +69,53 @@ def upload_menu(request):
         # Get the uploaded file
         menu_file = request.FILES.get('menu_file')
         user_id = request.data.get('user_id')
+
+        print(f"Menu file: {menu_file}")
+        print(f"User ID: {user_id}")
         
         if not menu_file:
             return Response({'error': 'No file provided'}, status=status.HTTP_400_BAD_REQUEST)
         
         # User_id object
         user_id = User.objects.get(id=user_id)
+        uploaded_log = AuditLog.objects.create(
+            phase="Uploaded file",
+            status="Received"
+        )
         # Create menu instance
         menu = Menu.objects.create(
             menu_file=menu_file,
             user_id=user_id
         )
+        uploaded_log.status = "Stored successfully"
 
         # Process the menu file (similar to admin.py)
         extension = menu_file.name.split(".")[-1].lower()
-        menu_json, ai_call_log = ai_call(menu, extension=extension)
-        
+        menu_json, extraction_log = ai_call(menu, extension=extension)
         if menu_json is None:
             menu.delete()
+        if menu_json is None:
+            extraction_log.status = "Failed"
+            extraction_log.save()
+            menu.delete()
             return Response(
-                {'error': f'AI processing failed: {ai_call_log.other}'}, 
+                {'error': f'AI processing failed: {extraction_log.other}'}, 
                 status=status.HTTP_422_UNPROCESSABLE_ENTITY
             )
-
         # Populate menu data
         try:
-            populate_menu_data(menu, menu_json)
+            insertion_log = populate_menu_data(menu, menu_json)
             if menu.restaurant.name:
                 menu_version = MenuVersion.objects.create(restaurant=menu.restaurant) # For each restaurant there is a menu version
                 menu.version = menu_version
                 menu.save()
+                insertion_log.menu_version = menu_version
+                extraction_log.menu_version = menu_version
+                uploaded_log.menu_version = menu.version
+                insertion_log.save()
+                extraction_log.save()
+                uploaded_log.save()
+
             return Response({
                 'message': 'Menu processed successfully',
                 'menu_id': menu.id

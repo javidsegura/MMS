@@ -84,6 +84,8 @@ class MenuAdmin(admin.ModelAdmin):
                 extension = menu.menu_file.name.split(".")[-1]
                 menu_json, extraction_log = ai_call(menu, extension=extension)
                 if menu_json is None:
+                    extraction_log.status = "Failed"
+                    extraction_log.save()
                     raise ValueError("No menu_json returned from AI call")
                 
                 insertion_log = populate_menu_data(menu, menu_json)
