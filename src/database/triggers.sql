@@ -13,9 +13,9 @@ BEGIN
         WHERE menu_section_id = NEW.menu_section_id AND available = TRUE
     ) THEN
         -- Update the menu_section name to indicate it is inactive
-        UPDATE menu_section
+        UPDATE menus_menusection
         SET name = CONCAT('[INACTIVE] ', name)
-        WHERE menu_section_id = NEW.menu_section_id;
+        WHERE id = NEW.menu_section_id;
     END IF;
 END$$
 

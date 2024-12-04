@@ -4867,3 +4867,84 @@ INFO 2024-12-04 18:02:23,260 logging_middleware 91736 6189625344 Response: {
   }
 }
 INFO 2024-12-04 18:02:23,261 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 19:13:41,320 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/menus/menusection/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "Dnt": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menu/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 19:13:41,359 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.13s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Expires": "Wed, 04 Dec 2024 19:13:41 GMT",
+    "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate, private",
+    "Vary": "Cookie"
+  }
+}
+INFO 2024-12-04 19:13:41,359 basehttp 91736 6189625344 "GET /admin/menus/menusection/ HTTP/1.1" 200 19150
+INFO 2024-12-04 19:13:41,384 logging_middleware 91736 6189625344 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/admin/jsi18n/",
+  "user": "test",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "127.0.0.1:8000",
+    "Connection": "keep-alive",
+    "Sec-Ch-Ua-Platform": "\"macOS\"",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Sec-Ch-Ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
+    "Dnt": "1",
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Dest": "script",
+    "Referer": "http://127.0.0.1:8000/admin/menus/menusection/",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cookie": "csrftoken=FTw2Jpy3DEDppovZNAOHB42GEbqLOJfA; sessionid=ljwuhw7nyjckwtkcdjm6nq0nvzrvmhyn"
+  }
+}
+INFO 2024-12-04 19:13:41,387 logging_middleware 91736 6189625344 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/javascript; charset=\"utf-8\""
+  }
+}
+INFO 2024-12-04 19:13:41,387 basehttp 91736 6189625344 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
