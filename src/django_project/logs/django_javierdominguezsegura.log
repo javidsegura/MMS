@@ -2964,3 +2964,451 @@ INFO 2024-12-04 13:09:25,162 logging_middleware 82618 6133673984 Response: {
   }
 }
 INFO 2024-12-04 13:09:25,162 basehttp 82618 6133673984 "GET /api/users/ HTTP/1.1" 200 744
+INFO 2024-12-04 13:12:27,840 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/1",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:12:27,846 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8"
+  }
+}
+INFO 2024-12-04 13:12:27,846 basehttp 82618 6133673984 "GET /api/users/1 HTTP/1.1" 301 0
+INFO 2024-12-04 13:12:27,849 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "GET",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:12:27,860 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:12:27,861 basehttp 82618 6133673984 "GET /api/users/1/ HTTP/1.1" 200 423
+INFO 2024-12-04 13:12:38,935 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "PATCH",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "first_name": "John"
+  },
+  "headers": {
+    "Content-Length": "22",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:12:38,947 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:12:38,948 basehttp 82618 6133673984 "PATCH /api/users/1/ HTTP/1.1" 200 427
+INFO 2024-12-04 13:12:50,133 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "PATCH",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "first_name": "Javi"
+  },
+  "headers": {
+    "Content-Length": "22",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:12:50,143 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:12:50,143 basehttp 82618 6133673984 "PATCH /api/users/1/ HTTP/1.1" 200 427
+INFO 2024-12-04 13:13:03,842 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "DELETE",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "0",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:13:03,864 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 204,
+  "content": "<undecodable content>",
+  "duration": "0.02s",
+  "headers": {
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:13:03,864 basehttp 82618 6133673984 "DELETE /api/users/1/ HTTP/1.1" 204 0
+INFO 2024-12-04 13:13:41,947 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/1/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "email": "test@test.com"
+  },
+  "headers": {
+    "Content-Length": "26",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:13:41,950 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<binary data>",
+  "duration": "0.00s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-04 13:13:41,950 log 82618 6133673984 Not Found: /api/users/1/
+WARNING 2024-12-04 13:13:41,951 basehttp 82618 6133673984 "PUT /api/users/1/ HTTP/1.1" 404 45
+INFO 2024-12-04 13:14:12,970 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/2/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "email": "test@test.com"
+  },
+  "headers": {
+    "Content-Length": "26",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:14:12,980 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-04 13:14:12,981 log 82618 6133673984 Bad Request: /api/users/2/
+WARNING 2024-12-04 13:14:12,981 basehttp 82618 6133673984 "PUT /api/users/2/ HTTP/1.1" 400 79
+INFO 2024-12-04 13:14:24,989 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/2/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "email": "test@test.com",
+    "first_name": "Test",
+    "last_name": "Test"
+  },
+  "headers": {
+    "Content-Length": "69",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:14:24,996 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-04 13:14:24,997 log 82618 6133673984 Bad Request: /api/users/2/
+WARNING 2024-12-04 13:14:24,997 basehttp 82618 6133673984 "PUT /api/users/2/ HTTP/1.1" 400 79
+INFO 2024-12-04 13:14:27,709 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/2/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "email": "test@test.com",
+    "first_name": "Test",
+    "last_name": "Test"
+  },
+  "headers": {
+    "Content-Length": "69",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:14:27,714 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 400,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-04 13:14:27,715 log 82618 6133673984 Bad Request: /api/users/2/
+WARNING 2024-12-04 13:14:27,715 basehttp 82618 6133673984 "PUT /api/users/2/ HTTP/1.1" 400 79
+INFO 2024-12-04 13:14:46,248 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "PUT",
+  "path": "/api/users/2/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "email": "test@test.com",
+    "first_name": "Test",
+    "last_name": "Test",
+    "password": "test",
+    "username": "test"
+  },
+  "headers": {
+    "Content-Length": "109",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:14:46,260 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 200,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:14:46,260 basehttp 82618 6133673984 "PUT /api/users/2/ HTTP/1.1" 200 323
+INFO 2024-12-04 13:14:58,885 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "DELETE",
+  "path": "/api/users/2/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "0",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:14:58,893 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 204,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:14:58,894 basehttp 82618 6133673984 "DELETE /api/users/2/ HTTP/1.1" 204 0
+INFO 2024-12-04 13:16:48,235 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "DELETE",
+  "path": "/api/users/2/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "0",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:16:48,243 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 404,
+  "content": "<binary data>",
+  "duration": "0.01s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+WARNING 2024-12-04 13:16:48,243 log 82618 6133673984 Not Found: /api/users/2/
+WARNING 2024-12-04 13:16:48,243 basehttp 82618 6133673984 "DELETE /api/users/2/ HTTP/1.1" 404 45
+INFO 2024-12-04 13:17:05,961 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "POST",
+  "path": "/api/users/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": {
+    "email": "test@test.com",
+    "first_name": "Test",
+    "last_name": "Test",
+    "password": "test",
+    "username": "test"
+  },
+  "headers": {
+    "Content-Length": "109",
+    "Content-Type": "application/json",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:17:05,976 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 201,
+  "content": "<binary data>",
+  "duration": "0.02s",
+  "headers": {
+    "Content-Type": "application/json",
+    "Vary": "Accept",
+    "Allow": "GET, POST, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:17:05,976 basehttp 82618 6133673984 "POST /api/users/ HTTP/1.1" 201 323
+INFO 2024-12-04 13:17:14,939 logging_middleware 82618 6133673984 Request: {
+  "type": "request",
+  "method": "DELETE",
+  "path": "/api/users/3/",
+  "user": "AnonymousUser",
+  "GET_params": {},
+  "POST_params": {},
+  "body": null,
+  "headers": {
+    "Content-Length": "0",
+    "Content-Type": "text/plain",
+    "Host": "localhost:8000",
+    "User-Agent": "python-requests/2.32.3",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
+  }
+}
+INFO 2024-12-04 13:17:14,949 logging_middleware 82618 6133673984 Response: {
+  "type": "response",
+  "status_code": 204,
+  "content": "<undecodable content>",
+  "duration": "0.01s",
+  "headers": {
+    "Vary": "Accept",
+    "Allow": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+  }
+}
+INFO 2024-12-04 13:17:14,949 basehttp 82618 6133673984 "DELETE /api/users/3/ HTTP/1.1" 204 0

@@ -17,7 +17,7 @@ class UploadMenu:
         except Exception as e:
             error = e
             if menuResponse:
-                error += f". Response: {menuResponse.text}"
+                error += f". Response: {menuResponse.text} Status Code: {menuResponse.status_code}"
             print(f"Error uploading menu: {error}")
 
 class Users:
@@ -29,10 +29,10 @@ class Users:
                     url = 'http://localhost:8000/api/users/'
                 usersResponse = requests.get(url)
                 print(f"Users {userID if userID else ''}: {usersResponse.json()}")
-            except Exception as e:
+            except Exception as e: # THIS EXCEPTION PATTERNS IS NEW. IT APPLIES TO ALL EXCEPTIONS.
                 error = e
                 try:
-                    error += f". Response: {usersResponse.text}"
+                    error += f". Response: {usersResponse.text} Status Code: {usersResponse.status_code}"
                 except:
                     pass
                 print(f"Error getting users: {error}")
@@ -48,7 +48,7 @@ class Users:
             except Exception as e:
                 error = e
                 try:
-                    error += f". Response: {userResponse.text}"
+                    error += f". Response: {userResponse.text} Status Code: {userResponse.status_code}"
                 except:
                     pass
                 print(f"Error adding user: {error}")
@@ -66,7 +66,7 @@ class Users:
             except Exception as e:
                 error = e
                 try:
-                    error += f". Response: {userResponse.text}"
+                    error += f". Response: {userResponse.text} Status Code: {userResponse.status_code}"
                 except:
                     pass
                 print(f"Error updating user: {error}")
@@ -79,7 +79,7 @@ class Users:
             except Exception as e:
                 error = e
                 try:
-                    error += f". Response: {userResponse.text}"
+                    error += f". Response: {userResponse.text} Status Code: {userResponse.status_code}"
                 except:
                     pass
                 print(f"Error patching user: {error}")
@@ -90,11 +90,14 @@ class Users:
                     raise Exception("User ID is required to delete a user")
                 url = f'http://localhost:8000/api/users/{userID}/'
                 userResponse = requests.delete(url)
-                print(f"User {userID}: {userResponse.json()}")
+                if userResponse.status_code == 204: # THIS IS NEW 
+                    print(f"User {userID} deleted")
+                else:
+                    print(f"User {userID} not deleted")
             except Exception as e:
                 error = e
                 try:
-                    error += f". Response: {userResponse.text}"
+                    error += f". Response: {userResponse.text} Status Code: {userResponse.status_code}"
                 except:
                     pass
                 print(f"Error deleting user: {error}")
@@ -122,7 +125,7 @@ class DatabaseQueries():
         except Exception as e:
             error = e
             try:
-                error += f". Response: {response.text}"
+                error += f". Response: {response.text} Status Code: {response.status_code}"
             except:
                 pass
             print(f"Error executing raw SQL: {error}")
@@ -130,5 +133,5 @@ class DatabaseQueries():
 
 if __name__ == "__main__":
     users = Users()
-    users.add_user()
+    users.delete_user(3)
    
