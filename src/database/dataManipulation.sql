@@ -1,6 +1,7 @@
 
 
--- FIRST QUERY
+--1. Retrieve Complete Menu Information
+-- Includes restaurant details, menu sections, and menu items.
 SELECT 
 	mitem.name as item_name,
     mitem.description as item_desscription,
