@@ -1,0 +1,63 @@
+.
+├── README.md
+├── others
+│   ├── demoVid
+│   │   └── demo.mov
+│   ├── documentation
+│   │   └── documentTree.txt
+│   └── menuExamples
+│       ├── html
+│       │   └── myMenu.html
+│       ├── images
+│       │   ├── PDF-Menus-For-Restaurants (1).png
+│       │   ├── buffalo_bill.jpg
+│       │   ├── defaultRestaurant.png
+│       │   ├── fiveguys.png
+│       │   └── gordoRamsayPF.png
+│       └── pdfs
+│           ├── nobu.pdf
+│           ├── nusr_et.pdf
+│           └── sample_menu.pdf
+├── requirements.txt
+└── src
+    ├── API
+    │   └── APIs.py
+    ├── database
+    │   ├── dataManipulation.sql
+    │   ├── datePermissions.sql
+    │   ├── events.sql
+    │   ├── fullTextsearch.sql
+    │   ├── materializedViews.sql
+    │   ├── mms_snapshot.sql
+    │   ├── schemaNotes.md
+    │   └── triggers.sql
+    ├── django_project
+    │   ├── django_project
+    │   │   ├── __init__.py
+    │   │   ├── asgi.py
+    │   │   ├── settings.py
+    │   │   ├── urls.py
+    │   │   └── wsgi.py
+    │   ├── logs
+    │   │   └── django_javierdominguezsegura.log
+    │   ├── manage.py
+    │   ├── menus
+    │   │   ├── __init__.py
+    │   │   ├── admin.py
+    │   │   ├── apps.py
+    │   │   ├── migrations
+    │   │   │   ├── 0001_initial.py
+    │   │   │   ├── 0002_alter_user_city_alter_user_country_alter_user_state_and_more.py
+    │   │   │   └── ...
+    │   │   ├── models.py
+    │   │   ├── serializers.py
+    │   │   ├── tests.py
+    │   │   ├── urls.py
+    │   │   └── views.py
+    │   ├── scripts
+    │   │   ├── createuser.bash
+    │   │   ├── startServer.bash
+    │   │   └── update.bash
+    │   └── utils
+    │       └── logging_middleware.py
+    └── notes.txt

@@ -14,7 +14,6 @@ def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
     """
     Populate the database with the data extracted from the menu file
     """
-    print(f"Populating menu data for {menu}")
     ai_insertion_log = AuditLog.objects.create(
         phase="Inserting data",
         status="Processing"
@@ -23,10 +22,8 @@ def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
 
         # Get info from the dictionary
         restaurant_info = menu_data.get('restaurant_info', {})
-        print(f"restaurant_info: {restaurant_info}")
 
         if restaurant_info:
-            print("I am inside")
             restaurant_name = restaurant_info.get('restaurant_name', '')[:99]
             phone = restaurant_info.get('phone', '')[:99]
             address = restaurant_info.get('address', '')[:99]
@@ -37,13 +34,11 @@ def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
             state = restaurant_info.get('state', '')[:99]
             zip = restaurant_info.get('zip', '')
             street = restaurant_info.get('street', '')[:99]
-            print(f"restaurant_name: {restaurant_name}")
 
             if restaurant_name:
                 # Try to find existing restaurant
                 existing_restaurant = Restaurant.objects.filter(name=restaurant_name).first()
                 if existing_restaurant:
-                    print(f"Updating existing restaurant {restaurant_name}")
                     menu.restaurant = existing_restaurant 
                     if menu.restaurant.phone != phone: # Filter through possible updates
                         menu.restaurant.phone = phone
@@ -65,7 +60,6 @@ def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
                         menu.restaurant.street = street
                     menu.restaurant.save()
                 else:
-                    print(f"Creating new restaurant {restaurant_name}")
                     # Create new restaurant if it doesn't exist
                     menu.restaurant = Restaurant.objects.create(
                         name=restaurant_name,

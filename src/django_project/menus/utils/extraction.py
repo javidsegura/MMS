@@ -2,12 +2,11 @@ import base64
 import os
 from openai import OpenAI
 import json
-from menus.models import AuditLog
+from menus.models import AuditLog, Menu
 from PyPDF2 import PdfReader
 
-# TO DO: get a dict with all the info. Then write it to the db
 
-def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
+def ai_call(menu: Menu, extension: str) -> tuple[dict, AuditLog]:
     """ Send the menu file to OpenAI to process 
     
     Note: extension is the file extension of the menu file (e.g: .png, .html, .pdf)
@@ -32,7 +31,7 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
                     "content": [
                         {
                             "type": "text",
-                            "text": """Please analyze this menu image and return a JSON with the following structure. Dont add any comments or explanations:
+                            "text": """Please analyze this menu image and return a JSON with the following structure. Dont add any comments or explanations. If the content is not a menu, return an empty JSON:
                             {
                                 "menu_sections": [
                                     {
@@ -89,11 +88,9 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
                 }
             ]
         
+        # Adjusting based on the file extension
         if extension in ["png", "jpg", "jpeg"]:
-            # Read image file directly from the InMemoryUploadedFile
             base64_file = base64.b64encode(menu_file.file.read()).decode('utf-8')
-            # Reset file pointer for future reads
-            menu_file.file.seek(0)
 
             type = "jpeg" if extension in ["jpg", "jpeg"] else extension
 
@@ -121,7 +118,15 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
             model="gpt-4o",
             messages=messages
         )
+        # Handling the case where the content is not a menu
+        if response.choices[0].message.content == "{}":
+            ai_call_log.status = "Failed"
+            ai_call_log.other = "No menu found in the image"
+            ai_call_log.save()
+            menu.delete() # Dont store the menu if it is not a menu
+            return None, ai_call_log
 
+        # Extracting the JSON from the markdown
         content = response.choices[0].message.content.replace('```json', '').replace('```', '').strip()
         print(f"Raw content from OpenAI: {content}")  
     

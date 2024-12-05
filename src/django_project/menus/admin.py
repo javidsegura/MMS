@@ -69,7 +69,6 @@ class MenuAdmin(admin.ModelAdmin):
         Note: we create an audit log and then we assing the corresponding menu version (FK)
         """
         # Log the event
-    
         super().save_model(request, menu, form, change) 
 
 
@@ -112,7 +111,6 @@ class MenuAdmin(admin.ModelAdmin):
         if menu.menu_file:
             return format_html('<a href="{}" target="_blank">View File</a>', menu.menu_file.url)
         return '-'
-
     menu_file_link.short_description = 'Menu File' # Change the column name in the admin interface
 
 @admin.register(MenuSection)

@@ -17,7 +17,7 @@ class User(AbstractUser):
     # is_staff
     # is_active
     # date_joined
-    country = models.CharField(max_length=50, null=True, blank=True)  # Should not be blank or null
+    country = models.CharField(max_length=50, null=True, blank=True) 
     city = models.CharField(max_length=50, null=True, blank=True)
     state = models.CharField(max_length=3, null=True, blank=True)
     zip = models.SmallIntegerField(null=True, blank=True)

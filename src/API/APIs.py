@@ -1,6 +1,7 @@
 import requests
 
 """
+This modules provides all the classes to interact with the Django API endpoints. You may as well use classical curl commands to interact with the API.
 The JSON  passed should be {db_field: value} (note not all are mandatory)
 """
 
@@ -877,13 +878,13 @@ class RawSQLQueries():
             print(f"Error executing raw SQL: {error}")
             return None
 
-    def filterItemsByDietaryRestrictions(self, restrictionID: int):
+    def filterItemsByDietaryRestrictions(self, restriction: str):
         try:
-            query = "CALL GetMenuItemsByDietaryRestriction();"
+            query = f"CALL GetMenuItemsByDietaryRestriction('{restriction}');"
             url = 'http://localhost:8000/api/raw-sql/'
             data = {
                 'query': query,
-                'params': [restrictionID]
+                'params': []
             }
             headers = {'Content-Type': 'application/json'}
             response = requests.post(url, 
@@ -963,18 +964,18 @@ class RawSQLQueries():
 
     def updateMenuVersion(self, restaurantID: int, menuFileURL: str):
         try:
-            query = "CALL UpdateMenuVersion();"
+            query = f"CALL UpdateMenuVersion({restaurantID}, '{menuFileURL}');"
             url = 'http://localhost:8000/api/raw-sql/'
             data = {
                 'query': query,
-                'params': [restaurantID, menuFileURL]
+                'params': []
             }
             headers = {'Content-Type': 'application/json'}
             response = requests.post(url, 
                                     json=data,
                                     headers=headers)
-            
-            if response.status_code == 200:
+                        
+            if response.status_code == 204:
                 return response.json()
             else:
                 print(f"Server error: {response.text}")
@@ -993,6 +994,7 @@ class RawSQLQueries():
 
 
 if __name__ == "__main__":
-    restaurants = Restaurants()
-    restaurants.delete_restaurant(1)
-   
+    restaurants = RawSQLQueries()
+    temp = restaurants.updateMenuVersion(1, "https://a.second.test.com")
+    print(temp)
+

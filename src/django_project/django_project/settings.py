@@ -106,13 +106,13 @@ AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_REGION_NAME = os.getenv('AWS_S3_REGION_NAME')
 AWS_S3_CUSTOM_DOMAIN = os.getenv('AWS_S3_CUSTOM_DOMAIN')
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_S3_FILE_OVERWRITE = True  # Don't overwrite files with the same name
-AWS_DEFAULT_ACL = None  # Use bucket's default ACL
+AWS_S3_FILE_OVERWRITE = True  
+AWS_DEFAULT_ACL = None  
 AWS_S3_VERIFY = True
 AWS_QUERYSTRING_AUTH = False  
 AWS_LOCATION = 'menus'
 
-print(f"AWS Settings loaded: Bucket={AWS_STORAGE_BUCKET_NAME}, Region={AWS_S3_REGION_NAME}")
+print(f"AWS Settings loaded: Bucket={AWS_STORAGE_BUCKET_NAME}, Region={AWS_S3_REGION_NAME}") #debugging
 
 
 # Password validation
@@ -163,10 +163,9 @@ STATIC_URL = 'static/'
 
 # Update MEDIA_URL to use S3
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/'
-# MEDIA_ROOT is not needed when using S3 as your storage backend
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-AUTH_USER_MODEL = 'menus.User' # customer user entity
+
+AUTH_USER_MODEL = 'menus.User' 
 
 current_user = getpass.getuser()  # Gets the system username
 

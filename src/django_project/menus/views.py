@@ -133,7 +133,7 @@ def upload_menu(request):
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
 
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt # This import was needed for the raw_sql_query function-based view
 @csrf_exempt
 def raw_sql_query(request):
     """

@@ -70,18 +70,18 @@ DELIMITER $$
 CREATE PROCEDURE GetPDFProcessingStatus()
 BEGIN
     SELECT 
-        m.id AS menu_id,                       -- menus_menu.id
-    ms.name AS menu_section,               -- menus_menusection.name
-    al.status,                             -- menus_auditlog.status
-    al.phase,                              -- menus_auditlog.phase
-    al.other AS error_details,             -- menus_auditlog.other
-    al.time_registered AS updated_time     -- menus_auditlog.time_registered
+        m.id AS menu_id,                       
+    ms.name AS menu_section,               
+    al.status,                             
+    al.phase,                              
+    al.other AS error_details,             
+    al.time_registered AS updated_time     
 FROM 
-    menus_menu m                           -- menus_menu table
+    menus_menu m                           
 JOIN 
-    menus_menusection ms ON m.id = ms.menu_id -- menus_menusection.menu_id links to menus_menu.id
+    menus_menusection ms ON m.id = ms.menu_id
 JOIN 
-    menus_auditlog al ON m.id = al.menu_version_id; -- menus_auditlog.menu_version_id links to menus_menu.id
+    menus_auditlog al ON m.id = al.menu_version_id;
 END$$
 
 DELIMITER ;
@@ -96,25 +96,25 @@ DELIMITER $$
 CREATE PROCEDURE GetMenuItemsAndPrices()
 BEGIN
     SELECT 
-        mr.name AS restaurant_name,         -- menus_restaurant.name
-    mi.name AS item_name,               -- menus_menuitem.name
-    mi.price,                           -- menus_menuitem.price
-    mi.currency,                        -- menus_menuitem.currency
-    ms.name AS section_name             -- menus_menusection.name
+        mr.name AS restaurant_name,         
+    mi.name AS item_name,               
+    mi.price,                           
+    mi.currency,                        
+    ms.name AS section_name             
 FROM 
-    menus_restaurant mr                 -- Restaurant table
+    menus_restaurant mr                 
 JOIN 
-    menus_menu m ON mr.id = m.restaurant_id -- menus_menu.restaurant_id links to menus_restaurant.id
+    menus_menu m ON mr.id = m.restaurant_id
 JOIN 
-    menus_menusection ms ON m.id = ms.menu_id -- menus_menusection.menu_id links to menus_menu.id
+    menus_menusection ms ON m.id = ms.menu_id
 JOIN 
-    menus_menuitem mi ON ms.id = mi.menu_section_id -- menus_menuitem.menu_section_id links to menus_menusection.id
+    menus_menuitem mi ON ms.id = mi.menu_section_id
 WHERE 
-    mi.available = TRUE                 -- Only include available items
+    mi.available = TRUE                 
 ORDER BY 
-    mr.name,                            -- Order by restaurant name
-        ms.name,                            -- Then by section name
-        mi.price;                           -- Finally by price
+    mr.name,                            
+    ms.name,                            
+    mi.price;                           
 END$$
 
 DELIMITER ;
