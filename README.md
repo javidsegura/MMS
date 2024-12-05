@@ -1,6 +1,6 @@
 # Description
 
-Menu management system for restaurant. Powered by AI.
+Menu management system for restaurant. ETL pipeline. Django in the backend, RDS and S3 used in the cloud infrastructure.
 
 # Dependencies
 
