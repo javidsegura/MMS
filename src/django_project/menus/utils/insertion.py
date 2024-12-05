@@ -20,36 +20,30 @@ def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
         status="Processing"
     )
     try:
+
         # Get info from the dictionary
         restaurant_info = menu_data.get('restaurant_info', {})
-        phone = restaurant_info.get('phone')
-        address = restaurant_info.get('address')
-        website = restaurant_info.get('website')
-        email = restaurant_info.get('email')
-        country = restaurant_info.get('country')
-        city = restaurant_info.get('city')
-        state = restaurant_info.get('state')
-        zip = restaurant_info.get('zip')
-        street = restaurant_info.get('street')
-
-        # Making sure that all fields adhere to schema constraints 
-        if len(restaurant_info) > 0:
-            restaurant_info['restaurant_name'] = restaurant_info['restaurant_name'][:99]
-            restaurant_info['phone'] = restaurant_info['phone'][:99]
-            restaurant_info['address'] = restaurant_info['address'][:99]
-            restaurant_info['website'] = restaurant_info['website'][:99]
-            restaurant_info['email'] = restaurant_info['email'][:99]
-            restaurant_info['country'] = restaurant_info['country'][:99]
-            restaurant_info['city'] = restaurant_info['city'][:99]
-            restaurant_info['state'] = restaurant_info['state'][:99]
-            restaurant_info['street'] = restaurant_info['street'][:99]
+        print(f"restaurant_info: {restaurant_info}")
 
         if restaurant_info:
-            restaurant_name = restaurant_info.get('restaurant_name')
+            print("I am inside")
+            restaurant_name = restaurant_info.get('restaurant_name', '')[:99]
+            phone = restaurant_info.get('phone', '')[:99]
+            address = restaurant_info.get('address', '')[:99]
+            website = restaurant_info.get('website', '')[:99]
+            email = restaurant_info.get('email', '')[:99]
+            country = restaurant_info.get('country', '')[:99]
+            city = restaurant_info.get('city', '')[:99]
+            state = restaurant_info.get('state', '')[:99]
+            zip = restaurant_info.get('zip', '')
+            street = restaurant_info.get('street', '')[:99]
+            print(f"restaurant_name: {restaurant_name}")
+
             if restaurant_name:
                 # Try to find existing restaurant
                 existing_restaurant = Restaurant.objects.filter(name=restaurant_name).first()
                 if existing_restaurant:
+                    print(f"Updating existing restaurant {restaurant_name}")
                     menu.restaurant = existing_restaurant 
                     if menu.restaurant.phone != phone: # Filter through possible updates
                         menu.restaurant.phone = phone
@@ -71,6 +65,7 @@ def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
                         menu.restaurant.street = street
                     menu.restaurant.save()
                 else:
+                    print(f"Creating new restaurant {restaurant_name}")
                     # Create new restaurant if it doesn't exist
                     menu.restaurant = Restaurant.objects.create(
                         name=restaurant_name,
@@ -105,7 +100,8 @@ def populate_menu_data(menu: Menu, menu_data: dict) -> AuditLog:
                     name=item_name,
                     description=item_data.get('description', ''),
                     price=item_data.get('price', 0.0),
-                    available=True
+                    available=item_data.get('available', True),
+                    currency=item_data.get('currency', 'USD')
                 )
                 
                 # Handle dietary restrictions properly

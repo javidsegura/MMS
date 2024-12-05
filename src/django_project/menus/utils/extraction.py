@@ -42,6 +42,8 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
                                                 "name": "item name",
                                                 "description": "item description",
                                                 "price": float,
+                                                "currency": string,
+                                                "available": boolean,
                                                 "dietary_restrictions": dietary_restrictions = [
                                                                                         "Vegetarian",
                                                                                         "Vegan",
@@ -70,7 +72,7 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
                                     }
                                 ]
                                 "restaurant_info":{
-                                    "resturant_name": "restaurant name", #may be extracted from the webiste url
+                                    "restaurant_name": "restaurant name", #may be extracted from the webiste url
                                     "address": "restaurant address",
                                     "phone": "restaurant phone",
                                     "website": "restaurant website"
@@ -116,7 +118,7 @@ def ai_call(menu, extension: str) -> tuple[dict, AuditLog]:
             })
                 
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
             messages=messages
         )
 

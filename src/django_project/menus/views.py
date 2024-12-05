@@ -127,7 +127,6 @@ def upload_menu(request):
                 {'error': f'Error processing menu data: {str(e)}'}, 
                 status=status.HTTP_422_UNPROCESSABLE_ENTITY
             )
-
     except Exception as e:
         return Response(
             {'error': f'Server error: {str(e)}'}, 

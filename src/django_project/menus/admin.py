@@ -82,12 +82,14 @@ class MenuAdmin(admin.ModelAdmin):
             uploaded_log.status = "Stored successfully"
             try:
                 extension = menu.menu_file.name.split(".")[-1]
+                print(f"menu before extraction: {menu}")
                 menu_json, extraction_log = ai_call(menu, extension=extension)
                 if menu_json is None:
                     extraction_log.save()
                     raise ValueError("No menu_json returned from AI call")
-                
+                print(f"menu: {menu}")
                 insertion_log = populate_menu_data(menu, menu_json)
+                print(f"menu.restaurant.name: {menu.restaurant.name}")
                 if menu.restaurant.name:
                     menu_version = MenuVersion.objects.create(restaurant=menu.restaurant) # For each restaurant there is a menu version
                     menu.version = menu_version
