@@ -2,6 +2,13 @@
 
 Menu management system for restaurant. ETL pipeline. Django in the backend, RDS and S3 used in the cloud infrastructure.
 
+# Demo
+
+
+https://github.com/user-attachments/assets/4cbe3e8e-a745-4fee-a3f3-703f21b98f76
+
+
+
 # Dependencies
 
 - Python 3.11
